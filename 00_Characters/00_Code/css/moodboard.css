@@ -1,0 +1,105 @@
+/* Section */
+.moodboard {
+    border-radius: 8px;
+}
+
+.mood-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.mood-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 4px;
+    background: var(--background-tertiary);
+    border: 1px solid var(--background-secondary);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.mood-grid img:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+}
+
+/* Lightbox (moodboard.js) */
+.moodboard-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+}
+
+.moodboard-lightbox.active {
+    display: block;
+}
+
+.lightbox-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+.lightbox-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 4px;
+    pointer-events: auto;
+}
+
+.lightbox-close,
+.lightbox-nav {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+    opacity: 0.7;
+}
+
+.lightbox-close {
+    top: 20px;
+    right: 24px;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.lightbox-nav {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+}
+
+.lightbox-prev {
+    left: 16px;
+}
+
+.lightbox-next {
+    right: 16px;
+}

@@ -1,0 +1,167 @@
+:root {
+
+  /* ===================================== PAGE ===================================== */
+
+  --page-background: url("assets/background.jpg");
+  --page-title: "Empire — UNNAMED";
+  --upper-title: "Empire";
+
+
+
+  /* ===================================== HERO ===================================== */
+
+  --hero-image: url("assets/hero/banner.jpg");
+  --hero-logo: url("assets/logo.png");
+
+  --empire-category: "Empire";
+
+  --empire-name: "Unnamed Empire";
+
+  --empire-description:
+    "A vast political and cultural power whose influence stretched far beyond its own borders.";
+
+
+
+  /* ===================================== AUTHOR NOTE ===================================== */
+
+  --quote:
+    "Every empire leaves monuments. The greatest leave questions.";
+
+  --quote-author:
+    "Archive Fragment 17";
+
+
+
+  /* ===================================== PLAYLIST ===================================== */
+
+  --playlist-label: "Soundtrack";
+
+  --playlist-title:
+    "Music of the Empire";
+
+  --playlist-description:
+    "Themes associated with this civilization.";
+
+  --playlist-background:
+    url("assets/playlist/background.gif");
+
+
+
+  --playlist-track-1:
+    url("assets/playlist/track-1.mp3");
+
+  --playlist-track-2:
+    url("assets/playlist/track-2.mp3");
+
+  --playlist-track-3:
+    url("assets/playlist/track-3.mp3");
+
+  --playlist-track-4:
+    url("assets/playlist/track-4.mp3");
+
+  --playlist-track-5:
+    url("assets/playlist/track-5.mp3");
+
+
+
+  --track-1-name: "Distant Horizons";
+  --track-1-artist: "Empire OST";
+
+  --track-2-name: "Golden Procession";
+  --track-2-artist: "Empire OST";
+
+  --track-3-name: "Ashes Beneath";
+  --track-3-artist: "Empire OST";
+
+  --track-4-name: "The Last Banner";
+  --track-4-artist: "Empire OST";
+
+  --track-5-name: "Beyond The Frontier";
+  --track-5-artist: "Empire OST";
+
+
+
+  /* ===================================== OVERVIEW ===================================== */
+
+  --overview-text-1:
+    "The Unnamed Empire emerged during a period of rapid expansion and cultural development, eventually becoming one of the most influential powers of its age.";
+
+  --overview-text-2:
+    "Though much of its history has been lost, surviving records suggest a civilization defined by ambition, innovation, and an unusual ability to adapt to changing conditions.";
+
+
+
+  /* ===================================== BUG PROTOTYPE ===================================== */
+
+  --bug-1: url("assets/bug/bug-1.jpg");
+  --bug-1-title: "Worker Caste";
+
+  --bug-2: url("assets/bug/bug-2.jpg");
+  --bug-2-title: "Field Variant";
+
+  --bug-3: url("assets/bug/bug-3.jpg");
+  --bug-3-title: "Royal Guard";
+
+  --bug-4: url("assets/bug/bug-4.jpg");
+  --bug-4-title: "Mountain Strain";
+
+
+
+  /* ===================================== MUSIC PROTOTYPE ===================================== */
+
+  --music-1: url("assets/music/music-1.jpg");
+  --music-1-title: "Primary Motif";
+
+  --music-2: url("assets/music/music-2.jpg");
+  --music-2-title: "Ceremonial Theme";
+
+  --music-3: url("assets/music/music-3.jpg");
+  --music-3-title: "Military Rhythm";
+
+  --music-4: url("assets/music/music-4.jpg");
+  --music-4-title: "Final Version";
+
+
+
+  /* ===================================== HISTORY ===================================== */
+
+  --history-title-1:
+    "Origins";
+
+  --history-text-1:
+    "The earliest references to the empire appear in fragmented records dating back several centuries before its rise to prominence.";
+
+  --history-text-2:
+    "What began as a collection of loosely connected territories gradually evolved into a unified political entity.";
+
+
+
+  --history-image-1:
+    url("assets/history/history-image-1.jpg");
+
+  --history-image-caption-1:
+    "One of the oldest surviving depictions of the empire.";
+
+
+
+  --history-title-2:
+    "Expansion";
+
+  --history-text-3:
+    "As its influence grew, neighboring powers were forced to adapt to the changing balance of power.";
+
+  --history-text-4:
+    "The empire's reach eventually extended far beyond its original heartlands.";
+
+
+
+  /* ===================================== MOODBOARD ===================================== */
+
+  --mood-1: url("assets/moodboard/mood-1.jpg");
+  --mood-2: url("assets/moodboard/mood-2.jpg");
+  --mood-3: url("assets/moodboard/mood-3.jpg");
+  --mood-4: url("assets/moodboard/mood-4.jpg");
+  --mood-5: url("assets/moodboard/mood-5.jpg");
+  --mood-6: url("assets/moodboard/mood-6.jpg");
+
+}

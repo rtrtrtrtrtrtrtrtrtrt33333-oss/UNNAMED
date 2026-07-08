@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caesar+Dressing&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+:root {
+    /* Typography and Colors */
+    --font-accent:"Audiowide", sans-serif;
+    --character-name-color: #ffffff;
+    --head-font-size: 100px;
+
+    /* Primary Text */
+    --font-primary: "Times New Roman", Times, serif;
+    --text-color-primary: #e3e8f2;
+
+    /* Secondary Text */
+    --font-secondary: "Cutive Mono", monospace;
+    --text-color-secondary: #b2baca;
+    
+    /* Background Colors */
+    --background-main: #181b22;
+    --background-primary: #353b47;
+    --background-secondary: #4a4f5b;
+    --background-tertiary: #5d626d;
+    --color-accent: #686d7a;
+    
+    /* Crystal Colors */
+    --color-palette-1: #4a200e;
+    --color-palette-2: #61331f;
+    --color-palette-3: #7c533c;
+    --color-palette-4: #5d688d;   
+    --color-palette-5: #1a2c4d;
+
+    /* playlist-header */
+    --playlist-text-color-primary: #f0f0f0;
+    --playlist-text-color-secondary: #cecece;
+    --playlist-head-text-color-primary: #2b1d1d;
+    --playlist-head-text-color-secondary: #653e3e;
+    --playlist-head-text-color-tertiary: #c08484;
+} 

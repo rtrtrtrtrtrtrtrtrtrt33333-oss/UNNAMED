@@ -1,0 +1,297 @@
+.playlist {
+    width: 250px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    z-index: 100;
+}
+
+.playlist-layout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 750px;
+    background: var(--background-primary);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.playlist-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.now-playing {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+.now-playing-info {
+    margin-bottom: 12px;
+}
+
+.now-playing-track {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--playlist-head-text-color-primary);
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.now-playing-artist {
+    font-size: 14px;
+    color: var(--playlist-head-text-color-secondary);
+}
+
+.now-playing-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.progress-time-start,
+.progress-time-end {
+    font-size: 10px;
+    font-family: monospace;
+    color: var(--playlist-head-text-color-primary);
+    min-width: 35px;
+}
+
+.progress-time-end {
+    text-align: right;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 3px;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--playlist-head-text-color-tertiary);
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--playlist-head-text-color-primary);
+    transition: width 0.1s ease;
+}
+
+.now-playing-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 40px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    color: var(--playlist-head-text-color-secondary);
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.control-btn:hover {
+    transform: scale(1.1);
+}
+
+.play-pause-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.Track-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.Track-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.Track-scroll::-webkit-scrollbar-track {
+    background: var(--background-primary);
+    border-radius: 3px;
+}
+
+.Track-scroll::-webkit-scrollbar-thumb {
+    background: var(--playlist-head-text-color-secondary);
+    border-radius: 3px;
+}
+
+.Track-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--playlist-head-text-color-primary);
+}
+
+.track {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-height: 60px;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.track::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--playlist-text-color-secondary);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.track:hover {
+    transform: translateX(5px);
+}
+
+.track:hover::before,
+.track.playing::before {
+    transform: scaleY(1);
+}
+
+.track-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.track-bars {
+    display: flex;
+    align-items: end;
+    gap: 2px;
+    height: 20px;
+}
+
+.track-bars span {
+    width: 3px;
+    border-radius: 1px;
+    background: var(--playlist-head-text-color-tertiary);
+    transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.track-bars span:nth-child(1) { height: 6px; }
+.track-bars span:nth-child(2) { height: 10px; }
+.track-bars span:nth-child(3) { height: 14px; }
+.track-bars span:nth-child(4) { height: 8px; }
+.track-bars span:nth-child(5) { height: 12px; }
+
+.track:hover .track-bars span {
+    background: var(--playlist-text-color-secondary);
+    opacity: 0.8;
+}
+
+.track.playing .track-bars span {
+    background: var(--playlist-text-color-secondary);
+    animation: trackBars 1s ease-in-out infinite;
+}
+
+.track.playing .track-bars span:nth-child(1) { animation-delay: 0s; }
+.track.playing .track-bars span:nth-child(2) { animation-delay: 0.1s; }
+.track.playing .track-bars span:nth-child(3) { animation-delay: 0.2s; }
+.track.playing .track-bars span:nth-child(4) { animation-delay: 0.3s; }
+.track.playing .track-bars span:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes trackBars {
+    0%, 100% { transform: scaleY(0.5); }
+    50% { transform: scaleY(1); }
+}
+
+.track-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.track-name {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--playlist-text-color-primary);
+}
+
+.track-artist {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.2;
+    color: var(--playlist-text-color-secondary);
+}
+
+.track-time {
+    margin-top: 2px;
+    font-size: 13px;
+    font-family: monospace;
+    color: var(--playlist-text-color-secondary);
+}
+
+.track-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    color: var(--playlist-text-color-secondary);
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.track:hover .track-play,
+.track.playing .track-play {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.track-play:hover,
+.track.playing .track-play {
+    color: var(--playlist-text-color-primary);
+}

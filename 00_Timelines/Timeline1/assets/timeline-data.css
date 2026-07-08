@@ -1,0 +1,95 @@
+:root {
+
+  /* ===================================== PAGE ===================================== */
+
+  --page-title: "Age of Silence — Timeline";
+
+  --upper-title: "Age of Silence";
+
+  --page-background: url("assets/background.jpg");
+
+
+  /* ===================================== HERO ===================================== */
+
+  --era-banner: url("assets/eras/age-of-silence/banner.jpg");
+
+  --era-number: "Era I";
+
+  --era-name: "Age of Silence";
+
+  --era-description: "The longest period of stability before the collapse.";
+
+
+  /* ===================================== PLAYLIST ===================================== */
+
+  --playlist-label: "Soundtrack";
+
+  --playlist-title: "Music of the Era";
+
+  --playlist-description: "Songs associated with this historical period.";
+
+  --playlist-background: url("assets/playlist/playlist-background.gif");
+
+
+  /* ===================================== TRACKS ===================================== */
+
+  --playlist-track-1: "assets/playlist/Princess Mononoke San";
+  --playlist-track-2: "assets/playlist/track-2.mp3";
+  --playlist-track-3: "assets/playlist/track-3.mp3";
+  --playlist-track-4: "assets/playlist/track-4.mp3";
+  --playlist-track-5: "assets/playlist/track-5.mp3";
+
+
+  --track-1-name: "Still Waters";
+  --track-1-artist: "Age of Silence OST";
+
+  --track-2-name: "Architect's Dream";
+  --track-2-artist: "Age of Silence OST";
+
+  --track-3-name: "Trade Winds";
+  --track-3-artist: "Age of Silence OST";
+
+  --track-4-name: "Golden Horizon";
+  --track-4-artist: "Age of Silence OST";
+
+  --track-5-name: "Before the Ruin";
+  --track-5-artist: "Age of Silence OST";
+
+
+  /* ===================================== STORY SECTION 1 ===================================== */
+
+  --section-1-title: "The Rise of Nations";
+
+  --section-1-text-1: "Powerful states emerged across the continent, each claiming dominion over fertile valleys and strategic mountain passes.";
+
+  --section-1-text-2: "Trade connected distant cultures. Caravans crossed deserts and rivers alike, carrying spices, manuscripts, and knowledge.";
+
+
+  /* ===================================== IMAGE 1 ===================================== */
+
+  --image-1: url("assets/eras/age-of-silence/image1.jpg");
+
+  --image-1-caption: "Trade routes crossing the eastern valleys.";
+
+
+  /* ===================================== QUOTE ===================================== */
+
+  --quote: "The world knew neither fear nor ruin. Only ambition and the quiet certainty of tomorrow.";
+
+
+  /* ===================================== STORY SECTION 2 ===================================== */
+
+  --section-2-title: "The Last Decades";
+
+  --section-2-text-1: "Strange phenomena began to appear at the edges of mapped territory.";
+
+  --section-2-text-2: "The first warnings were ignored. Leaders dismissed the signs as superstition.";
+
+
+  /* ===================================== IMAGE 2 ===================================== */
+
+  --image-2: url("assets/eras/age-of-silence/image2.jpg");
+
+  --image-2-caption: "Capital of the Architects at its peak.";
+
+}

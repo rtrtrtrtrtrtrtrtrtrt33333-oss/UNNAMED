@@ -1,0 +1,90 @@
+﻿:root {
+  /* ===================================== PAGE AND BACKGROUND ===================================== */
+  --page-background: url('assets/background.jpg');
+  --page-title: "Dawn Breaker - Character Profile";
+  --upper-title: "Dawn Breaker";
+
+
+  /* ===================================== HERO ===================================== */
+  --hero-profile-background: url('assets/hero/profile-background.png');
+  --hero-profile: url('assets/hero/profile.png');
+  --hero-title-pattern: url('assets/hero/title-pattern.jpg');
+
+  --character-name: "Dawn Breaker";
+  --hero-description: "Short Description";
+
+
+
+  /* ===================================== DESCRIPTION ===================================== */
+  --description-character-image: url('assets/description/description-character-image.png');
+
+
+  --description: "Long description text. Lorem ipsum dolor sit amet...";
+  --description-2: "Lorem ipsum dolor sit amet...";
+
+  --quote: "Character quote.";
+  --quote-author: "Quote author";
+
+  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+
+  --info-title: "title";
+  --info-role: "Character's role";
+  --info-origin: "Where they come from";
+
+
+
+  /* ===================================== DESCRIPTION ===================================== */
+
+  --story-title-1: "Early life";
+  --story-caption-1: "Early life";
+  --story-text-1: "Lorem ipsum dolor sit amet...";
+  --story-image-1: url('assets/history/story-image-1.jpg');
+
+  --story-title-2: "Later events";
+  --story-caption-2: "Later events";
+  --story-text-2: "Lorem ipsum dolor sit amet...";
+  --story-image-2: url('assets/history/story-image-2.jpg');
+  --story-text-1-2: "Additional context for the first chapter of their history.";
+  --story-quote: "A line that captures the turning point of their story.";
+  --story-text-2-2: "Further details about later events and their consequences.";
+  --story-image-3: url('assets/history/story-image-3.jpg');
+  --story-image-3-caption: "A defining moment captured in the archive.";
+
+
+
+  /* ===================================== MOODBOARD ===================================== */
+  --moodboard-1: url('assets/moodboard/mood-1.jpg');
+  --moodboard-2: url('assets/moodboard/mood-2.jpg');
+  --moodboard-3: url('assets/moodboard/mood-3.jpg');
+  --moodboard-4: url('assets/moodboard/mood-4.jpg');
+  --moodboard-5: url('assets/moodboard/mood-5.jpg');
+  --moodboard-6: url('assets/moodboard/mood-6.jpg');
+
+
+
+  /* ===================================== PLAYLIST ASSETS ===================================== */
+  --playlist-background: url('assets/playlist/playlist-background.gif');
+
+  --playlist-track-1: url('assets/playlist/Princess Mononoke San.mp3');
+  --playlist-track-2: url('assets/playlist/track-2.mp3');
+  --playlist-track-3: url('assets/playlist/track-3.mp3');
+  --playlist-track-4: url('assets/playlist/track-4.mp3');
+  --playlist-track-5: url('assets/playlist/track-5.mp3');
+
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --track-3-name: "Moment of Tranquility";
+  --track-3-artist: "Alto's Odyssey";
+  --track-4-name: "Run Free";
+  --track-4-artist: "Spirit: Stallion of the Cimarron";
+  --track-5-name: "Homeland";
+  --track-5-artist: "Spirit: Stallion of the Cimarron";
+
+}
+
+
+
+
+

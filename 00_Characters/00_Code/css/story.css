@@ -1,0 +1,150 @@
+/* Section */
+.story {
+    border-radius: 8px;
+}
+
+.story .wiki-article {
+    margin-top: 20px;
+}
+
+/* Fandom wiki article */
+.wiki-article {
+    font-family: var(--font-secondary);
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--text-color-secondary);
+}
+
+.wiki-section {
+    margin-bottom: 1.5em;
+}
+
+.wiki-section:last-child {
+    margin-bottom: 0;
+}
+
+.wiki-section::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wiki-heading {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--background-tertiary);
+    color: var(--text-color-primary);
+}
+
+.wiki-article > .wiki-section:first-child .wiki-heading {
+    margin-top: 0;
+}
+
+.mw-headline {
+    font-weight: inherit;
+}
+
+.wiki-article p {
+    margin: 0 0 0.75em;
+}
+
+.wiki-article p:last-child {
+    margin-bottom: 0;
+}
+
+/* Thumbnails */
+.wiki-thumb {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.wiki-thumb-right {
+    float: right;
+    width: 180px;
+    margin: 0.3em 0 0.8em 1.2em;
+    clear: right;
+}
+
+.wiki-thumbinner {
+    border: 1px solid var(--background-tertiary);
+    background: var(--background-tertiary);
+    padding: 3px;
+    font-size: 94%;
+    text-align: center;
+}
+
+.wiki-thumbinner img,
+.wiki-thumb-image {
+    display: block;
+    width: 100%;
+    height: 135px;
+    background: var(--background-tertiary);
+    object-fit: cover;
+}
+
+.wiki-thumbinner img {
+    height: auto;
+    min-height: 135px;
+    aspect-ratio: 4 / 3;
+}
+
+.wiki-thumbcaption {
+    margin: 0;
+    padding: 6px 4px 4px;
+    border-top: 1px solid var(--background-tertiary);
+    font-size: 12px;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--text-color-secondary);
+}
+
+.wiki-thumbcaption:empty {
+    display: none;
+    padding: 0;
+    border: none;
+}
+
+.story-quote {
+    margin: 2em 0;
+    padding: 20px 24px;
+    border-left: 3px solid var(--color-accent);
+    font-family: var(--font-primary);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--text-color-primary);
+    background: rgba(255, 255, 255, .03);
+}
+
+.article-image {
+    margin: 2em 0 0;
+}
+
+.article-image img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border: 1px solid var(--background-tertiary);
+    display: block;
+}
+
+.article-image figcaption {
+    margin-top: 10px;
+    color: var(--text-color-secondary);
+    font-size: 12px;
+    text-align: center;
+    font-family: var(--font-secondary);
+}
+
+@media (max-width: 900px) {
+    .wiki-thumb-right {
+        float: none;
+        width: 100%;
+        margin: 0 0 1em;
+    }
+}

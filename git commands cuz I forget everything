@@ -1,0 +1,26 @@
+git add .
+git commit -m "update"
+git push
+
+
+
+
+history reset:
+git status
+
+git checkout --orphan new-main
+
+git add -A
+
+git commit -m "Initial project version"
+
+git log --oneline
+
+git branch
+
+git branch -D main
+
+git branch -m main
+
+git status
+git log --oneline

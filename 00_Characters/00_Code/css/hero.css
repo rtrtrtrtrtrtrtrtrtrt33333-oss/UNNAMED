@@ -1,0 +1,117 @@
+.hero-layout {
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    gap: 20px;
+    width: 100%;
+    margin: 50px auto 20px;
+}
+
+.profile-container {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container::before,
+.profile-container::after {
+  position: absolute;
+  color: var(--color-accent);
+}
+
+.profile-container::before {
+  content: "";
+  top: -31px;
+  left: 0;
+  width: 94%;
+  height: 5px;
+  background: var(--color-accent);
+}
+
+.profile-container::after {
+  content: "✦";
+  top: -70px;
+  right: 0;
+  font-size: 56px;
+}
+
+.background-pic {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--background-tertiary);
+  background-image: var(--hero-profile-bg);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.profile-pic {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 100;
+}
+
+.hero-text-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 20px;
+}
+
+.character-name {
+  margin: 0;
+  font-size: var(--head-font-size);
+  font-family: var(--font-accent);
+  color: var(--character-name-color);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 0.85;
+  z-index: 10;
+}
+
+.hero-description {
+  width: 60%;
+  margin: 10px;
+  font-family: var(--font-secondary);
+  color: var(--character-name-color);
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 0.8;
+}
+
+.character-name-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--background-primary);
+}
+
+.title-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.character-name-container h1 {
+  position: absolute;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: clamp(32px, 6vw, 90px);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  color: var(--character-name-color);
+  text-transform: uppercase;
+}
+

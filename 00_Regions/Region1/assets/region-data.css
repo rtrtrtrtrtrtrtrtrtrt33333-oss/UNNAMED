@@ -1,0 +1,109 @@
+:root {
+
+  /* ===================================== PAGE ===================================== */
+
+  --page-title: "Region — Timeline";
+
+  --upper-title: "Region Name";
+
+  --page-background: url("assets/background.jpg");
+
+
+  /* ===================================== HERO ===================================== */
+
+  --era-banner: url("assets/region/banner.jpg");
+
+  --era-number: "Region Number";
+
+  --era-name: "Region Name";
+
+  --era-description: "Region description.";
+
+
+  /* ===================================== OVERVIEW ===================================== */
+
+  --intro-text-1: "First introduction paragraph.";
+
+  --intro-text-2: "Second introduction paragraph.";
+
+
+  /* ===================================== PLAYLIST ===================================== */
+
+  --playlist-label: "Soundtrack";
+
+  --playlist-title: "Music of the Region";
+
+  --playlist-description: "Playlist description.";
+
+  --playlist-background: url("assets/playlist/background.gif");
+
+
+  /* ===================================== TRACKS ===================================== */
+
+  --playlist-track-1: "assets/playlist/track-1.mp3";
+  --playlist-track-2: "assets/playlist/track-2.mp3";
+  --playlist-track-3: "assets/playlist/track-3.mp3";
+  --playlist-track-4: "assets/playlist/track-4.mp3";
+  --playlist-track-5: "assets/playlist/track-5.mp3";
+
+
+  --track-1-name: "Track Name";
+  --track-1-artist: "Artist";
+
+  --track-2-name: "Track Name";
+  --track-2-artist: "Artist";
+
+  --track-3-name: "Track Name";
+  --track-3-artist: "Artist";
+
+  --track-4-name: "Track Name";
+  --track-4-artist: "Artist";
+
+  --track-5-name: "Track Name";
+  --track-5-artist: "Artist";
+
+
+  /* ===================================== HISTORY SECTION 1 ===================================== */
+
+  --section-1-title: "First Historical Period";
+
+  --section-1-text-1: "Historical text.";
+
+  --section-1-text-2: "Historical text.";
+
+
+  /* ===================================== IMAGE 1 ===================================== */
+
+  --image-1: url("assets/images/image-1.jpg");
+
+  --image-1-caption: "Image description.";
+
+
+  /* ===================================== QUOTE ===================================== */
+
+  --quote: "Important quote related to this region.";
+
+
+  /* ===================================== HISTORY SECTION 2 ===================================== */
+
+  --section-2-title: "Second Historical Period";
+
+  --section-2-text-1: "Historical text.";
+
+  --section-2-text-2: "Historical text.";
+
+
+  /* ===================================== IMAGE 2 ===================================== */
+
+  --image-2: url("assets/images/image-2.jpg");
+
+  --image-2-caption: "Image description.";
+
+
+  /* ===================================== FINAL IMAGE ===================================== */
+
+  --image-3: url("assets/images/image-3.jpg");
+
+  --image-3-caption: "Image description.";
+
+}
