@@ -2,8 +2,8 @@ git add .
 git commit -m "update"
 git push
 
-
-
+Поменять владейльце или чего типо того
+git config --global --add safe.directory "C:/Users/main/Desktop/Nest/HTML/Unnamed project"
 
 history reset:
 git status

@@ -1,4 +1,14 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+console.log('playlist loaded');
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('playlist init');
+
+    const tracks = [...document.querySelectorAll('.track')];
+
+    console.log('tracks:', tracks.length);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
   const tracks = [...document.querySelectorAll('.track')];
   if (!tracks.length) return;
 
