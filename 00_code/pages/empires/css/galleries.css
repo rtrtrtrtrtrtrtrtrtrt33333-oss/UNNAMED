@@ -1,0 +1,56 @@
+/* ========================= */
+/* GALLERIES */
+/* ========================= */
+
+.prototype-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+    margin-bottom: 70px;
+}
+
+.prototype-column {
+    padding: 20px;
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    background:
+    rgba(255,255,255,.02);
+}
+
+.prototype-column .section-title h2 {
+    text-align: left;
+}
+
+.prototype-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.prototype-grid figure {
+    margin: 0;
+}
+
+.prototype-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+
+    object-fit: cover;
+    display: block;
+
+    background: rgba(255,255,255,.04);
+}
+
+.prototype-grid figcaption {
+    padding: 8px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color:
+    var(--text-color-secondary);
+}

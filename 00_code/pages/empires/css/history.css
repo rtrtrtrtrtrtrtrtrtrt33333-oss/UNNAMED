@@ -1,0 +1,40 @@
+/* ========================= */
+/* HISTORY */
+/* ========================= */
+
+.empire-history {
+    margin-bottom: 70px;
+}
+
+.history-block {
+    margin-bottom: 35px;
+}
+
+.history-block h3 {
+    margin-bottom: 12px;
+
+    font-size: 1.4rem;
+}
+
+.history-image {
+    margin: 40px 0;
+}
+
+.history-image img {
+    width: 100%;
+    max-height: 650px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.history-image figcaption {
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    color: var(--text-color-secondary);
+}

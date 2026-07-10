@@ -1,0 +1,28 @@
+@media (max-width: 1000px) {
+
+    .story-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .story-cover {
+        min-height: 400px;
+        order: -1;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .story-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .story-cover {
+        min-height: 300px;
+    }
+
+    .story-image img {
+        max-height: 400px;
+    }
+
+}

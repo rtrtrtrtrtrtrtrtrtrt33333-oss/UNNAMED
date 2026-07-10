@@ -1,0 +1,90 @@
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.empire-hero {
+    position: relative;
+    height: 620px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.empire-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.empire-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.75)
+    );
+}
+
+.empire-logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.empire-tag {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+    font-size: .75rem;
+}
+
+.empire-overlay h1 {
+    margin: 12px 0;
+
+    font-size: clamp(3rem,8vw,6rem);
+
+    font-family: var(--font-accent);
+
+    text-transform: uppercase;
+}
+
+.empire-overlay p {
+    max-width: 800px;
+    line-height: 1.8;
+    color: var(--text-color-secondary);
+}
+
+
+
+.empire-subinfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.empire-subinfo span {
+    padding: 8px 14px;
+
+    border: 1px solid var(--border);
+
+    background: rgba(255,255,255,.04);
+
+    font-size: .75rem;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

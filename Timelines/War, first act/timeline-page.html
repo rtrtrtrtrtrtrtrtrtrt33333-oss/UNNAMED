@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../../00_code/shared/browser-icon/faticon.png">
+    <title data-text="--page-title">page title</title>
+
+    <script src="../../00_code/shared/content-loaders/00_content-loader.js"></script>
+
+    <link rel="stylesheet" href="assets/timeline-colors.css">
+    <link rel="stylesheet" href="assets/timeline-data.css">
+
+    <link rel="stylesheet" href="../../00_code/shared/css/header.css">
+    <link rel="stylesheet" href="../../00_code/pages/timelines/css/layout.css">
+    <link rel="stylesheet" href="../../00_code/pages/timelines/css/hero.css">
+    <link rel="stylesheet" href="../../00_code/pages/timelines/css/story.css">
+    <link rel="stylesheet" href="../../00_code/pages/timelines/css/responsive.css">
+    <link rel="stylesheet" href="../../00_code/pages/timelines/css/playlist.css">
+    <script src="../../00_code/shared/js/header.js"></script>
+    <script src="../../00_code/shared/js/playlist.js"></script>
+</head>
+<body>
+    <img class="background" alt="" data-link="--page-background">
+
+    <header>
+        <section class="top-header">
+            <div class="header-banner">
+                <img src="../../00_code/shared/browser-icon/header-background.png" alt="">
+
+                <div class="banner-overlay">
+                    <div class="logo-holder">
+                        <img src="../../00_code/shared/browser-icon/name.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <nav class="header-nav">
+                <a href="../../Navigation/home.html">Home</a>
+                <a href="../../Navigation/character_list.html">Characters</a>
+                <a href="#">Locations</a>
+                <a href="#">Factions</a>
+                <a href="../../Navigation/timeline_list.html">Timeline</a>
+            </nav>
+        </section>
+
+        <aside class="sidebar">
+            <a href="../../Navigation/home.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
+            <a href="../../Navigation/character_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
+            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Locations</span></a>
+            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Factions</span></a>
+            <a href="../../Navigation/timeline_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+        </aside>
+    </header>
+
+    <main class="main">
+
+        <div class="project-name">
+            <p>✦</p>
+            <p data-text="--upper-title">Timeline</p>
+        </div>
+
+        <div class="main-page">
+
+            <section class="story-hero">
+
+                <img
+                    class="story-hero-image"
+                    data-link="--era-banner"
+                    alt="">
+
+                <div class="story-hero-overlay">
+
+                    <span class="story-tag"
+                        data-text="--era-number">
+                        Event Number
+                    </span>
+
+                    <h1 data-text="--era-name">
+                        Event Name
+                    </h1>
+
+                    <p class="story-description"
+                        data-text="--era-description">
+                        Event Description
+                    </p>
+
+                </div>
+
+            </section>
+
+                    <div class="playlist-section">
+                        <div class="playlist-header">
+                            <span data-text="--playlist-label">Soundtrack</span>
+                            <h3 data-text="--playlist-title">Music of the Era</h3>
+                            <p data-text="--playlist-description">Playlist Description</p>
+                        </div>
+
+                        <div class="playlist-panel">
+                            <div class="playlist-layout">
+                                <img class="playlist-background" alt="" data-link="--playlist-background">
+
+                                <div class="now-playing">
+                                    <div class="now-playing-info">
+                                        <div class="now-playing-track">No track playing</div>
+                                        <div class="now-playing-artist">—</div>
+                                    </div>
+
+                                    <div class="now-playing-progress">
+                                        <div class="progress-container">
+                                            <div class="progress-time-start">0:00</div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill"></div>
+                                            </div>
+                                            <div class="progress-time-end">0:00</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="now-playing-controls">
+                                        <button class="control-btn prev-btn" type="button">⏮</button>
+                                        <button class="control-btn play-pause-btn" type="button">▶</button>
+                                        <button class="control-btn next-btn" type="button">⏭</button>
+                                    </div>
+                                </div>
+
+                                <div class="Track-scroll">
+                                    <div class="track" data-track="1">
+                                        <div class="track-visual">
+                                            <div class="track-bars"><span></span><span></span><span></span><span></span></div>
+                                        </div>
+                                        <div class="track-info">
+                                            <div class="track-name" data-text="--track-1-name">Track</div>
+                                            <div class="track-artist" data-text="--track-1-artist">Artist</div>
+                                        </div>
+                                        <div class="track-time">--:--</div>
+                                        <button class="track-play" type="button">▶</button>
+                                        <audio class="audio-player" preload="metadata">
+                                            <source type="audio/mpeg" data-link="--playlist-track-1">
+                                        </audio>
+                                    </div>
+
+                                    <div class="track" data-track="2">
+                                        <div class="track-visual">
+                                            <div class="track-bars"><span></span><span></span><span></span><span></span></div>
+                                        </div>
+                                        <div class="track-info">
+                                            <div class="track-name" data-text="--track-2-name">Track</div>
+                                            <div class="track-artist" data-text="--track-2-artist">Artist</div>
+                                        </div>
+                                        <div class="track-time">--:--</div>
+                                        <button class="track-play" type="button">▶</button>
+                                        <audio class="audio-player" preload="metadata">
+                                            <source type="audio/mpeg" data-link="--playlist-track-2">
+                                        </audio>
+                                    </div>
+
+                                    <div class="track" data-track="3">
+                                        <div class="track-visual">
+                                            <div class="track-bars"><span></span><span></span><span></span><span></span></div>
+                                        </div>
+                                        <div class="track-info">
+                                            <div class="track-name" data-text="--track-3-name">Track</div>
+                                            <div class="track-artist" data-text="--track-3-artist">Artist</div>
+                                        </div>
+                                        <div class="track-time">--:--</div>
+                                        <button class="track-play" type="button">▶</button>
+                                        <audio class="audio-player" preload="metadata">
+                                            <source type="audio/mpeg" data-link="--playlist-track-3">
+                                        </audio>
+                                    </div>
+
+                                    <div class="track" data-track="4">
+                                        <div class="track-visual">
+                                            <div class="track-bars"><span></span><span></span><span></span><span></span><span></span></div>
+                                        </div>
+                                        <div class="track-info">
+                                            <div class="track-name" data-text="--track-4-name">Track</div>
+                                            <div class="track-artist" data-text="--track-4-artist">Artist</div>
+                                        </div>
+                                        <div class="track-time">--:--</div>
+                                        <button class="track-play" type="button">▶</button>
+                                        <audio class="audio-player" preload="metadata">
+                                            <source type="audio/mpeg" data-link="--playlist-track-4">
+                                        </audio>
+                                    </div>
+
+                                    <div class="track" data-track="5">
+                                        <div class="track-visual">
+                                            <div class="track-bars"><span></span><span></span><span></span><span></span><span></span></div>
+                                        </div>
+                                        <div class="track-info">
+                                            <div class="track-name" data-text="--track-5-name">Track</div>
+                                            <div class="track-artist" data-text="--track-5-artist">Artist</div>
+                                        </div>
+                                        <div class="track-time">--:--</div>
+                                        <button class="track-play" type="button">▶</button>
+                                        <audio class="audio-player" preload="metadata">
+                                            <source type="audio/mpeg" data-link="--playlist-track-5">
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            <article class="story-content">
+
+                <div class="story-section">
+
+                    <h2 data-text="--section-1-title">
+                        Section Title
+                    </h2>
+
+                    <p data-text="--section-1-text-1">
+                        Text
+                    </p>
+
+                    <p data-text="--section-1-text-2">
+                        Text
+                    </p>
+
+                </div>
+
+                <figure class="story-image">
+
+                    <img data-link="--image-1" alt="">
+
+                    <figcaption data-text="--image-1-caption">
+                        Caption
+                    </figcaption>
+
+                </figure>
+
+                <blockquote class="story-quote"
+                    data-text="--quote">
+                    Quote
+                </blockquote>
+
+                <div class="story-section">
+
+                    <h2 data-text="--section-2-title">
+                        Section Title
+                    </h2>
+
+                    <p data-text="--section-2-text-1">
+                        Text
+                    </p>
+
+                    <p data-text="--section-2-text-2">
+                        Text
+                    </p>
+
+                </div>
+
+                <figure class="story-image large">
+
+                    <img data-link="--image-2" alt="">
+
+                    <figcaption data-text="--image-2-caption">
+                        Caption
+                    </figcaption>
+
+                </figure>
+
+                
+
+                <div class="story-section">
+
+                    <h2 data-text="--section-3-title">
+                        Text
+                    </h2>
+
+                    <p data-text="--section-3-text-1">
+                        Text
+                    </p>
+
+                    <p data-text="--section-3-text-2">
+                        Text
+                    </p>
+
+                </div>
+
+                <blockquote class="story-quote"
+                    data-text="--quote2">
+                    Quote
+                </blockquote>
+            
+                <figure class="story-image">
+
+                    <img data-link="--image-3" alt="">
+
+                    <figcaption data-text="--image-3-caption">
+                        Caption
+                    </figcaption>
+
+                </figure>
+
+                
+
+                <div class="story-section">
+
+                    <h2 data-text="--section-4-title">
+                        Text
+                    </h2>
+
+                    <p data-text="--section-4-text-1">
+                        Text
+                    </p>
+
+                    <p data-text="--section-4-text-2">
+                        Text
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer-logo">
+            <h2>UNNAMED</h2>
+            <p>Yuo reached the end contratulations</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Characters</a>
+            <a href="#">Locations</a>
+            <a href="#">Factions</a>
+            <a href="#">History</a>
+        </div>
+    </footer>
+</body>
+</html>

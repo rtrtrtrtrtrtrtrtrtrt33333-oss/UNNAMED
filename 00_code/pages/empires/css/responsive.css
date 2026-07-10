@@ -1,0 +1,31 @@
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 1000px) {
+
+    .empire-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .prototype-section {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .empire-hero {
+        height: 500px;
+    }
+
+    .prototype-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .moodboard-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,188 @@
+:root {
+
+  /* ===================================== PAGE ===================================== */
+
+  --page-background: url("assets/background.jpg");
+  --page-title: "Empire - UNNAMED";
+  --upper-title: "Empire";
+
+
+
+  /* ===================================== HERO ===================================== */
+
+  --hero-image: url("assets/hero/profile-background.png");
+  --hero-logo: url("assets/hero/profile.png");
+
+  --empire-category: "Empire";
+
+  --empire-name: "Unnamed Empire";
+
+  --empire-description:
+    "A civilization archive for atmosphere, symbols, history, music, and visual language.";
+
+  --empire-age:
+    "Archive Record";
+
+  --empire-status:
+    "In Progress";
+
+
+
+  /* ===================================== AUTHOR NOTE ===================================== */
+
+  --quote:
+    "Every empire leaves monuments. The greatest leave questions.";
+
+  --quote-author:
+    "Archive Fragment 17";
+
+
+
+  /* ===================================== PLAYLIST ===================================== */
+
+  --playlist-label: "Soundtrack";
+
+  --playlist-title:
+    "Music of the Empire";
+
+  --playlist-description:
+    "Themes associated with this civilization.";
+
+  --playlist-background:
+    url("assets/hero/title-pattern.jpg");
+
+  --playlist-track-1:
+    url("assets/playlist/Princess Mononoke San.mp3");
+
+  --playlist-track-2:
+    url("assets/playlist/Princess Mononoke San.mp3");
+
+  --playlist-track-3:
+    url("assets/playlist/Princess Mononoke San.mp3");
+
+  --track-1-name: "Princess Mononoke San";
+  --track-1-artist: "Empire Playlist";
+
+  --track-2-name: "Golden Procession";
+  --track-2-artist: "Empire OST";
+
+  --track-3-name: "Ashes Beneath";
+  --track-3-artist: "Empire OST";
+
+
+
+  /* ===================================== OVERVIEW ===================================== */
+
+  --overview-text-1:
+    "The Unnamed Empire emerged as a visual and cultural force before it became a political one.";
+
+  --overview-text-2:
+    "This page records the empire through atmosphere, fragments, symbols, and remembered sound instead of census-style facts.";
+
+
+
+  /* ===================================== GALLERIES ===================================== */
+
+  --gallery-1-title:
+    "Visual Identity";
+
+  --gallery-1-image-1: url("assets/moodboard/mood-1.jpg");
+  --gallery-1-caption-1: "Architecture";
+
+  --gallery-1-image-2: url("assets/moodboard/mood-2.jpg");
+  --gallery-1-caption-2: "Ceremonial forms";
+
+  --gallery-1-image-3: url("assets/moodboard/mood-3.jpg");
+  --gallery-1-caption-3: "Common silhouettes";
+
+  --gallery-1-image-4: url("assets/moodboard/mood-4.jpg");
+  --gallery-1-caption-4: "Sacred patterns";
+
+
+
+  --gallery-2-title:
+    "Archive Fragments";
+
+  --gallery-2-image-1: url("assets/history/story-image-1.jpg");
+  --gallery-2-caption-1: "Old record";
+
+  --gallery-2-image-2: url("assets/history/story-image-2.jpg");
+  --gallery-2-caption-2: "Lost procession";
+
+  --gallery-2-image-3: url("assets/moodboard/mood-5.jpg");
+  --gallery-2-caption-3: "Material study";
+
+  --gallery-2-image-4: url("assets/moodboard/mood-6.jpg");
+  --gallery-2-caption-4: "Border myth";
+
+
+
+  /* ===================================== HISTORY ===================================== */
+
+  --history-title-1:
+    "Origins";
+
+  --history-text-1:
+    "The earliest references to the empire appear in fragmented records dating back several centuries before its rise to prominence.";
+
+  --history-text-2:
+    "What began as a collection of loosely connected territories gradually evolved into a shared visual language and a single imperial myth.";
+
+  --history-image-1:
+    url("assets/history/story-image-1.jpg");
+
+  --history-image-caption-1:
+    "One of the oldest surviving depictions of the empire.";
+
+  --history-title-2:
+    "Expansion";
+
+  --history-text-3:
+    "As its influence grew, neighboring powers were forced to adapt to the changing shape of its rituals, banners, and songs.";
+
+  --history-text-4:
+    "The empire's reach eventually extended far beyond its original heartlands, leaving traces even where its name was forgotten.";
+
+
+
+  /* ===================================== CULTURE ===================================== */
+
+  --culture-title:
+    "Culture";
+
+  --culture-card-1-label:
+    "Ritual";
+
+  --culture-card-1-text:
+    "Public ceremonies are remembered more clearly than laws, rulers, or borders.";
+
+  --culture-card-2-label:
+    "Memory";
+
+  --culture-card-2-text:
+    "Songs and visual symbols carry fragments of events that no official record preserved.";
+
+  --culture-card-3-label:
+    "Symbol";
+
+  --culture-card-3-text:
+    "Repeated patterns mark belonging, devotion, mourning, and triumph.";
+
+  --culture-card-4-label:
+    "Voice";
+
+  --culture-card-4-text:
+    "The empire speaks through archives, ruins, music, and unfinished witness accounts.";
+
+
+
+  /* ===================================== MOODBOARD ===================================== */
+
+  --mood-1: url("assets/moodboard/mood-1.jpg");
+  --mood-2: url("assets/moodboard/mood-2.jpg");
+  --mood-3: url("assets/moodboard/mood-3.jpg");
+  --mood-4: url("assets/moodboard/mood-4.jpg");
+  --mood-5: url("assets/moodboard/mood-5.jpg");
+  --mood-6: url("assets/moodboard/mood-6.jpg");
+
+}

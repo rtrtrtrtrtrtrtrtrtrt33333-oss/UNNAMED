@@ -1,0 +1,39 @@
+/* ========================= */
+/* OVERVIEW */
+/* ========================= */
+
+.empire-intro {
+    display: grid;
+    grid-template-columns: 1.5fr .9fr;
+    gap: 30px;
+
+    margin-bottom: 70px;
+}
+
+.empire-sidebar {
+    min-width: 0;
+}
+
+.author-note {
+    margin-top: 30px;
+
+    padding: 24px;
+
+    border-left: 3px solid var(--color-accent);
+
+    background:
+    rgba(255,255,255,.03);
+}
+
+.author-note p {
+    font-style: italic;
+}
+
+.author-note span {
+    display: block;
+    margin-top: 10px;
+
+    text-align: right;
+
+    color: var(--text-color-secondary);
+}

@@ -1,0 +1,79 @@
+/* ========================= */
+/* ERA HERO */
+/* ========================= */
+
+.era-hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin: 50px auto 20px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    background: var(--background-tertiary);
+}
+
+.era-hero::before,
+.era-hero::after {
+    position: absolute;
+    color: var(--color-accent);
+    z-index: 2;
+}
+
+.era-hero::before {
+    content: "";
+    top: -31px;
+    left: 0;
+    width: 94%;
+    height: 5px;
+    background: var(--color-accent);
+}
+
+.era-hero::after {
+    content: "✦";
+    top: -70px;
+    right: 0;
+    font-size: 56px;
+}
+
+.era-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.era-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 60px 40px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .88));
+}
+
+.era-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--text-color-secondary);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    font-size: .8rem;
+}
+
+.era-overlay h1 {
+    margin: 0 0 16px;
+    font-family: var(--font-accent);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: .9;
+    color: var(--character-name-color);
+}
+
+.era-overlay p {
+    max-width: 700px;
+    margin: 0;
+    color: var(--text-color-secondary);
+    font-family: var(--font-secondary);
+    line-height: 1.8;
+}

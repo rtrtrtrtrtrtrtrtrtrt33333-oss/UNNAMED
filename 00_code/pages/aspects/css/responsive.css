@@ -1,0 +1,23 @@
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .aspect-header {
+        grid-template-columns: 1fr;
+    }
+
+    .aspect-image-panel {
+        order: -1;
+    }
+
+    .wiki-thumb-right {
+        float: none;
+
+        width: 100%;
+
+        margin: 0 0 20px;
+    }
+
+}

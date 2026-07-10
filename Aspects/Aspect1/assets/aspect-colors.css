@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+
+:root {
+    /* Typography */
+    --font-accent:"Limelight", sans-serif;
+    --character-name-color: #ffffff;
+    --font-primary: "Times New Roman", Times, serif;
+    --font-secondary: "Cutive Mono", monospace;
+
+    /* Text */
+    --text-color-primary: #e3e8f2;
+    --text-color-secondary: #b2baca;
+    
+    /* Backgrounds and accents */
+    --background-main: #181b22;
+    --background-primary: #353b47;
+    --background-secondary: #4a4f5b;
+    --background-tertiary: #5d626d;
+    --color-accent: #686d7a;
+} 

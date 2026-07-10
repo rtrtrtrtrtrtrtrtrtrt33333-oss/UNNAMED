@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../../00_code/shared/browser-icon/faticon.png">
+    <title data-text="--page-title">page title</title>
+
+    <script src="../../00_code/shared/content-loaders/00_content-loader.js"></script>
+
+    <link rel="stylesheet" href="assets/empire-colors.css">
+    <link rel="stylesheet" href="assets/empire-data.css">
+
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/hero.css">
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/overview.css">
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/galleries.css">
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/history.css">
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/culture.css">
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/moodboard.css">
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/responsive.css">
+    <link rel="stylesheet" href="../../00_code/pages/empires/css/playlist.css">
+    <link rel="stylesheet" href="../../00_code/shared/css/header.css">
+    <link rel="stylesheet" href="../../00_code/shared/css/layout.css">
+
+    <script src="../../00_code/shared/js/header.js"></script>
+    <script src="../../00_code/shared/js/playlist.js"></script>
+</head>
+<body>
+    <img class="background" alt="" data-link="--page-background">
+
+    <header>
+        <section class="top-header">
+            <div class="header-banner">
+                <img src="../../00_code/shared/browser-icon/header-background.png" alt="">
+
+                <div class="banner-overlay">
+                    <div class="logo-holder">
+                        <img src="../../00_code/shared/browser-icon/name.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <nav class="header-nav">
+                <a href="../../Navigation/home.html">Home</a>
+                <a href="../../Navigation/character_list.html">Characters</a>
+                <a href="#">Locations</a>
+                <a href="#">Factions</a>
+                <a href="../../Navigation/timeline_list.html">Timeline</a>
+            </nav>
+        </section>
+
+        <aside class="sidebar">
+            <a href="../../Navigation/home.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
+            <a href="../../Navigation/character_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
+            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Locations</span></a>
+            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Factions</span></a>
+            <a href="../../Navigation/timeline_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+        </aside>
+    </header>
+
+<main class="main">
+    <div class="project-name">
+        <p>&#10022;</p>
+        <p data-text="--upper-title">Empire Archive</p>
+    </div>
+
+    <div class="main-page">
+
+        <!-- HERO -->
+
+        <section class="empire-hero">
+
+            <img class="empire-banner"
+                data-link="--hero-image"
+                alt="">
+
+            <div class="empire-overlay">
+
+                <img class="empire-logo"
+                    data-link="--hero-logo"
+                    alt="">
+
+                <span class="empire-tag"
+                    data-text="--empire-category">
+                    Hive Civilization
+                </span>
+
+                <h1 data-text="--empire-name">
+                    Empire Name
+                </h1>
+
+                <p data-text="--empire-description">
+                    Empire Description
+                </p>
+
+                <div class="empire-subinfo">
+
+                    <span data-text="--empire-age">
+                        Ancient Civilization
+                    </span>
+
+                    <span data-text="--empire-status">
+                        Active
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OVERVIEW -->
+
+        <section class="empire-intro">
+
+            <div class="empire-overview">
+
+                <div class="section-title">
+                    <h2>Overview</h2>
+                </div>
+
+                <div class="wiki-article">
+
+                    <p data-text="--overview-text-1"></p>
+
+                    <p data-text="--overview-text-2"></p>
+
+                    <div class="author-note">
+
+                        <p data-text="--quote">
+                            Quote
+                        </p>
+
+                        <span data-text="--quote-author">
+                            Author
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <aside class="empire-sidebar">
+
+                <div class="section-title">
+                    <h2>Playlist</h2>
+                </div>
+
+                <div class="playlist-section empire-playlist">
+                    <div class="playlist-header">
+                        <span data-text="--playlist-label">Soundtrack</span>
+                        <h3 data-text="--playlist-title">Music of the Empire</h3>
+                        <p data-text="--playlist-description">Themes associated with this civilization.</p>
+                    </div>
+
+                    <div class="playlist-panel">
+                        <div class="playlist-layout">
+                            <img class="playlist-background" alt="" data-link="--playlist-background">
+
+                            <div class="now-playing">
+                                <div class="now-playing-info">
+                                    <div class="now-playing-track">No track playing</div>
+                                    <div class="now-playing-artist">—</div>
+                                </div>
+
+                                <div class="now-playing-progress">
+                                    <div class="progress-container">
+                                        <div class="progress-time-start">0:00</div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill"></div>
+                                        </div>
+                                        <div class="progress-time-end">0:00</div>
+                                    </div>
+                                </div>
+
+                                <div class="now-playing-controls">
+                                    <button class="control-btn prev-btn" type="button">⏮</button>
+                                    <button class="control-btn play-pause-btn" type="button">▶</button>
+                                    <button class="control-btn next-btn" type="button">⏭</button>
+                                </div>
+                            </div>
+
+                            <div class="Track-scroll">
+                                <div class="track" data-track="1">
+                                    <div class="track-visual">
+                                        <div class="track-bars"><span></span><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="track-info">
+                                        <div class="track-name" data-text="--track-1-name">Track</div>
+                                        <div class="track-artist" data-text="--track-1-artist">Artist</div>
+                                    </div>
+                                    <div class="track-time">--:--</div>
+                                    <button class="track-play" type="button">▶</button>
+                                    <audio class="audio-player" preload="metadata">
+                                        <source type="audio/mpeg" data-link="--playlist-track-1">
+                                    </audio>
+                                </div>
+
+                                <div class="track" data-track="2">
+                                    <div class="track-visual">
+                                        <div class="track-bars"><span></span><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="track-info">
+                                        <div class="track-name" data-text="--track-2-name">Track</div>
+                                        <div class="track-artist" data-text="--track-2-artist">Artist</div>
+                                    </div>
+                                    <div class="track-time">--:--</div>
+                                    <button class="track-play" type="button">▶</button>
+                                    <audio class="audio-player" preload="metadata">
+                                        <source type="audio/mpeg" data-link="--playlist-track-2">
+                                    </audio>
+                                </div>
+
+                                <div class="track" data-track="3">
+                                    <div class="track-visual">
+                                        <div class="track-bars"><span></span><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="track-info">
+                                        <div class="track-name" data-text="--track-3-name">Track</div>
+                                        <div class="track-artist" data-text="--track-3-artist">Artist</div>
+                                    </div>
+                                    <div class="track-time">--:--</div>
+                                    <button class="track-play" type="button">▶</button>
+                                    <audio class="audio-player" preload="metadata">
+                                        <source type="audio/mpeg" data-link="--playlist-track-3">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+
+        </section>
+
+
+
+        <!-- GALLERIES -->
+
+        <section class="prototype-section">
+
+            <div class="prototype-column">
+
+                <div class="section-title">
+                    <h2 data-text="--gallery-1-title">Gallery</h2>
+                </div>
+
+                <div class="prototype-grid">
+
+                    <figure>
+                        <img data-link="--gallery-1-image-1">
+                        <figcaption data-text="--gallery-1-caption-1"></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-link="--gallery-1-image-2">
+                        <figcaption data-text="--gallery-1-caption-2"></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-link="--gallery-1-image-3">
+                        <figcaption data-text="--gallery-1-caption-3"></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-link="--gallery-1-image-4">
+                        <figcaption data-text="--gallery-1-caption-4"></figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="prototype-column">
+
+                <div class="section-title">
+                    <h2 data-text="--gallery-2-title">Gallery</h2>
+                </div>
+
+                <div class="prototype-grid">
+
+                    <figure>
+                        <img data-link="--gallery-2-image-1">
+                        <figcaption data-text="--gallery-2-caption-1"></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-link="--gallery-2-image-2">
+                        <figcaption data-text="--gallery-2-caption-2"></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-link="--gallery-2-image-3">
+                        <figcaption data-text="--gallery-2-caption-3"></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-link="--gallery-2-image-4">
+                        <figcaption data-text="--gallery-2-caption-4"></figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- HISTORY -->
+
+        <section class="empire-history">
+
+            <div class="section-title">
+                <h2>History</h2>
+            </div>
+
+            <div class="wiki-article">
+
+                <div class="history-block">
+
+                    <h3 data-text="--history-title-1"></h3>
+
+                    <p data-text="--history-text-1"></p>
+
+                    <p data-text="--history-text-2"></p>
+
+                </div>
+
+                <figure class="history-image">
+
+                    <img data-link="--history-image-1">
+
+                    <figcaption
+                        data-text="--history-image-caption-1">
+                    </figcaption>
+
+                </figure>
+
+                <div class="history-block">
+
+                    <h3 data-text="--history-title-2"></h3>
+
+                    <p data-text="--history-text-3"></p>
+
+                    <p data-text="--history-text-4"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CULTURE -->
+
+        <section class="empire-society">
+
+            <div class="section-title">
+                <h2 data-text="--culture-title">Culture</h2>
+            </div>
+
+            <div class="society-grid">
+
+                <div class="society-card">
+                    <span data-text="--culture-card-1-label">Ritual</span>
+                    <strong data-text="--culture-card-1-text"></strong>
+                </div>
+
+                <div class="society-card">
+                    <span data-text="--culture-card-2-label">Memory</span>
+                    <strong data-text="--culture-card-2-text"></strong>
+                </div>
+
+                <div class="society-card">
+                    <span data-text="--culture-card-3-label">Symbol</span>
+                    <strong data-text="--culture-card-3-text"></strong>
+                </div>
+
+                <div class="society-card">
+                    <span data-text="--culture-card-4-label">Voice</span>
+                    <strong data-text="--culture-card-4-text"></strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MOODBOARD -->
+
+        <section class="empire-moodboard">
+
+            <div class="section-title">
+                <h2>Visual Archive</h2>
+            </div>
+
+            <div class="moodboard-grid">
+
+                <img data-link="--mood-1">
+                <img data-link="--mood-2">
+                <img data-link="--mood-3">
+                <img data-link="--mood-4">
+                <img data-link="--mood-5">
+                <img data-link="--mood-6">
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+    <footer id="footer" class="footer">
+        <div class="footer-logo">
+            <h2>UNNAMED</h2>
+            <p>Yuo reached the end contratulations</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Characters</a>
+            <a href="#">Locations</a>
+            <a href="#">Factions</a>
+            <a href="#">History</a>
+        </div>
+    </footer>
+</body>
+</html>

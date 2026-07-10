@@ -1,0 +1,20 @@
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 900px) {
+    .era-hero {
+        height: 380px;
+        margin-top: 30px;
+    }
+
+    .era-overlay {
+        padding: 30px 20px;
+    }
+
+    .wiki-thumb-right {
+        float: none;
+        width: 100%;
+        margin: 0 0 1em;
+    }
+}

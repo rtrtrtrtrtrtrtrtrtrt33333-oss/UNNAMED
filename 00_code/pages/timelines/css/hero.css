@@ -1,0 +1,86 @@
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.story-hero {
+    position: relative;
+
+    height: 520px;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: var(--background-tertiary);
+}
+
+.story-hero-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.story-hero-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 60px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.9)
+        );
+}
+
+.story-tag {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--text-color-secondary);
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    font-size: .8rem;
+
+    font-family: var(--font-secondary);
+}
+
+.story-hero-overlay h1 {
+    margin: 0 0 14px;
+
+    font-family: var(--font-accent);
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    line-height: .9;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    color: var(--character-name-color);
+}
+
+.story-description {
+    max-width: 800px;
+
+    margin: 0;
+
+    line-height: 1.8;
+
+    color: var(--text-color-secondary);
+
+    font-family: var(--font-secondary);
+}
