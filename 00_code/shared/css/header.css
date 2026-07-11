@@ -100,19 +100,16 @@
 
 .sidebar{
     position:fixed;
-    top:var(--current-top-header-height);
+    top:0;
     left:0;
     width:var(--sidebar-collapsed);
-    height:calc(100vh - var(--current-top-header-height));
+    height:100vh;
     padding:20px 14px;
     overflow:hidden;
     background:#15181e;
     border-right:1px solid rgba(255,255,255,.08);
-    border-top:1px solid rgba(255,255,255,.08);
-    z-index:999;
+    z-index:1001;
     transition:
-        top .1s linear,
-        height .1s linear,
         width .3s ease;
 }
 
