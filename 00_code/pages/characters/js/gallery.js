@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const moodGrid = document.querySelector('.mood-grid');
-  if (!moodGrid) return;
+  const galleryGrid = document.querySelector('.gallery-grid');
+  if (!galleryGrid) return;
 
-  const images = [...moodGrid.querySelectorAll('img')];
+  const images = [...galleryGrid.querySelectorAll('img')];
   if (!images.length) return;
 
   const modal = document.createElement('div');
-  modal.className = 'moodboard-lightbox';
+  modal.className = 'gallery-lightbox';
   modal.innerHTML = `
     <div class="lightbox-overlay"></div>
     <div class="lightbox-content">

@@ -87,6 +87,12 @@
     text-transform: uppercase;
 }
 
+.coming-soon {
+    cursor: not-allowed;
+    opacity: .5;
+    pointer-events: none;
+}
+
 @media (max-width: 1400px) {
     .main {
         width: calc(100% - 120px);

@@ -1,4 +1,4 @@
-﻿/* Global */
+/* Global */
 * {
     box-sizing: border-box;
 }
@@ -93,7 +93,7 @@ body {
     padding: 20px;
 }
 
-/* Shared section heading (Description, History, Moodboard) */
+/* Shared section heading (Description, History, Gallery) */
 .section-title {
     background-color: var(--background-secondary);
     border-top: 4px dashed var(--color-accent);

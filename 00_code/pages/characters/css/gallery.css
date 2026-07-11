@@ -1,16 +1,16 @@
 /* Section */
-.moodboard {
+.gallery {
     border-radius: 8px;
 }
 
-.mood-grid {
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin-top: 16px;
 }
 
-.mood-grid img {
+.gallery-grid img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
@@ -20,20 +20,20 @@
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.mood-grid img:hover {
+.gallery-grid img:hover {
     opacity: 0.85;
     transform: scale(1.02);
 }
 
-/* Lightbox (moodboard.js) */
-.moodboard-lightbox {
+/* Lightbox (gallery.js) */
+.gallery-lightbox {
     display: none;
     position: fixed;
     inset: 0;
     z-index: 2000;
 }
 
-.moodboard-lightbox.active {
+.gallery-lightbox.active {
     display: block;
 }
 

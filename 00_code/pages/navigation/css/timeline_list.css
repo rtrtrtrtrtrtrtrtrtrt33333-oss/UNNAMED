@@ -92,11 +92,6 @@
     opacity: 1;
 }
 
-.era-card.coming-soon {
-    pointer-events: none;
-    opacity: .5;
-}
-
 @media (max-width: 900px) {
     .era-card {
         grid-template-columns: 1fr;

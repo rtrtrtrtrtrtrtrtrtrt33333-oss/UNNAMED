@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.jpg');
   --page-title: "Running River - Character Profile";
@@ -53,12 +53,12 @@
 
 
   /* ===================================== MOODBOARD ===================================== */
-  --moodboard-1: url('assets/moodboard/mood-1.jpg');
-  --moodboard-2: url('assets/moodboard/mood-2.jpg');
-  --moodboard-3: url('assets/moodboard/mood-3.jpg');
-  --moodboard-4: url('assets/moodboard/mood-4.jpg');
-  --moodboard-5: url('assets/moodboard/mood-5.jpg');
-  --moodboard-6: url('assets/moodboard/mood-6.jpg');
+  --gallery-1: url('assets/gallery/gallery-1.jpg');
+  --gallery-2: url('assets/gallery/gallery-2.jpg');
+  --gallery-3: url('assets/gallery/gallery-3.jpg');
+  --gallery-4: url('assets/gallery/gallery-4.jpg');
+  --gallery-5: url('assets/gallery/gallery-5.jpg');
+  --gallery-6: url('assets/gallery/gallery-6.jpg');
 
 
 

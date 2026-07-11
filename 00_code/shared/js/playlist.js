@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const ICONS = {
+    play: '▶',
+    pause: '⏸',
+    prev: '⏮',
+    next: '⏭',
+  };
+
   const playlistRoots = [...document.querySelectorAll('.playlist-layout')]
     .filter((root) => root.querySelector('.track'));
 
@@ -36,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateNowPlaying(trackName, trackArtist) {
       if (nowPlayingTrack) nowPlayingTrack.textContent = trackName || 'No track playing';
-      if (nowPlayingArtist) nowPlayingArtist.textContent = trackArtist || '—';
+      if (nowPlayingArtist) nowPlayingArtist.textContent = trackArtist || '-';
     }
 
     function updateProgress() {
@@ -67,12 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setPlayButtons(activeTrack) {
       root.querySelectorAll('.track-play').forEach((btn) => {
-        btn.textContent = '▶';
+        btn.textContent = ICONS.play;
       });
 
       if (activeTrack) {
         const button = activeTrack.querySelector('.track-play');
-        if (button) button.textContent = '❚❚';
+        if (button) button.textContent = ICONS.pause;
       }
     }
 
@@ -83,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (resetTime) currentAudio.currentTime = 0;
       currentTrack.classList.remove('playing');
       isPlaying = false;
-      if (playPauseBtn) playPauseBtn.textContent = '▶';
+      if (playPauseBtn) playPauseBtn.textContent = ICONS.play;
       setPlayButtons(null);
       stopProgressTracking();
     }
@@ -102,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       activePlayer = player;
 
       const trackName = track.querySelector('.track-name')?.textContent || 'Unknown track';
-      const trackArtist = track.querySelector('.track-artist')?.textContent || '—';
+      const trackArtist = track.querySelector('.track-artist')?.textContent || '-';
 
       if (currentAudio && currentTrack && currentTrack !== track) {
         stopCurrentTrack(true);
@@ -114,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       updateNowPlaying(trackName, trackArtist);
       track.classList.add('playing');
-      if (playPauseBtn) playPauseBtn.textContent = '❚❚';
+      if (playPauseBtn) playPauseBtn.textContent = ICONS.pause;
       setPlayButtons(track);
 
       audio.play().then(() => {
@@ -123,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }).catch((error) => {
         isPlaying = false;
         track.classList.remove('playing');
-        if (playPauseBtn) playPauseBtn.textContent = '▶';
+        if (playPauseBtn) playPauseBtn.textContent = ICONS.play;
         setPlayButtons(null);
         stopProgressTracking();
         console.error('Error playing audio:', error);
@@ -145,13 +152,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       isPlaying = true;
       currentTrack?.classList.add('playing');
-      if (playPauseBtn) playPauseBtn.textContent = '❚❚';
+      if (playPauseBtn) playPauseBtn.textContent = ICONS.pause;
       setPlayButtons(currentTrack);
 
       currentAudio.play().then(startProgressTracking).catch((error) => {
         isPlaying = false;
         currentTrack?.classList.remove('playing');
-        if (playPauseBtn) playPauseBtn.textContent = '▶';
+        if (playPauseBtn) playPauseBtn.textContent = ICONS.play;
         setPlayButtons(null);
         console.error('Error playing audio:', error);
       });
@@ -170,6 +177,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const player = {
       stopCurrentTrack,
     };
+
+    if (prevBtn) prevBtn.textContent = ICONS.prev;
+    if (playPauseBtn) playPauseBtn.textContent = ICONS.play;
+    if (nextBtn) nextBtn.textContent = ICONS.next;
 
     tracks.forEach((track) => {
       const playBtn = track.querySelector('.track-play');
