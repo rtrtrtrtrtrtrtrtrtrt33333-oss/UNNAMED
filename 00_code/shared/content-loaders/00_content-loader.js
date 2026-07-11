@@ -13,9 +13,45 @@
     }
 
     function getUrl(varName) {
-        return getVar(varName)
+        return cleanLink(getVar(varName));
+    }
+
+    function cleanLink(value) {
+        return value
             .replace(/^url\(['"]?/, '')
-            .replace(/['"]?\)$/, '');
+            .replace(/['"]?\)$/, '')
+            .replace(/^['"]|['"]$/g, '');
+    }
+
+    function getProjectRootUrl() {
+        const currentUrl = new URL(window.location.href);
+        const path = currentUrl.pathname;
+        const folders = [
+            '/Navigation/',
+            '/Characters/',
+            '/Regions/',
+            '/Empires/',
+            '/Timelines/',
+            '/Aspects/',
+            '/00_code/',
+        ];
+
+        for (const folder of folders) {
+            const index = path.indexOf(folder);
+            if (index !== -1) {
+                return new URL(path.slice(0, index + 1), currentUrl);
+            }
+        }
+
+        return new URL('./', currentUrl);
+    }
+
+    function resolveProjectLink(url) {
+        if (/^(https?:|mailto:|data:|#)/.test(url) || url.startsWith('./') || url.startsWith('../') || url.startsWith('/')) {
+            return url;
+        }
+
+        return new URL(url, getProjectRootUrl()).href;
     }
 
     function applyTexts() {
@@ -29,6 +65,12 @@
         document.querySelectorAll('[data-link]').forEach((el) => {
             const url = getUrl(el.getAttribute('data-link'));
             if (!url) return;
+
+            if (el.tagName === 'A') {
+                el.href = resolveProjectLink(url);
+                return;
+            }
+
             el.src = url;
         });
 

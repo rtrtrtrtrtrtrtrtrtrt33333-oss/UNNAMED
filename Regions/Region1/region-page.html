@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +13,13 @@
     <link rel="stylesheet" href="assets/region-data.css">
 
     <link rel="stylesheet" href="../../00_code/pages/regions/css/hero.css">
+
     <link rel="stylesheet" href="../../00_code/pages/regions/css/history.css">
+
     <link rel="stylesheet" href="../../00_code/pages/regions/css/responsive.css">
     <link rel="stylesheet" href="../../00_code/pages/regions/css/playlist.css">
     <link rel="stylesheet" href="../../00_code/shared/css/header.css">
+    <link rel="stylesheet" href="../../00_code/shared/css/navigation.css">
     <link rel="stylesheet" href="../../00_code/shared/css/layout.css">
 
     <script src="../../00_code/shared/js/header.js"></script>
@@ -37,20 +41,22 @@
             </div>
 
             <nav class="header-nav">
-                <a href="../../Navigation/home.html">Home</a>
-                <a href="../../Navigation/character_list.html">Characters</a>
-                <a href="#">Locations</a>
-                <a href="#">Factions</a>
-                <a href="../../Navigation/timeline_list.html">Timeline</a>
+                <a href="#" data-link="--nav-home-link">Home</a>
+                <a href="#" data-link="--nav-characters-link">Characters</a>
+                <a href="#" data-link="--nav-regions-link">Regions</a>
+                <a href="#" data-link="--nav-empires-link">Empires</a>
+                <a href="#" data-link="--nav-timeline-link">Timeline</a>
+                <a href="#" data-link="--nav-aspects-link">Lore aspects</a>
             </nav>
         </section>
 
         <aside class="sidebar">
-            <a href="../../Navigation/home.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
-            <a href="../../Navigation/character_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
-            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Locations</span></a>
-            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Factions</span></a>
-            <a href="../../Navigation/timeline_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+            <a href="#" data-link="--nav-home-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
+            <a href="#" data-link="--nav-characters-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
+            <a href="#" data-link="--nav-regions-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Regions</span></a>
+            <a href="#" data-link="--nav-empires-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Empires</span></a>
+            <a href="#" data-link="--nav-timeline-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+            <a href="#" data-link="--nav-aspects-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Lore aspects</span></a>
         </aside>
     </header>
 
@@ -96,7 +102,7 @@
                                 <div class="now-playing">
                                     <div class="now-playing-info">
                                         <div class="now-playing-track">No track playing</div>
-                                        <div class="now-playing-artist">—</div>
+                                        <div class="now-playing-artist">вЂ”</div>
                                     </div>
 
                                     <div class="now-playing-progress">
@@ -110,9 +116,9 @@
                                     </div>
 
                                     <div class="now-playing-controls">
-                                        <button class="control-btn prev-btn" type="button">⏮</button>
-                                        <button class="control-btn play-pause-btn" type="button">▶</button>
-                                        <button class="control-btn next-btn" type="button">⏭</button>
+                                        <button class="control-btn prev-btn" type="button">вЏ®</button>
+                                        <button class="control-btn play-pause-btn" type="button">в–¶</button>
+                                        <button class="control-btn next-btn" type="button">вЏ­</button>
                                     </div>
                                 </div>
 
@@ -126,7 +132,7 @@
                                             <div class="track-artist" data-text="--track-1-artist">Artist</div>
                                         </div>
                                         <div class="track-time">--:--</div>
-                                        <button class="track-play" type="button">▶</button>
+                                        <button class="track-play" type="button">в–¶</button>
                                         <audio class="audio-player" preload="metadata">
                                             <source type="audio/mpeg" data-link="--playlist-track-1">
                                         </audio>
@@ -141,7 +147,7 @@
                                             <div class="track-artist" data-text="--track-2-artist">Artist</div>
                                         </div>
                                         <div class="track-time">--:--</div>
-                                        <button class="track-play" type="button">▶</button>
+                                        <button class="track-play" type="button">в–¶</button>
                                         <audio class="audio-player" preload="metadata">
                                             <source type="audio/mpeg" data-link="--playlist-track-2">
                                         </audio>
@@ -156,7 +162,7 @@
                                             <div class="track-artist" data-text="--track-3-artist">Artist</div>
                                         </div>
                                         <div class="track-time">--:--</div>
-                                        <button class="track-play" type="button">▶</button>
+                                        <button class="track-play" type="button">в–¶</button>
                                         <audio class="audio-player" preload="metadata">
                                             <source type="audio/mpeg" data-link="--playlist-track-3">
                                         </audio>
@@ -171,7 +177,7 @@
                                             <div class="track-artist" data-text="--track-4-artist">Artist</div>
                                         </div>
                                         <div class="track-time">--:--</div>
-                                        <button class="track-play" type="button">▶</button>
+                                        <button class="track-play" type="button">в–¶</button>
                                         <audio class="audio-player" preload="metadata">
                                             <source type="audio/mpeg" data-link="--playlist-track-4">
                                         </audio>
@@ -186,7 +192,7 @@
                                             <div class="track-artist" data-text="--track-5-artist">Artist</div>
                                         </div>
                                         <div class="track-time">--:--</div>
-                                        <button class="track-play" type="button">▶</button>
+                                        <button class="track-play" type="button">в–¶</button>
                                         <audio class="audio-player" preload="metadata">
                                             <source type="audio/mpeg" data-link="--playlist-track-5">
                                         </audio>
@@ -252,13 +258,15 @@
             <h2>UNNAMED</h2>
             <p>Yuo reached the end contratulations</p>
         </div>
-
-        <div class="footer-links">
-            <a href="#">Characters</a>
-            <a href="#">Locations</a>
-            <a href="#">Factions</a>
-            <a href="#">History</a>
-        </div>
+    <div class="footer-links">
+        <a href="#" data-link="--nav-home-link">Home</a>
+        <a href="#" data-link="--nav-characters-link">Characters</a>
+        <a href="#" data-link="--nav-regions-link">Regions</a>
+        <a href="#" data-link="--nav-empires-link">Empires</a>
+        <a href="#" data-link="--nav-timeline-link">Timeline</a>
+        <a href="#" data-link="--nav-aspects-link">Lore aspects</a>
+    </div>
     </footer>
 </body>
 </html>
+

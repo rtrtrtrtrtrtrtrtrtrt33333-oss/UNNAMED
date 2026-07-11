@@ -1,3 +1,4 @@
+
 ===<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Timeline | UNNAMED</title>
 
-    <link rel="stylesheet" href="../00_code/pages/navigation/css/general_colors.css">
+    
+
+    <script src="../00_code/shared/content-loaders/00_content-loader.js"></script>
+
+<link rel="stylesheet" href="../00_code/pages/navigation/css/general_colors.css">
     <link rel="stylesheet" href="../00_code/shared/css/header.css">
+    <link rel="stylesheet" href="../00_code/shared/css/navigation.css">
     <link rel="stylesheet" href="../00_code/pages/navigation/css/layout.css">
     <link rel="stylesheet" href="../00_code/pages/navigation/css/timeline_list.css">
     <script src="../00_code/shared/js/header.js"></script>
@@ -28,21 +34,22 @@
             </div>
 
             <nav class="header-nav">
-                <a href="home.html">Home</a>
-                <a href="character_list.html">Characters</a>
-                <a href="regions_list.html">Regions</a>
-                <a href="empires_list.html">Empires</a>
-                <a href="#">Timeline</a>
-                <a href="aspects_list.html">Lore aspects</a>
+                <a href="#" data-link="--nav-home-link">Home</a>
+                <a href="#" data-link="--nav-characters-link">Characters</a>
+                <a href="#" data-link="--nav-regions-link">Regions</a>
+                <a href="#" data-link="--nav-empires-link">Empires</a>
+                <a href="#" data-link="--nav-timeline-link">Timeline</a>
+                <a href="#" data-link="--nav-aspects-link">Lore aspects</a>
             </nav>
         </section>
 
         <aside class="sidebar">
-            <a href="home.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
-            <a href="character_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
-            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Locations</span></a>
-            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Factions</span></a>
-            <a href="timeline_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+            <a href="#" data-link="--nav-home-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
+            <a href="#" data-link="--nav-characters-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
+            <a href="#" data-link="--nav-regions-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Regions</span></a>
+            <a href="#" data-link="--nav-empires-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Empires</span></a>
+            <a href="#" data-link="--nav-timeline-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+            <a href="#" data-link="--nav-aspects-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Lore aspects</span></a>
         </aside>
     </header>
 
@@ -51,7 +58,7 @@
             <span class="section-tag">Chronology</span>
             <h1>History of the World</h1>
             <p>
-                Major eras and turning points — from the long Age of Silence
+                Major eras and turning points вЂ” from the long Age of Silence
                 to the catastrophes that reshaped civilization forever.
             </p>
         </div>
@@ -68,12 +75,12 @@
                     <p>
                         The first and oldest era. An age shaped by the Architects, whose works would outlive their creators by countless generations. Their cities touched the skies, their machines endured for millennia, and their disappearance marked the end of one world and the beginning of another.
                     </p>
-                    <span class="era-link-hint">Read  →</span>
+                    <span class="era-link-hint">Read  в†’</span>
                 </div>
             </a>
 
             <a href="#" class="era-card coming-soon">
-                <div class="era-number">✧</div>
+                <div class="era-number">вњ§</div>
                 <div class="era-card-image">
                     <img src="assets/timeline list/Timeline-2.jpg" alt="">
                 </div>
@@ -83,12 +90,12 @@
                     <p>
                         The golden age of artificial civilization. Freed from the shadow of the Architects, nations flourished, discoveries reshaped the known world, and great empires rose from the ruins of the old age. For many, it remains the brightest chapter in recorded history.
                     </p>
-                    <span class="era-link-hint">Read  →</span>
+                    <span class="era-link-hint">Read  в†’</span>
                 </div>
             </a>
 
             <a href="#" class="era-card coming-soon">
-                <div class="era-number">✧</div>
+                <div class="era-number">вњ§</div>
                 <div class="era-card-image">
                     <img src="assets/timeline list/Timeline-3.jpg" alt="">
                 </div>
@@ -98,12 +105,12 @@
                     <p>
                         What began as rivalry soon became conquest. Borders shifted, alliances fractured, and the ambitions of young empires ignited a conflict that would outlast those who started it. Few understood that the age of peace had already ended.
                     </p>
-                    <span class="era-link-hint">Read  →</span>
+                    <span class="era-link-hint">Read  в†’</span>
                 </div>
             </a>
 
-            <a href="../Timelines/War, the bloodletting/timeline-page.html" class="era-card">
-                <div class="era-number">✧</div>
+            <a href="../Timelines/War, the bloodletting/timeline-page.html" class="era-card coming-soon">
+                <div class="era-number">вњ§</div>
                 <div class="era-card-image">
                     <img src="assets/timeline list/Timeline-4.jpg" alt="">
                 </div>
@@ -113,13 +120,13 @@
                     <p>
                        The war reached its height. Entire worlds were consumed by endless campaigns, countless cities vanished beneath fire and steel, and rivers of synthetic blood flowed through battlefields that no longer served any purpose beyond war itself.
                     </p>
-                    <span class="era-link-hint">Read  →</span>
+                    <span class="era-link-hint">Read  в†’</span>
                 </div>
             </a>
 
 
             <a href="#" class="era-card coming-soon">
-                <div class="era-number">✧</div>
+                <div class="era-number">вњ§</div>
                 <div class="era-card-image">
                     <img src="assets/timeline list/Timeline-5.jpg" alt="">
                 </div>
@@ -129,13 +136,13 @@
                     <p>
                        As centuries became millennia, faith succeeded where victory had failed. New doctrines spread across exhausted civilizations, promising salvation beyond conflict. Among them grew a belief that would change the fate of the world forever.
                     </p>
-                    <span class="era-link-hint">Read  →</span>
+                    <span class="era-link-hint">Read  в†’</span>
                 </div>
             </a>
 
 
             <a href="#" class="era-card coming-soon">
-                <div class="era-number">✧</div>
+                <div class="era-number">вњ§</div>
                 <div class="era-card-image">
                     <img src="assets/timeline list/Timeline-6.jpg" alt="">
                 </div>
@@ -145,12 +152,12 @@
                     <p>
                         The age of restoration. Ancient dreams became reality as organic life returned to a world that had long forgotten it. Celebrated as a miracle by some and a triumph by others, it marked the beginning of artificial's's oldest fantasy and civilization's final mistake.
                     </p>
-                    <span class="era-link-hint">Read  →</span>
+                    <span class="era-link-hint">Read  в†’</span>
                 </div>
             </a>
 
-            <a href="#" class="era-card coming-soon">
-                <div class="era-number">✧</div>
+            <a href="../Timelines/Post-ascension/timeline-page.html" class="era-card">
+                <div class="era-number">вњ§</div>
                 <div class="era-card-image">
                     <img src="assets/timeline list/Timeline-7.jpg" alt="">
                 </div>
@@ -160,7 +167,7 @@
                     <p>
                         The final chapter of the old world. As the infection spread across stars alike, nations retreated behind fortified borders and desperate measures. Cities were abandoned, fleets disappeared, and every year brought fewer voices than the last. Yet even as civilization crumbled, countless survivors continued to resist a fate that seemed increasingly inevitable.
                     </p>
-                    <span class="era-link-hint">Read  →</span>
+                    <span class="era-link-hint">Read  в†’</span>
                 </div>
             </a>
         </div>
@@ -171,13 +178,14 @@
             <h2>UNNAMED</h2>
             <p>You reached the end. Congratulations.</p>
         </div>
-
-        <div class="footer-links">
-            <a href="character_list.html">Characters</a>
-            <a href="#">Locations</a>
-            <a href="#">Factions</a>
-            <a href="timeline_list.html">Timeline</a>
-        </div>
+    <div class="footer-links">
+        <a href="#" data-link="--nav-home-link">Home</a>
+        <a href="#" data-link="--nav-characters-link">Characters</a>
+        <a href="#" data-link="--nav-regions-link">Regions</a>
+        <a href="#" data-link="--nav-empires-link">Empires</a>
+        <a href="#" data-link="--nav-timeline-link">Timeline</a>
+        <a href="#" data-link="--nav-aspects-link">Lore aspects</a>
+    </div>
     </footer>
 </body>
 </html>

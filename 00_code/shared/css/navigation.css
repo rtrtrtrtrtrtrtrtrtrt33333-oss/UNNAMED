@@ -1,0 +1,8 @@
+:root {
+    --nav-home-link: "Navigation/home.html";
+    --nav-characters-link: "Navigation/character_list.html";
+    --nav-regions-link: "Navigation/regions_list.html";
+    --nav-empires-link: "Navigation/empires_list.html";
+    --nav-timeline-link: "Navigation/timeline_list.html";
+    --nav-aspects-link: "Navigation/aspects_list.html";
+}

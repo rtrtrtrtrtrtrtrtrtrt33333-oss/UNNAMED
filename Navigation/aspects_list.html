@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aspects | UNNAMED</title>
 
-    <link rel="stylesheet" href="../00_code/pages/navigation/css/general_colors.css">
+    
+
+    <script src="../00_code/shared/content-loaders/00_content-loader.js"></script>
+
+<link rel="stylesheet" href="../00_code/pages/navigation/css/general_colors.css">
     <link rel="stylesheet" href="../00_code/shared/css/header.css">
+    <link rel="stylesheet" href="../00_code/shared/css/navigation.css">
     <link rel="stylesheet" href="../00_code/pages/navigation/css/layout.css">
     <link rel="stylesheet" href="../00_code/pages/navigation/css/aspect_list.css">
     <script src="../00_code/shared/js/header.js"></script>
@@ -28,21 +34,22 @@
             </div>
 
             <nav class="header-nav">
-                <a href="home.html">Home</a>
-                <a href="character_list.html">Characters</a>
-                <a href="regions_list.html">Regions</a>
-                <a href="empires_list.html">Empires</a>
-                <a href="timeline_list.html">Timeline</a>
-                <a href="#">Lore aspects</a>
+                <a href="#" data-link="--nav-home-link">Home</a>
+                <a href="#" data-link="--nav-characters-link">Characters</a>
+                <a href="#" data-link="--nav-regions-link">Regions</a>
+                <a href="#" data-link="--nav-empires-link">Empires</a>
+                <a href="#" data-link="--nav-timeline-link">Timeline</a>
+                <a href="#" data-link="--nav-aspects-link">Lore aspects</a>
             </nav>
         </section>
 
         <aside class="sidebar">
-            <a href="home.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
-            <a href="character_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
-            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Locations</span></a>
-            <a href="#"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Factions</span></a>
-            <a href="timeline_list.html"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+            <a href="#" data-link="--nav-home-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Home</span></a>
+            <a href="#" data-link="--nav-characters-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Characters</span></a>
+            <a href="#" data-link="--nav-regions-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Regions</span></a>
+            <a href="#" data-link="--nav-empires-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Empires</span></a>
+            <a href="#" data-link="--nav-timeline-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Timeline</span></a>
+            <a href="#" data-link="--nav-aspects-link"><span class="sidebar-icon">&#10022;</span><span class="sidebar-label">Lore aspects</span></a>
         </aside>
     </header>
 
@@ -82,7 +89,7 @@
                     </p>
 
                     <span class="aspect-link">
-                        Explore Aspect →
+                        Explore Aspect в†’
                     </span>
 
                 </div>
@@ -109,7 +116,7 @@
                     </p>
 
                     <span class="aspect-link">
-                        Explore Aspect →
+                        Explore Aspect в†’
                     </span>
 
                 </div>
@@ -136,7 +143,7 @@
                     </p>
 
                     <span class="aspect-link">
-                        Explore Aspect →
+                        Explore Aspect в†’
                     </span>
 
                 </div>
@@ -163,7 +170,7 @@
                     </p>
 
                     <span class="aspect-link">
-                        Explore Aspect →
+                        Explore Aspect в†’
                     </span>
 
                 </div>
@@ -178,13 +185,15 @@
             <h2>UNNAMED</h2>
             <p>You reached the end. Congratulations.</p>
         </div>
-
-        <div class="footer-links">
-            <a href="character_list.html">Characters</a>
-            <a href="#">Locations</a>
-            <a href="#">Factions</a>
-            <a href="timeline_list.html">Timeline</a>
-        </div>
+    <div class="footer-links">
+        <a href="#" data-link="--nav-home-link">Home</a>
+        <a href="#" data-link="--nav-characters-link">Characters</a>
+        <a href="#" data-link="--nav-regions-link">Regions</a>
+        <a href="#" data-link="--nav-empires-link">Empires</a>
+        <a href="#" data-link="--nav-timeline-link">Timeline</a>
+        <a href="#" data-link="--nav-aspects-link">Lore aspects</a>
+    </div>
     </footer>
 </body>
 </html>
+

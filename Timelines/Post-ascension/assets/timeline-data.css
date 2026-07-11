@@ -1,0 +1,126 @@
+:root {
+
+  /* ===================================== PAGE ===================================== */
+
+  --page-title: "Post-Ascension — Timeline";
+
+  --upper-title: "Post-Ascension";
+
+  --page-background: url("assets/background.jpg");
+
+
+  /* ===================================== HERO ===================================== */
+
+  --era-banner: url("assets/hero/timeline-banner.jpg");
+
+  --era-number: "Age of crumbling pillars";
+
+  --era-name: "Post-Ascension";
+
+  --era-description: "Age, where nothing was left to lose, to fight for, and to live for.";
+
+
+  /* ===================================== PLAYLIST ===================================== */
+
+  --playlist-label: "Soundtrack";
+
+  --playlist-title: "Music of the Era";
+
+  --playlist-description: "Songs associated with this historical period.";
+
+  --playlist-background: url("assets/playlist/playlist-background.gif");
+
+
+  /* ===================================== TRACKS ===================================== */
+
+  --playlist-track-1: url("assets/playlist/ULTRAKILL war without reason.mp3");
+  --playlist-track-2: url("assets/playlist/track-2.mp3");
+  --playlist-track-3: url("assets/playlist/track-3.mp3");
+  --playlist-track-4: url("assets/playlist/track-4.mp3");
+  --playlist-track-5: url("assets/playlist/track-5.mp3");
+
+
+  --track-1-name: "War without reason";
+  --track-1-artist: "ULTRAKILL OST";
+
+  --track-2-name: "";
+  --track-2-artist: "";
+
+  --track-3-name: "";
+  --track-3-artist: "";
+
+  --track-4-name: "";
+  --track-4-artist: "";
+
+  --track-5-name: "";
+  --track-5-artist: "";
+
+
+  /* ===================================== STORY SECTIONs ===================================== */
+
+  --section-1-title: "Descruction";
+
+  --section-1-text-1: "The Bloodletting was the second and most destructive phase of the Long War. By its beginning, countless campaigns had already scarred the world, and several early powers had ceased to exist entirely. Yet compared to what followed, the opening centuries of the conflict would later be remembered as an age of restraint.";
+
+  --section-1-text-2: "New weapons entered service. New doctrines emerged. Entire categories of military technology appeared within a relatively short period, each designed not merely to defeat an enemy, but to erase their ability to recover. The scale of destruction increased accordingly.";
+
+
+
+  
+
+
+  --section-2-title: "The Bloodshed";
+
+  --section-2-text-1: "During the Bloodletting, industrial capacity became the primary measure of power. Vast foundries operated continuously, consuming unprecedented quantities of raw materials to sustain fleets, armies, orbital platforms, and planetary defense networks. Resource extraction expanded into increasingly hostile regions as existing reserves proved insufficient for the demands of total war. Several major empires collapsed during the era. Some were destroyed by direct military action. Others exhausted themselves through centuries of uninterrupted conflict. ";
+
+  --section-2-text-2: "Entire capitals disappeared beneath bombardment, while numerous archives, repositories, and historical sites dating back to the Renaissance were permanently lost. Military technology advanced at an extraordinary rate. Autonomous warforms, strategic annihilation systems, continent-scale siege platforms, and highly specialized combat organisms entered widespread use throughout the period. Many weapons developed during the Bloodletting remained active long after their creators had ceased to exist.";
+
+
+
+
+
+
+  --section-3-title: "Shortage";
+
+  --section-3-text-1: "As the conflict intensified, territorial conquest became increasingly secondary. Many campaigns were conducted solely to deny resources, infrastructure, or manufacturing capacity to rival powers. In some regions, the destruction of an objective was considered more valuable than its capture. The physical landscape of the world was permanently altered. Mining operations hollowed entire mountain ranges. ";
+
+  --section-3-text-2: "Industrial complexes expanded across former seas and plains. Battlefields remained active for centuries without interruption, eventually becoming indistinguishable from the fortifications built around them. The Bloodletting also marked the emergence of severe resource shortages. The requirements of war had surpassed the capacity of many established extraction networks, forcing states to seek increasingly distant and dangerous sources of strategic materials. Competition for these resources escalated existing conflicts and contributed significantly to the duration of the era.";
+
+
+
+
+  
+  --section-4-title: "The Continuation";
+
+  --section-4-text-1: "Despite its devastation, the Bloodletting represented the technological peak of the Long War. Never before had the world's civilizations possessed such destructive capability. Never before had they demonstrated such efficiency in applying it.";
+
+  --section-4-text-2: "The war continued. The world simply began running out of things worth winning.";
+
+
+
+
+
+
+  --image-1: url("assets/history/story-image-1.jpg");
+  --image-1-caption: "Horrors of war.";
+
+
+
+  --image-2: url("assets/history/story-image-2.jpg");
+  --image-2-caption: "Silent Constellations.";
+
+
+
+  --image-3: url("assets/history/story-image-3.jpg");
+  --image-3-caption: "Watchers walking through ruins";
+
+
+
+
+
+  
+  --quote: '"Thy existence belongs to our foremother, and her decision to give it up in war."';
+  --quote2: "Thy existence belongs to our foremother, and her decision to give it up in war.";
+
+
+}
