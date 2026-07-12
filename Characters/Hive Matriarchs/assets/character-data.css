@@ -1,6 +1,6 @@
 :root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
-  --page-background: url('assets/background.jpg');
+  --page-background: url('assets/background.png');
   --page-title: "The Eternal Choir - Character Profile";
   --upper-title: "The Eternal Choir";
 
@@ -9,7 +9,7 @@
   /* ===================================== HERO ===================================== */
   --hero-profile-background: url('assets/hero/profile-background.png');
   --hero-profile: url('assets/hero/profile.png');
-  --hero-title-pattern: url('assets/hero/title-pattern.jpg');
+  --hero-title-pattern: url('assets/hero/title-pattern.png');
 
   --character-name: "The Eternal Choir";
   --hero-description: "Grand predesessors";
@@ -39,27 +39,27 @@
   --story-title-1: "Early life";
   --story-caption-1: "Early life";
   --story-text-1: "Lorem ipsum dolor sit amet...";
-  --story-image-1: url('assets/history/story-image-1.jpg');
+  --story-image-1: url('assets/history/story-image-1.png');
 
   --story-title-2: "Later events";
   --story-caption-2: "Later events";
   --story-text-2: "Lorem ipsum dolor sit amet...";
-  --story-image-2: url('assets/history/story-image-2.jpg');
+  --story-image-2: url('assets/history/story-image-2.png');
   --story-text-1-2: "Additional context for the first chapter of their history.";
   --story-quote: "A line that captures the turning point of their story.";
   --story-text-2-2: "Further details about later events and their consequences.";
-  --story-image-3: url('assets/history/story-image-3.jpg');
+  --story-image-3: url('assets/history/story-image-3.png');
   --story-image-3-caption: "A defining moment captured in the archive.";
 
 
 
   /* ===================================== MOODBOARD ===================================== */
-  --gallery-1: url('assets/gallery/gallery-1.jpg');
-  --gallery-2: url('assets/gallery/gallery-2.jpg');
-  --gallery-3: url('assets/gallery/gallery-3.jpg');
-  --gallery-4: url('assets/gallery/gallery-4.jpg');
-  --gallery-5: url('assets/gallery/gallery-5.jpg');
-  --gallery-6: url('assets/gallery/gallery-6.jpg');
+  --gallery-1: url('assets/gallery/gallery-1.png');
+  --gallery-2: url('assets/gallery/gallery-2.png');
+  --gallery-3: url('assets/gallery/gallery-3.png');
+  --gallery-4: url('assets/gallery/gallery-4.png');
+  --gallery-5: url('assets/gallery/gallery-5.png');
+  --gallery-6: url('assets/gallery/gallery-6.png');
 
 
 
@@ -84,7 +84,6 @@
   --track-5-artist: "Spirit: Stallion of the Cimarron";
 
 }
-
 
 
 

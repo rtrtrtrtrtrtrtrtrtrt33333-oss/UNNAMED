@@ -6,12 +6,12 @@
 
   --upper-title: "The Bloodletting";
 
-  --page-background: url("assets/background.jpg");
+  --page-background: url("assets/background.png");
 
 
   /* ===================================== HERO ===================================== */
 
-  --era-banner: url("assets/hero/timeline-banner.jpg");
+  --era-banner: url("assets/hero/timeline-banner.png");
 
   --era-number: "Act II, Long War";
 
@@ -101,17 +101,17 @@
 
 
 
-  --image-1: url("assets/history/story-image-1.jpg");
+  --image-1: url("assets/history/story-image-1.png");
   --image-1-caption: "Horrors of war.";
 
 
 
-  --image-2: url("assets/history/story-image-2.jpg");
+  --image-2: url("assets/history/story-image-2.png");
   --image-2-caption: "Silent Constellations.";
 
 
 
-  --image-3: url("assets/history/story-image-3.jpg");
+  --image-3: url("assets/history/story-image-3.png");
   --image-3-caption: "Watchers walking through ruins";
 
 

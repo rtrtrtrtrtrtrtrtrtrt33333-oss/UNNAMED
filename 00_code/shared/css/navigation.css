@@ -1,8 +1,39 @@
 :root {
     --nav-home-link: "Navigation/home.html";
     --nav-characters-link: "Navigation/character_list.html";
-    /* --nav-regions-link: "Navigation/regions_list.html"; */
-    /* --nav-empires-link: "Navigation/empires_list.html"; */
+    --nav-regions-link: "Navigation/regions_list.html";
+    --nav-empires-link: "Navigation/empires_list.html";
     --nav-timeline-link: "Navigation/timeline_list.html";
-    /* --nav-aspects-link: "Navigation/aspects_list.html"; */
+    --nav-aspects-link: "Navigation/aspects_list.html";
+
+    --character-1-link: "Characters/Thirteenth Sun/character-page.html";
+    --character-2-link: "Characters/Copper Spire/character-page.html";
+    --character-3-link: "Characters/Coffee/character-page.html";
+    --character-4-link: "Characters/Molten Fire/character-page.html";
+    --character-5-link: "Characters/Running River/character-page.html";
+    --character-6-link: "Characters/Riven/character-page.html";
+    --character-7-link: "Characters/Firstborn Sun/character-page.html";
+    --character-8-link: "Characters/Dawn Breaker/character-page.html";
+    --character-9-link: "Characters/The Eternal Choir/character-page.html";
+    --character-10-link: "Characters/The Forsworn/character-page.html";
+    --character-11-link: "Characters/The Mothers/character-page.html";
+    --character-12-link: "Characters/Hive Matriarchs/character-page.html";
+
+    --timeline-1-link: "#";
+    --timeline-2-link: "#";
+    --timeline-3-link: "#";
+    --timeline-4-link: "Timelines/War, the bloodletting/timeline-page.html";
+    --timeline-5-link: "#";
+    --timeline-6-link: "Timelines/Post-ascension/timeline-page.html";
+
+    --region-1-link: "Regions/Region1/region-page.html";
+    --region-2-link: "Regions/Region1/region-page.html";
+    --region-3-link: "Regions/Region1/region-page.html";
+
+    --empire-1-link: "Empires/emipre/empire-page.html";
+
+    --aspect-1-link: "Aspects/Interlayer/aspect-page.html";
+    --aspect-2-link: "Aspects/Interlayer/aspect-page.html";
+    --aspect-3-link: "Aspects/Interlayer/aspect-page.html";
+    --aspect-4-link: "Aspects/Interlayer/aspect-page.html";
 }

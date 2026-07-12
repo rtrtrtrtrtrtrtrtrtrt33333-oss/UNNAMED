@@ -6,12 +6,12 @@
 
   --upper-title: "Region Name";
 
-  --page-background: url("assets/background.jpg");
+  --page-background: url("assets/background.png");
 
 
   /* ===================================== HERO ===================================== */
 
-  --era-banner: url("assets/region/banner.jpg");
+  --era-banner: url("assets/region/banner.png");
 
   --era-number: "Region Number";
 
@@ -35,7 +35,7 @@
 
   --playlist-description: "Playlist description.";
 
-  --playlist-background: url("assets/playlist/background.gif");
+  --playlist-background: url("assets/playlist/playlist-background.gif");
 
 
   /* ===================================== TRACKS ===================================== */
@@ -74,7 +74,7 @@
 
   /* ===================================== IMAGE 1 ===================================== */
 
-  --image-1: url("assets/images/image-1.jpg");
+  --image-1: url("assets/images/image-1.png");
 
   --image-1-caption: "Image description.";
 
@@ -95,14 +95,14 @@
 
   /* ===================================== IMAGE 2 ===================================== */
 
-  --image-2: url("assets/images/image-2.jpg");
+  --image-2: url("assets/images/image-2.png");
 
   --image-2-caption: "Image description.";
 
 
   /* ===================================== FINAL IMAGE ===================================== */
 
-  --image-3: url("assets/images/image-3.jpg");
+  --image-3: url("assets/images/image-3.png");
 
   --image-3-caption: "Image description.";
 

@@ -2,7 +2,7 @@
 
   /* ===================================== PAGE ===================================== */
 
-  --page-background: url("assets/background.jpg");
+  --page-background: url("assets/background.png");
   --page-title: "Empire - UNNAMED";
   --upper-title: "Empire";
 
@@ -49,7 +49,7 @@
     "Themes associated with this civilization.";
 
   --playlist-background:
-    url("assets/hero/title-pattern.jpg");
+    url("assets/playlist/playlist-background.gif");
 
   --playlist-track-1:
     url("assets/playlist/Princess Mononoke San.mp3");
@@ -86,16 +86,16 @@
   --gallery-1-title:
     "Visual Identity";
 
-  --gallery-1-image-1: url("assets/moodboard/mood-1.jpg");
+  --gallery-1-image-1: url("assets/moodboard/mood-1.png");
   --gallery-1-caption-1: "Architecture";
 
-  --gallery-1-image-2: url("assets/moodboard/mood-2.jpg");
+  --gallery-1-image-2: url("assets/moodboard/mood-2.png");
   --gallery-1-caption-2: "Ceremonial forms";
 
-  --gallery-1-image-3: url("assets/moodboard/mood-3.jpg");
+  --gallery-1-image-3: url("assets/moodboard/mood-3.png");
   --gallery-1-caption-3: "Common silhouettes";
 
-  --gallery-1-image-4: url("assets/moodboard/mood-4.jpg");
+  --gallery-1-image-4: url("assets/moodboard/mood-4.png");
   --gallery-1-caption-4: "Sacred patterns";
 
 
@@ -103,16 +103,16 @@
   --gallery-2-title:
     "Archive Fragments";
 
-  --gallery-2-image-1: url("assets/history/story-image-1.jpg");
+  --gallery-2-image-1: url("assets/history/story-image-1.png");
   --gallery-2-caption-1: "Old record";
 
-  --gallery-2-image-2: url("assets/history/story-image-2.jpg");
+  --gallery-2-image-2: url("assets/history/story-image-2.png");
   --gallery-2-caption-2: "Lost procession";
 
-  --gallery-2-image-3: url("assets/moodboard/mood-5.jpg");
+  --gallery-2-image-3: url("assets/moodboard/mood-5.png");
   --gallery-2-caption-3: "Material study";
 
-  --gallery-2-image-4: url("assets/moodboard/mood-6.jpg");
+  --gallery-2-image-4: url("assets/moodboard/mood-6.png");
   --gallery-2-caption-4: "Border myth";
 
 
@@ -129,7 +129,7 @@
     "What began as a collection of loosely connected territories gradually evolved into a shared visual language and a single imperial myth.";
 
   --history-image-1:
-    url("assets/history/story-image-1.jpg");
+    url("assets/history/story-image-1.png");
 
   --history-image-caption-1:
     "One of the oldest surviving depictions of the empire.";
@@ -178,11 +178,11 @@
 
   /* ===================================== MOODBOARD ===================================== */
 
-  --mood-1: url("assets/moodboard/mood-1.jpg");
-  --mood-2: url("assets/moodboard/mood-2.jpg");
-  --mood-3: url("assets/moodboard/mood-3.jpg");
-  --mood-4: url("assets/moodboard/mood-4.jpg");
-  --mood-5: url("assets/moodboard/mood-5.jpg");
-  --mood-6: url("assets/moodboard/mood-6.jpg");
+  --mood-1: url("assets/moodboard/mood-1.png");
+  --mood-2: url("assets/moodboard/mood-2.png");
+  --mood-3: url("assets/moodboard/mood-3.png");
+  --mood-4: url("assets/moodboard/mood-4.png");
+  --mood-5: url("assets/moodboard/mood-5.png");
+  --mood-6: url("assets/moodboard/mood-6.png");
 
 }
