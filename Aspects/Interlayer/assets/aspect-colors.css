@@ -5,18 +5,18 @@
 :root {
     /* Typography */
     --font-accent:"Limelight", sans-serif;
-    --character-name-color: #ffffff;
+    --character-name-color: #f5f0ff;
     --font-primary: "Times New Roman", Times, serif;
     --font-secondary: "Cutive Mono", monospace;
 
     /* Text */
-    --text-color-primary: #e3e8f2;
-    --text-color-secondary: #b2baca;
+    --text-color-primary: #e4e8f5;
+    --text-color-secondary: #adb5cd;
     
     /* Backgrounds and accents */
-    --background-main: #181b22;
-    --background-primary: #353b47;
-    --background-secondary: #4a4f5b;
-    --background-tertiary: #5d626d;
-    --color-accent: #686d7a;
+    --background-main: #10131d;
+    --background-primary: #171b28;
+    --background-secondary: #23293b;
+    --background-tertiary: #464d60;
+    --color-accent: #9aa7e0;
 } 

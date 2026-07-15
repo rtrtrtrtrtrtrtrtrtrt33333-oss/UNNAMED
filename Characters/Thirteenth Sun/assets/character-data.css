@@ -38,41 +38,37 @@
 
   /* ===================================== DESCRIPTION ===================================== */
 
-    --story-title-1: "Previous life";
-    --story-caption-1: "Records prior to the Ascension";
-    --story-text-1: "NO DATA AVAILABLE.\A\AThe original individual no longer exists. All personal records, memories, and identifiers are considered irrelevant to the current entity.";
-    --story-image-1: url('assets/history/story-image-1.png');
+  --story-title-1: "Previous life";
 
-    --story-title-2: "Adaptive Evolution";
+  --story-text-1: "NO DATA AVAILABLE.\A\AThe original individual no longer exists. All personal records, memories, and identifiers are considered irrelevant to the current entity.";
 
-    --story-caption-2: "Observed after the Ascension";
+  --story-text-1-2: ".";
 
-    --story-text-2: "Thirteen did not emerge from the Ascension in their current form. Early observations suggest an entity possessing only basic awareness and an overwhelming instinct to survive. Over time, every encounter became a lesson. Every failure resulted in adaptation. Every victory refined both body and mind.";
-
-    --story-image-2: url("assets/history/story-image-2.png");
-
-    --story-text-1-2: "...";
-
-    --story-quote: "Survival does not reward perfection. It rewards adaptation.";
+  --story-image-1: url('assets/history/story-image-1.png');
+  --story-caption-1: "Records prior to the Ascension";
 
 
-  --story-title-2: "Adaptation";
 
-  --story-caption-2: "Following the Ascension";
+
+
+
+
+  --story-quote: "Every wound became an improvement. Every survivor became a teacher.";
+
+
+
+
+
+
+  --story-title-2: "Ascension";
 
   --story-text-2: "Thirteen was not born exceptional. Like every Ascended, they emerged driven solely by the instinct to survive. Intelligence, patience, and strategic thinking were not gifts of the Ascension, but qualities developed over countless years of adaptation. Every conflict, every injury, and every narrow escape became part of an endless process of evolution.";
 
-  --story-image-2: url("assets/history/story-image-2.png");
-
-  --story-text-1-2: ". . .";
-
-  --story-quote: ". . .";
-
   --story-text-2-2: "Centuries of uninterrupted adaptation transformed Thirteen into one of the most formidable known Ascended. Their methods became increasingly calculated, their movements deliberate, and their decisions guided by experience rather than impulse. The instinct to survive never changed. Everything else evolved around it.";
 
-  --story-image-3: url("assets/history/story-image-3.png");
+  --story-image-2: url("assets/history/story-image-2.png");
+  --story-caption-2: "Following the Ascension";
 
-  --story-image-3-caption: "Progressive structural adaptation over an extended period of time.";
 
 
 
@@ -82,7 +78,7 @@
   --gallery-3: url('assets/gallery/gallery-3.png');
   --gallery-4: url('assets/gallery/gallery-4.png');
   --gallery-5: url('assets/gallery/gallery-5.png');
-  --gallery-6: url('assets/gallery/gallery-6.gif');
+  --gallery-6: url('assets/gallery/gallery-6.png');
 
 
 

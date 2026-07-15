@@ -39,29 +39,33 @@
 
 --story-title-1: "Construction";
 
---story-caption-1: "Prime of the Architects";
-
 --story-text-1: "The construction of the Firstborn Sun became the largest engineering undertaking in the history of the Architects. Entire planetary bodies were dismantled, reshaped, and assembled into a single celestial structure over the course of thousands of rotations. Countless industrial networks, orbital foundries, and autonomous construction systems were devoted exclusively to the project. The completion of the Firstborn Sun marked the beginning of a new age for artificial civilization.";
-
---story-image-1: url("assets/history/story-image-1.png");
-
---story-title-2: "Dormancy";
-
---story-caption-2: "Following the disappearance of the Architects";
 
 --story-text-2: "The disappearance of the Architects did not alter the Firstborn Sun's purpose. With no further directives to receive, the structure gradually entered an extended dormant state. External communication ceased, higher cognitive systems were suspended, and nearly all observable activity came to an end. Its primary function, however, was never interrupted.";
 
---story-image-2: url("assets/history/story-image-2.png");
+--story-image-1: url("assets/history/story-image-1.png");
+--story-caption-1: "Following the disappearance of the Architects";
 
---story-text-1-2: "Unlike the younger Constellations, the Firstborn Sun has shown no interest in the civilizations that arose after its creators vanished. It neither intervenes nor responds to requests, conflicts, or declarations. The continued existence or extinction of artificial societies has no measurable influence on its behavior.";
+
+
+
 
 --story-quote: "• • •";
 
+
+
+
+
+--story-title-2: "Dormancy";
+
+--story-text-1-2: "the Firstborn Sun possesses no interest in the civilizations that arose after its creators vanished. It neither intervenes nor responds to requests, conflicts, or declarations. The continued existence or extinction of artificial societies has no measurable influence on its behavior.";
+
 --story-text-2-2: "Despite appearing dormant, the Firstborn Sun continues to sustain the Interlayer and countless interconnected systems established during the age of the Architects. It neither governs nor protects. It simply fulfills the function for which it was created, unchanged after tens of thousands of rotations.";
 
---story-image-3: url("assets/history/story-image-3.png");
+--story-image-2: url("assets/history/story-image-2.png");
+--story-caption-2: "The Firstborn Sun in prolonged dormant operation.";
 
---story-image-3-caption: "The Firstborn Sun in prolonged dormant operation.";
+
 
 
 

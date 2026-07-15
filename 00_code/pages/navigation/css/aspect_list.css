@@ -106,6 +106,7 @@
 .aspect-card-content {
     display: flex;
     flex-direction: column;
+    min-width: 0;
 
     padding: 35px;
 }
@@ -133,6 +134,7 @@
 
     text-transform: uppercase;
     letter-spacing: 2px;
+    overflow-wrap: anywhere;
 
     color: var(--text-color-primary);
 }
@@ -145,6 +147,7 @@
     color: var(--text-color-secondary);
 
     line-height: 1.8;
+    overflow-wrap: anywhere;
 }
 
 .aspect-link {
@@ -158,6 +161,7 @@
     letter-spacing: 2px;
 
     opacity: .7;
+    overflow-wrap: anywhere;
 
     transition: opacity .2s ease;
 }

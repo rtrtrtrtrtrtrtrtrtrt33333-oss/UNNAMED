@@ -3,7 +3,7 @@
   /* ===================================== PAGE ===================================== */
 
   --page-title: "Interlayer - lore Aspect";
-  --upper-title: "Aspect";
+  --upper-title: "Interlayer";
 
   --page-background: url("assets/background.png");
 
@@ -14,14 +14,7 @@
 
   --aspect-name: "Interlayer";
 
-  --aspect-description: "Description of this aspect goes here.";
-
-
-  /* ===================================== OVERVIEW ===================================== */
-
-  --intro-text-1: "Introduction text paragraph one.";
-
-  --intro-text-2: "Introduction text paragraph two.";
+  --aspect-description: "The Interlayer is a planetary-scale infrastructure constructed by the Architects long before the Ascension. While it is less prominent than structures such as the Firstborn Sun, it remains one of the largest surviving systems created during their era. Built to maintain orbital stability and preserve the Web connecting inhabited worlds, the Interlayer appears as a vast translucent veil surrounding planets and extending throughout interplanetary space.";
 
 
   /* ===================================== MAIN IMAGE ===================================== */
@@ -33,24 +26,9 @@
 
   /* ===================================== HISTORY ===================================== */
 
-  --section-1-title: "First Section Title";
+  --section-1-title: "Function";
 
-  --section-1-text-1: "First historical paragraph.";
+  --section-1-text-1: "The Interlayer has remained in operation since the time of the Architects. It regulates orbital stability, keeping celestial bodies synchronized and connected through the Web. Without it, planets would gradually drift from their established paths, eventually destabilizing the network between worlds. For Artificial civilization, the Interlayer became an ordinary part of reality, much like gravity or daylight.";
 
-  --section-1-text-2: "Second historical paragraph.";
-
-
-  /* ===================================== QUOTE ===================================== */
-
-  --quote: "Important quote related to this aspect.";
-
-
-  /* ===================================== SECOND SECTION ===================================== */
-
-  --section-2-title: "Second Section Title";
-
-  --section-2-text-1: "Another historical paragraph.";
-
-  --section-2-text-2: "Final historical paragraph.";
-
+  --section-1-text-2: "Its influence is not distributed equally. Regions where the Interlayer remains weak are considered suitable for long-term habitation. Areas of high density become increasingly hazardous, gradually overwhelming Artificial systems and causing irreversible structural failure. Organic ecosystems are affected in a similar way, as prolonged exposure leaves landscapes dry, barren, and incapable of sustaining complex life. Despite the disappearance of its creators, the Interlayer continues operating without interruption.";
 }
