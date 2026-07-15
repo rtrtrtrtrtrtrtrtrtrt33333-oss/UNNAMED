@@ -82,18 +82,18 @@
   /* ===================================== PLAYLIST ASSETS ===================================== */
   --playlist-background: url('assets/playlist/playlist-background.gif');
 
-  --playlist-track-1: url('assets/playlist/Princess Mononoke San.mp3');
-  --playlist-track-2: url('assets/playlist/track-2.mp3');
-  --playlist-track-3: url('assets/playlist/track-3.mp3');
+  --playlist-track-1: url('assets/playlist/Steven Universe S5 Official Soundtrack  White Diamond - aivi & surasshu  Cartoon Network.mp3');
+  --playlist-track-2: url('assets/playlist/Hollow Knight_ Silksong - OST - Choral Chambers.mp3');
+  --playlist-track-3: url('assets/playlist/MECHANICAL GOD.mp3');
   --playlist-track-4: url('assets/playlist/track-4.mp3');
   --playlist-track-5: url('assets/playlist/track-5.mp3');
 
-  --track-1-name: "Voiceclaim: San";
-  --track-1-artist: "The Princess Mononoke";
-  --track-2-name: "Endless Desert";
-  --track-2-artist: "Alto's Odyssey";
-  --track-3-name: "Moment of Tranquility";
-  --track-3-artist: "Alto's Odyssey";
+  --track-1-name: "White Diamond OST";
+  --track-1-artist: "Steven Universe";
+  --track-2-name: "Choral Chambers";
+  --track-2-artist: "Hollow Knight: Silksong";
+  --track-3-name: "MECHANICAL GOD";
+  --track-3-artist: "AZALI from youtube";
   --track-4-name: "Run Free";
   --track-4-artist: "Spirit: Stallion of the Cimarron";
   --track-5-name: "Homeland";
