@@ -1,6 +1,7 @@
 /* Section */
 .story {
     border-radius: 8px;
+    margin-bottom: 40px;
 }
 
 .story .wiki-article {

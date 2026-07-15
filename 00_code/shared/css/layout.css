@@ -29,7 +29,6 @@ body {
     margin: 0 auto 50px;
     margin-top: 400px;
     transform: translateX(50px);
-    background-color: var(--background-main);
     padding: 100px;
 }
 

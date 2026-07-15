@@ -1,4 +1,4 @@
-/* ========================= */
+﻿/* ========================= */
 /* MOBILE */
 /* ========================= */
 
@@ -24,7 +24,7 @@
         grid-template-columns: 1fr;
     }
 
-    .moodboard-grid {
+    .gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
 

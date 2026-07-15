@@ -1,16 +1,16 @@
-:root {
+﻿:root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
-  --page-title: "Thirteenth Sun - Character Profile";
-  --upper-title: "Thirteenth Sun";
+  --page-title: "Firstborn Sun - Character Profile";
+  --upper-title: "Firstborn Sun";
 
 
   /* ===================================== HERO ===================================== */
   --hero-profile-background: url('assets/hero/profile-background.png');
   --hero-profile: url('assets/hero/profile.png');
-  --hero-title-pattern: url('assets/hero/title-pattern.png');
+  --hero-title-pattern: url('assets/hero/title-pattern.gif');
 
-  --character-name: "Thirteenth Sun";
+  --character-name: "First Constellation";
   --hero-description: "Short Description";
 
 
@@ -19,40 +19,53 @@
   --description-character-image: url('assets/description/description-character-image.png');
 
 
-  --description: "Long description text. Lorem ipsum dolor sit amet...";
-  --description-2: "Lorem ipsum dolor sit amet...";
+  --description: "The Firstborn Sun is the crowning achievement of the Architects, created at the dawn of their technological prime. Formed from multiple planetary bodies, she stands as both a work of impossible design and the foundation upon which artificial civilization was built.";
 
-  --quote: "Character quote.";
-  --quote-author: "Quote author";
+  --description-2: "She has endured throughout every recorded era, sustaining the Interlayer and countless systems beneath it. Yet despite her scale, beauty, and importance, the Firstborn Sun possesses no desire, emotion, or will beyond the function assigned to her. She does not protect, create, or endure by choice. She simply continues.";
 
-  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+  --quote: "She is beautiful... She is everything we have pursued for thousands of years.";
 
-  --info-title: "title";
-  --info-role: "Character's role";
-  --info-origin: "Where they come from";
+  --quote-author: "Singing Comb, Architect and Chief Engineer.";
 
+  --personality: "None. No identifiable emotion, preference, attachment, or independent intent has ever been recorded. All observed behavior remains consistent with the uninterrupted fulfillment of her original function.";
 
+  --info-title: "First Creation • Constellation";
+
+  --info-role: "Primary energy source • Interlayer stabilizer • Progenitor of artificial civilization";
+
+  --info-origin: "Prime of the Architects • 66,000 rotations before the Ascension";
 
   /* ===================================== DESCRIPTION ===================================== */
 
-  --story-title-1: "Early life";
-  --story-caption-1: "Early life";
-  --story-text-1: "Lorem ipsum dolor sit amet...";
-  --story-image-1: url('assets/history/story-image-1.png');
+--story-title-1: "Construction";
 
-  --story-title-2: "Later events";
-  --story-caption-2: "Later events";
-  --story-text-2: "Lorem ipsum dolor sit amet...";
-  --story-image-2: url('assets/history/story-image-2.png');
-  --story-text-1-2: "Additional context for the first chapter of their history.";
-  --story-quote: "A line that captures the turning point of their story.";
-  --story-text-2-2: "Further details about later events and their consequences.";
-  --story-image-3: url('assets/history/story-image-3.png');
-  --story-image-3-caption: "A defining moment captured in the archive.";
+--story-caption-1: "Prime of the Architects";
+
+--story-text-1: "The construction of the Firstborn Sun became the largest engineering undertaking in the history of the Architects. Entire planetary bodies were dismantled, reshaped, and assembled into a single celestial structure over the course of thousands of rotations. Countless industrial networks, orbital foundries, and autonomous construction systems were devoted exclusively to the project. The completion of the Firstborn Sun marked the beginning of a new age for artificial civilization.";
+
+--story-image-1: url("assets/history/story-image-1.png");
+
+--story-title-2: "Dormancy";
+
+--story-caption-2: "Following the disappearance of the Architects";
+
+--story-text-2: "The disappearance of the Architects did not alter the Firstborn Sun's purpose. With no further directives to receive, the structure gradually entered an extended dormant state. External communication ceased, higher cognitive systems were suspended, and nearly all observable activity came to an end. Its primary function, however, was never interrupted.";
+
+--story-image-2: url("assets/history/story-image-2.png");
+
+--story-text-1-2: "Unlike the younger Constellations, the Firstborn Sun has shown no interest in the civilizations that arose after its creators vanished. It neither intervenes nor responds to requests, conflicts, or declarations. The continued existence or extinction of artificial societies has no measurable influence on its behavior.";
+
+--story-quote: "• • •";
+
+--story-text-2-2: "Despite appearing dormant, the Firstborn Sun continues to sustain the Interlayer and countless interconnected systems established during the age of the Architects. It neither governs nor protects. It simply fulfills the function for which it was created, unchanged after tens of thousands of rotations.";
+
+--story-image-3: url("assets/history/story-image-3.png");
+
+--story-image-3-caption: "The Firstborn Sun in prolonged dormant operation.";
 
 
 
-  /* ===================================== MOODBOARD ===================================== */
+  /* ===================================== GALLERY ===================================== */
   --gallery-1: url('assets/gallery/gallery-1.png');
   --gallery-2: url('assets/gallery/gallery-2.png');
   --gallery-3: url('assets/gallery/gallery-3.png');

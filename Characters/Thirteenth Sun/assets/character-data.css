@@ -19,36 +19,60 @@
   --description-character-image: url('assets/description/description-character-image.png');
 
 
-  --description: "Long description text. Lorem ipsum dolor sit amet...";
-  --description-2: "Lorem ipsum dolor sit amet...";
+  --description: "Thirteen is one of the rare sentient Ascended, entities born when the Ascension repurposes the remains of a deceased Artificial. The original individual does not survive the process. Only the body remains, inhabited by a new consciousness with no memory, identity, or emotional connection to the life that came before. Though capable of thought and reason, an Ascended is driven by instincts no amount of intelligence can suppress: to consume, to survive, and to eliminate anything that threatens its existence.";
 
-  --quote: "Character quote.";
-  --quote-author: "Quote author";
+  --description-2: "Most Ascended exist as little more than relentless predators. Thirteen is an exceptional case. They demonstrate self-awareness, strategic reasoning, and long-term planning while remaining bound to the same irreversible instincts shared by all Ascended. Their current objective is the destruction of every surviving Constellation.";
 
-  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+  --quote: "You are not evil. You are simply what remains when survival outlives everything else.";
 
-  --info-title: "title";
-  --info-role: "Character's role";
-  --info-origin: "Where they come from";
+  --quote-author: "Unknown survivor";
 
+  --personality: "Unlike the vast majority of Ascended husks, Thirteen retained a stable and self-aware consciousness. They are patient, observant, and highly intelligent, capable of long-term planning and complex reasoning. Yet beneath that composure remains the same immutable instinct shared by every Ascended: survive, consume, and remove whatever stands in the way. Intelligence has refined these impulses, but never replaced them.";
+
+  --info-title: "Rare Sentient Ascended";
+
+  --info-role: "Wanderer • Calamity • Abomination";
+
+  --info-origin: "Formerly an Artificial of the Octaves. The original individual perished during the Ascension. No trace of their previous identity remains.";
 
 
   /* ===================================== DESCRIPTION ===================================== */
 
-  --story-title-1: "Early life";
-  --story-caption-1: "Early life";
-  --story-text-1: "Lorem ipsum dolor sit amet...";
-  --story-image-1: url('assets/history/story-image-1.png');
+    --story-title-1: "Previous life";
+    --story-caption-1: "Records prior to the Ascension";
+    --story-text-1: "NO DATA AVAILABLE.\A\AThe original individual no longer exists. All personal records, memories, and identifiers are considered irrelevant to the current entity.";
+    --story-image-1: url('assets/history/story-image-1.png');
 
-  --story-title-2: "Later events";
-  --story-caption-2: "Later events";
-  --story-text-2: "Lorem ipsum dolor sit amet...";
-  --story-image-2: url('assets/history/story-image-2.png');
-  --story-text-1-2: "Additional context for the first chapter of their history.";
-  --story-quote: "A line that captures the turning point of their story.";
-  --story-text-2-2: "Further details about later events and their consequences.";
-  --story-image-3: url('assets/history/story-image-3.png');
-  --story-image-3-caption: "A defining moment captured in the archive.";
+    --story-title-2: "Adaptive Evolution";
+
+    --story-caption-2: "Observed after the Ascension";
+
+    --story-text-2: "Thirteen did not emerge from the Ascension in their current form. Early observations suggest an entity possessing only basic awareness and an overwhelming instinct to survive. Over time, every encounter became a lesson. Every failure resulted in adaptation. Every victory refined both body and mind.";
+
+    --story-image-2: url("assets/history/story-image-2.png");
+
+    --story-text-1-2: "...";
+
+    --story-quote: "Survival does not reward perfection. It rewards adaptation.";
+
+
+  --story-title-2: "Adaptation";
+
+  --story-caption-2: "Following the Ascension";
+
+  --story-text-2: "Thirteen was not born exceptional. Like every Ascended, they emerged driven solely by the instinct to survive. Intelligence, patience, and strategic thinking were not gifts of the Ascension, but qualities developed over countless years of adaptation. Every conflict, every injury, and every narrow escape became part of an endless process of evolution.";
+
+  --story-image-2: url("assets/history/story-image-2.png");
+
+  --story-text-1-2: ". . .";
+
+  --story-quote: ". . .";
+
+  --story-text-2-2: "Centuries of uninterrupted adaptation transformed Thirteen into one of the most formidable known Ascended. Their methods became increasingly calculated, their movements deliberate, and their decisions guided by experience rather than impulse. The instinct to survive never changed. Everything else evolved around it.";
+
+  --story-image-3: url("assets/history/story-image-3.png");
+
+  --story-image-3-caption: "Progressive structural adaptation over an extended period of time.";
 
 
 
@@ -58,7 +82,7 @@
   --gallery-3: url('assets/gallery/gallery-3.png');
   --gallery-4: url('assets/gallery/gallery-4.png');
   --gallery-5: url('assets/gallery/gallery-5.png');
-  --gallery-6: url('assets/gallery/gallery-6.png');
+  --gallery-6: url('assets/gallery/gallery-6.gif');
 
 
 

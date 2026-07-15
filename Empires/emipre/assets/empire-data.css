@@ -1,4 +1,4 @@
-:root {
+﻿:root {
 
   /* ===================================== PAGE ===================================== */
 
@@ -86,16 +86,16 @@
   --gallery-1-title:
     "Visual Identity";
 
-  --gallery-1-image-1: url("assets/moodboard/mood-1.png");
+  --gallery-1-image-1: url("assets/gallery/gallery-1.png");
   --gallery-1-caption-1: "Architecture";
 
-  --gallery-1-image-2: url("assets/moodboard/mood-2.png");
+  --gallery-1-image-2: url("assets/gallery/gallery-2.png");
   --gallery-1-caption-2: "Ceremonial forms";
 
-  --gallery-1-image-3: url("assets/moodboard/mood-3.png");
+  --gallery-1-image-3: url("assets/gallery/gallery-3.png");
   --gallery-1-caption-3: "Common silhouettes";
 
-  --gallery-1-image-4: url("assets/moodboard/mood-4.png");
+  --gallery-1-image-4: url("assets/gallery/gallery-4.png");
   --gallery-1-caption-4: "Sacred patterns";
 
 
@@ -109,10 +109,10 @@
   --gallery-2-image-2: url("assets/history/story-image-2.png");
   --gallery-2-caption-2: "Lost procession";
 
-  --gallery-2-image-3: url("assets/moodboard/mood-5.png");
+  --gallery-2-image-3: url("assets/gallery/gallery-5.png");
   --gallery-2-caption-3: "Material study";
 
-  --gallery-2-image-4: url("assets/moodboard/mood-6.png");
+  --gallery-2-image-4: url("assets/gallery/gallery-6.png");
   --gallery-2-caption-4: "Border myth";
 
 
@@ -176,13 +176,13 @@
 
 
 
-  /* ===================================== MOODBOARD ===================================== */
+  /* ===================================== GALLERY ===================================== */
 
-  --mood-1: url("assets/moodboard/mood-1.png");
-  --mood-2: url("assets/moodboard/mood-2.png");
-  --mood-3: url("assets/moodboard/mood-3.png");
-  --mood-4: url("assets/moodboard/mood-4.png");
-  --mood-5: url("assets/moodboard/mood-5.png");
-  --mood-6: url("assets/moodboard/mood-6.png");
+  --gallery-1: url("assets/gallery/gallery-1.png");
+  --gallery-2: url("assets/gallery/gallery-2.png");
+  --gallery-3: url("assets/gallery/gallery-3.png");
+  --gallery-4: url("assets/gallery/gallery-4.png");
+  --gallery-5: url("assets/gallery/gallery-5.png");
+  --gallery-6: url("assets/gallery/gallery-6.png");
 
 }

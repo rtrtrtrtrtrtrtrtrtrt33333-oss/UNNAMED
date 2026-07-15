@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
   --page-title: "Running River - Character Profile";
@@ -52,7 +52,7 @@
 
 
 
-  /* ===================================== MOODBOARD ===================================== */
+  /* ===================================== GALLERY ===================================== */
   --gallery-1: url('assets/gallery/gallery-1.png');
   --gallery-2: url('assets/gallery/gallery-2.png');
   --gallery-3: url('assets/gallery/gallery-3.png');
