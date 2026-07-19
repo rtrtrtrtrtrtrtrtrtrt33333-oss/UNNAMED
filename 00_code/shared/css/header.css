@@ -10,8 +10,6 @@
     --header-link-hover-text:#fff;
     --header-nav-hover-background:rgba(255,255,255,.06);
     --header-sidebar-hover-background:rgba(255,255,255,.05);
-    --header-banner-overlay-start:rgba(0,0,0,.18);
-    --header-banner-overlay-end:rgba(0,0,0,.68);
     --header-logo-background:#20242c;
     --sidebar-collapsed:70px;
     --sidebar-expanded:240px;
@@ -58,16 +56,9 @@
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:
-        linear-gradient(
-            to bottom,
-            var(--header-banner-overlay-start),
-            var(--header-banner-overlay-end)
-        );
 }
 
 .logo-holder{
-    background-color: var(--header-logo-background); 
     width: 300px; 
     height: 100px;
 }

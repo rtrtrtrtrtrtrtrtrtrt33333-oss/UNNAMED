@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
   --page-title: "Firstborn Sun - Character Profile";
@@ -10,8 +10,8 @@
   --hero-profile: url('assets/hero/profile.png');
   --hero-title-pattern: url('assets/hero/title-pattern.gif');
 
-  --character-name: "First Constellation";
-  --hero-description: "Short Description";
+  --character-name: "Первородное Солнце";
+  --hero-description: "A planetary-scale engineering megastructure created to reshape worlds, sustain the Interlayer, and preserve the infrastructure of the Architects.";
 
 
 
@@ -19,51 +19,48 @@
   --description-character-image: url('assets/description/description-character-image.png');
 
 
-  --description: "The Firstborn Sun is the crowning achievement of the Architects, created at the dawn of their technological prime. Formed from multiple planetary bodies, she stands as both a work of impossible design and the foundation upon which artificial civilization was built.";
+  --description: "Перворождённоe Солнце — высшее достижение Архитекторов, созданное на заре их технологического могущества. Сформированная из нескольких планетарных тел, она возвышается как невозможный инженерный монумент и как основание, на котором была построена искусственная цивилизация.";
 
-  --description-2: "She has endured throughout every recorded era, sustaining the Interlayer and countless systems beneath it. Yet despite her scale, beauty, and importance, the Firstborn Sun possesses no desire, emotion, or will beyond the function assigned to her. She does not protect, create, or endure by choice. She simply continues.";
+  --description-2: "Её создавали как существо чтобы изменять и создавать новые миры, чем она и является, соединяя планеты между собой, меняя, уничтожая, разбирая или выкраивая в новые. Она пережила все зафиксированные эпохи, продолжая питать Межслой и бесчисленные системы под ним. Но за ее масштабом, красотой и почти священным значением нет ни желания, ни эмоций, ни воли за пределами назначенной ей функции.";
 
-  --quote: "She is beautiful... She is everything we have pursued for thousands of years.";
+  --quote: "Она прекрасна... Она — все, к чему мы стремились тысячи лет.";
 
-  --quote-author: "Singing Comb, Architect and Chief Engineer.";
+  --quote-author: "Поющий Гребень, Архитектор и главный инженер.";
 
-  --personality: "None. No identifiable emotion, preference, attachment, or independent intent has ever been recorded. All observed behavior remains consistent with the uninterrupted fulfillment of her original function.";
+  --personality: "Отсутствует.";
 
-  --info-title: "First Creation • Constellation";
+  --info-title: "Крупнейшее Созвездие";
 
-  --info-role: "Primary energy source • Interlayer stabilizer • Progenitor of artificial civilization";
+  --info-role: "Architect Superstructure";
 
-  --info-origin: "Prime of the Architects • 66,000 rotations before the Ascension";
+  --info-origin: "Расцвет Архитекторов • 66 000 оборотов до Вознесения";
 
-  /* ===================================== DESCRIPTION ===================================== */
+  /* ===================================== HISTORY ===================================== */
 
---story-title-1: "Construction";
+  --story-title-1: "Строительство";
 
---story-text-1: "The construction of the Firstborn Sun became the largest engineering undertaking in the history of the Architects. Entire planetary bodies were dismantled, reshaped, and assembled into a single celestial structure over the course of thousands of rotations. Countless industrial networks, orbital foundries, and autonomous construction systems were devoted exclusively to the project. The completion of the Firstborn Sun marked the beginning of a new age for artificial civilization.";
+  --story-text-1: "Строительство Перворождённого Солнца стало величайшим инженерным предприятием в истории Архитекторов. Её создавали с целью чтобы создать существо способное изменять и создавать целые планетарные системы и не только, её созданием Архитекторы стремились превзойти ограничения своих физических оболочек. Целые планетарные тела, технологии, поколения и амбиции в единую небесную структуру на протяжении тысяч оборотов. Бесчисленные промышленные сети, комплексы и автономные строительные системы были подчинены одному проекту. Масштаб работ затронул практически каждую известную систему. Завершение Перворождённого Солнца ознаменовало начало новой эпохи для Архитекторов и глубоко засело в фундаментах ульев и колоний, которые будут построены после их исчезновения.";
 
---story-text-2: "The disappearance of the Architects did not alter the Firstborn Sun's purpose. With no further directives to receive, the structure gradually entered an extended dormant state. External communication ceased, higher cognitive systems were suspended, and nearly all observable activity came to an end. Its primary function, however, was never interrupted.";
-
---story-image-1: url("assets/history/story-image-1.png");
---story-caption-1: "Following the disappearance of the Architects";
-
+  --story-text-1-2: "После завершения строительства Перворождённое Солнце стало центральным обьектом всей инфраструктуры Архитекторов. Помимо её основной цели, через них проходили навигация, обмен информацией и координация и многое другое. Перворожденное Солнце продолжала медленно преобразовывать планеты, перестройка, Межслой и прочее не дали возможности дикой органике вовремя приспособиться.";
+  --story-image-1: url("assets/history/story-image-1.png");
+  --story-caption-1: "После исчезновения Архитекторов";
 
 
 
 
---story-quote: "• • •";
+  --story-quote: "• • •";
 
 
 
 
+  --story-title-2: "Покой / Dormancy";
 
---story-title-2: "Dormancy";
+  --story-text-2: "Исчезновение Архитекторов не изменило предназначение Перворождённого Солнца. Не получая новых команд, структура постепенно перешла в состояние длительного покоя. Однако её основная функция никогда не прерывалась. Как и остальные Созвездия, Перворождённое Солнце не взаимодействует с цивилизациями, возникшими после Архитекторов. Оно не вмешивается в войны, экспансии или внутренние конфликты, продолжая безмолвно выполнять возложенную на него задачу. За своё существование, Перворожденное Солнце изменило и построило новый мир, кардинально отличавшийся от изначального.";
 
---story-text-1-2: "the Firstborn Sun possesses no interest in the civilizations that arose after its creators vanished. It neither intervenes nor responds to requests, conflicts, or declarations. The continued existence or extinction of artificial societies has no measurable influence on its behavior.";
+  --story-text-2-2: "Когда произошло Вознесение, это так же не касалось Перворождённого Солнца. Такая страшная катастрофа не изменила ни одной из выполняемых им функций.";
 
---story-text-2-2: "Despite appearing dormant, the Firstborn Sun continues to sustain the Interlayer and countless interconnected systems established during the age of the Architects. It neither governs nor protects. It simply fulfills the function for which it was created, unchanged after tens of thousands of rotations.";
-
---story-image-2: url("assets/history/story-image-2.png");
---story-caption-2: "The Firstborn Sun in prolonged dormant operation.";
+  --story-image-2: url("assets/history/story-image-2.png");
+  --story-caption-2: "Первородное Солнце в длительном состоянии покоя.";
 
 
 
@@ -82,16 +79,16 @@
   /* ===================================== PLAYLIST ASSETS ===================================== */
   --playlist-background: url('assets/playlist/playlist-background.gif');
 
-  --playlist-track-1: url('assets/playlist/Steven Universe S5 Official Soundtrack  White Diamond - aivi & surasshu  Cartoon Network.mp3');
-  --playlist-track-2: url('assets/playlist/Hollow Knight_ Silksong - OST - Choral Chambers.mp3');
-  --playlist-track-3: url('assets/playlist/MECHANICAL GOD.mp3');
+  --playlist-track-1: url('assets/playlist/Silksong Choral Chambers.m4a');
+  --playlist-track-2: url('assets/playlist/White Diamond.m4a');
+  --playlist-track-3: url('assets/playlist/MECHANICAL GOD.m4a');
   --playlist-track-4: url('assets/playlist/track-4.mp3');
   --playlist-track-5: url('assets/playlist/track-5.mp3');
 
-  --track-1-name: "White Diamond OST";
-  --track-1-artist: "Steven Universe";
-  --track-2-name: "Choral Chambers";
-  --track-2-artist: "Hollow Knight: Silksong";
+  --track-1-name: "Choral Chambers";
+  --track-1-artist: "Hollow Knight: Silksong";
+  --track-2-name: "White Diamond OST";
+  --track-2-artist: "Steven Universe";
   --track-3-name: "MECHANICAL GOD";
   --track-3-artist: "AZALI from youtube";
   --track-4-name: "Run Free";
@@ -100,7 +97,3 @@
   --track-5-artist: "Spirit: Stallion of the Cimarron";
 
 }
-
-
-
-

@@ -1,0 +1,33 @@
+:root {
+  --page-title: "Character Template";
+  --page-background: url("assets/background.png");
+
+  --hero-image: url("assets/background.png");
+
+  --character-type: "Character";
+  --character-name: "Character Name";
+  --hero-description: "lorem ipsum.";
+
+  --section-1-title: "Overview";
+  --section-1-text-1: "This paragraph is controlled through the data file. Replace it with a short introduction, role summary, or the first part of the character history.";
+  --section-1-text-2: "The template is intentionally small: hero, text, quote, and a three-image gallery. More sections can be added once the layout feels right.";
+
+  --quote: "A short quote can live here.";
+  --quote-author: "Quote author";
+
+  --gallery-1: url("assets/background.png");
+  --gallery-2: url("assets/background.png");
+  --gallery-3: url("assets/background.png");
+
+  --background-main: #151821;
+  --background-secondary: #222737;
+  --border-color: rgba(255,255,255,.12);
+  --accent: #c7a46a;
+  --name-color: #f3f0e6;
+  --text-primary: #f0f2f5;
+  --text-secondary: #b8bfcb;
+
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Times New Roman", Times, serif;
+  --font-mono: "Courier New", monospace;
+}

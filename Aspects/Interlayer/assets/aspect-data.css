@@ -10,25 +10,26 @@
 
   /* ===================================== ASPECT INFO ===================================== */
 
-  --aspect-type: "Category";
+  --aspect-type: "Lore aspect";
 
-  --aspect-name: "Interlayer";
+  --aspect-name: "Межслой";
 
-  --aspect-description: "The Interlayer is a planetary-scale infrastructure constructed by the Architects long before the Ascension. While it is less prominent than structures such as the Firstborn Sun, it remains one of the largest surviving systems created during their era. Built to maintain orbital stability and preserve the Web connecting inhabited worlds, the Interlayer appears as a vast translucent veil surrounding planets and extending throughout interplanetary space.";
+  --aspect-description: "Межслой — Это одна из первоначальных функция Перворожденного Солнца и других созвездий, соединяющей обитаемые планеты с целью удержания их. Невидимый для большинства форм восприятия, он существует как огромная полупрозрачная завеса вокруг планет и в межпланетном пространстве. Иногда его можно увидеть с поверхности, в темном месте, обычно он выглядит как слабое свечение";
 
 
   /* ===================================== MAIN IMAGE ===================================== */
 
   --main-image: url("assets/aspect/main-image.png");
 
-  --main-image-caption: "Main image description.";
+  --main-image-caption: "Визуальное представление Межслоя.";
 
 
   /* ===================================== HISTORY ===================================== */
 
-  --section-1-title: "Function";
+  --section-1-title: "Функция";
 
-  --section-1-text-1: "The Interlayer has remained in operation since the time of the Architects. It regulates orbital stability, keeping celestial bodies synchronized and connected through the Web. Without it, planets would gradually drift from their established paths, eventually destabilizing the network between worlds. For Artificial civilization, the Interlayer became an ordinary part of reality, much like gravity or daylight.";
+  --section-1-text-1: "Межслой продолжает работать с начала появления Перворожденного Солнца. Он регулирует орбитальную стабильность, удерживая небесные тела в согласованном движении и связывая их через паутино подобные соединения. Без него планеты постепенно сошли бы с установленных траекторий. Межслой со временем стал обычной частью реальности, такой же привычной, как гравитация или дневной свет.";
 
-  --section-1-text-2: "Its influence is not distributed equally. Regions where the Interlayer remains weak are considered suitable for long-term habitation. Areas of high density become increasingly hazardous, gradually overwhelming Artificial systems and causing irreversible structural failure. Organic ecosystems are affected in a similar way, as prolonged exposure leaves landscapes dry, barren, and incapable of sustaining complex life. Despite the disappearance of its creators, the Interlayer continues operating without interruption.";
+  --section-1-text-2: "Его влияние распределено неравномерно. Области, где Межслой остается слабым, считаются пригодными для долговременного обитания. Зоны высокой плотности становятся все опаснее: они постепенно перегружают системы и вызывают необратимые структурные повреждения, обычно земля в таких местах сухая и ломкая. Органические экосистемы страдают похожим образом, поскольку длительное воздействие оставляет ландшафты сухими, бесплодными и неспособными поддерживать сложную жизнь.";
+
 }

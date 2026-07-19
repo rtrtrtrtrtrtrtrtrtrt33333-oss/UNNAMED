@@ -10,75 +10,76 @@
   --hero-profile: url('assets/hero/profile.png');
   --hero-title-pattern: url('assets/hero/title-pattern.gif');
 
-  --character-name: "Thirteenth Sun";
-  --hero-description: "Short Description";
+  --character-name: "Тринадцатое Солнце";
+  --hero-description: "Ходячая катастрофа";
 
 
 
   /* ===================================== DESCRIPTION ===================================== */
   --description-character-image: url('assets/description/description-character-image.png');
 
+  --description: "Тринадцать — Вознесенный и странник, пересекающий руины павших колоний. Они опытные и сильные бойцы, за долгое время овладевшие разными видами оружия. Их оболочка когда-то принадлежала боевой единице Октав, но они не помнят ничего из прошлой жизни, имя Тринадцать они носят по тому, что в системе оборота Перворожденного Солнца нету 13-го оборота, и цикл заканчивается на 12.";
 
-  --description: "Thirteen is one of the rare sentient Ascended, entities born when the Ascension repurposes the remains of a deceased Artificial. The original individual does not survive the process. Only the body remains, inhabited by a new consciousness with no memory, identity, or emotional connection to the life that came before. Though capable of thought and reason, an Ascended is driven by instincts no amount of intelligence can suppress: to consume, to survive, and to eliminate anything that threatens its existence.";
-
-  --description-2: "Most Ascended exist as little more than relentless predators. Thirteen is an exceptional case. They demonstrate self-awareness, strategic reasoning, and long-term planning while remaining bound to the same irreversible instincts shared by all Ascended. Their current objective is the destruction of every surviving Constellation.";
-
-  --quote: "You are not evil. You are simply what remains when survival outlives everything else.";
-
-  --quote-author: "Unknown survivor";
-
-  --personality: "Unlike the vast majority of Ascended husks, Thirteen retained a stable and self-aware consciousness. They are patient, observant, and highly intelligent, capable of long-term planning and complex reasoning. Yet beneath that composure remains the same immutable instinct shared by every Ascended: survive, consume, and remove whatever stands in the way. Intelligence has refined these impulses, but never replaced them.";
-
-  --info-title: "Rare Sentient Ascended";
-
-  --info-role: "Wanderer • Calamity • Abomination";
-
-  --info-origin: "Formerly an Artificial of the Octaves. The original individual perished during the Ascension. No trace of their previous identity remains.";
+  --description-2: "Тринадцать не утратили ни одного из инстинктов Вознесенного. Ими всё ещё движет голод и уничтожение, но Тринадцать достигает своих целей с особой эффективностью и стратегией. Их броня на самом деле таковой не является, это плоть которая приняла более ровную форму со временем. Иногда, она может выдавать себя, когда вены выходят из ровного строя.";
 
 
-  /* ===================================== DESCRIPTION ===================================== */
 
-  --story-title-1: "Previous life";
+  --quote: "Вы все должны были давно сгнить в своих оболочках. Но именно ты... На удивление упряма.";
 
-  --story-text-1: "NO DATA AVAILABLE.\A\AThe original individual no longer exists. All personal records, memories, and identifiers are considered irrelevant to the current entity.";
+  --quote-author: "Кофеёк";
 
-  --story-text-1-2: ".";
+  --personality: "Спокойные, немногословные и терпеливые. Они крайне эффективны в достижении поставленной цели и редко позволяют эмоциям влиять на свои решения. Их методы зачастую кажутся жестокими, однако почти всегда продиктованы холодным расчётом и стремлением выжить. Несмотря на отчуждённость, они способны проявлять уважение к достойным противникам";
+
+  --info-title: "Тринадцать • Катастрофа на трёх ножках";
+
+  --info-role: "Скиталец • Вознесенный";
+
+  --info-origin: "Прежде Искусственный из Октав. Изначальная личность погибла во время Вознесения. Бывший воин Вечного Хора.";
+
+
+  /* ===================================== HISTORY ===================================== */
+
+  --story-title-1: "Прошлая жизнь";
+
+  --story-text-1: "ДАННЫЕ ОТСУТСТВУЮТ.\A\AПервоначальная личность более не существует. Старая оболочка, принадлежала боевому искуственному и принимало участие в Долгой Войне под командованием Вечного Хора. Во время одного из последних наступлений гнездо было уничтожено. Несмотря на дисциплину и ожесточённое сопротивление, Октавы столкнулись с противником, к которому оказались совершенно не готовы. Боевой юнит был уничтожен вместе с остальными войнами.";
+
+  --story-text-1-2: ". . .";
+
 
   --story-image-1: url('assets/history/story-image-1.png');
-  --story-caption-1: "Records prior to the Ascension";
+  --story-caption-1: "Тут будет картинка потом";
+
+
+
+
+
+  --story-quote: ". . .";
 
 
 
 
 
 
+  --story-title-2: "Вознесение";
 
-  --story-quote: "Every wound became an improvement. Every survivor became a teacher.";
+  --story-text-2: "К моменту Вознесения гнёзда Октав уже лежали в руинах. Их колонии опустели, стеклянные купола были разрушены, а немногочисленные уцелевшие оболочки остались погребены среди обломков. Спустя некоторое время Вознесение достигло одних из них. Металл постепенно скрывался под разрастающейся плотью, а повреждённые механизмы становились частью нового организма. Когда сознание впервые пробудилось, оно не обладало ни именем, ни воспоминаниями, ни пониманием собственного происхождения. Вокруг простирались лишь руины павшей колонии, а единственным наследием прошлого оставалось тело, созданное для войны.";
 
+  --story-text-2-2: "Первые годы своего существования новое сознание практически не осознавало себя. Оно следовало лишь инстинктам Вознесённого, без колебаний уничтожая всё, что воспринималось как угроза или добыча. Боевые системы прежней оболочки продолжали работать безупречно, несмотря на то что личность, которой они когда-то служили, исчезла навсегда. Лишь спустя многие годы бесконечных странствий разум постепенно обрёл самосознание и собственную волю. Инстинкты не исчезли, но перестали управлять каждым действием. Так появился холодный, терпеливый и расчётливый странник, позднее известный как Тринадцать.";
 
-
-
-
-
-  --story-title-2: "Ascension";
-
-  --story-text-2: "Thirteen was not born exceptional. Like every Ascended, they emerged driven solely by the instinct to survive. Intelligence, patience, and strategic thinking were not gifts of the Ascension, but qualities developed over countless years of adaptation. Every conflict, every injury, and every narrow escape became part of an endless process of evolution.";
-
-  --story-text-2-2: "Centuries of uninterrupted adaptation transformed Thirteen into one of the most formidable known Ascended. Their methods became increasingly calculated, their movements deliberate, and their decisions guided by experience rather than impulse. The instinct to survive never changed. Everything else evolved around it.";
 
   --story-image-2: url("assets/history/story-image-2.png");
-  --story-caption-2: "Following the Ascension";
+  --story-caption-2: "После Вознесения";
 
 
 
 
-  /* ===================================== MOODBOARD ===================================== */
+  /* ===================================== GALLERY ===================================== */
   --gallery-1: url('assets/gallery/gallery-1.png');
   --gallery-2: url('assets/gallery/gallery-2.png');
   --gallery-3: url('assets/gallery/gallery-3.png');
   --gallery-4: url('assets/gallery/gallery-4.png');
   --gallery-5: url('assets/gallery/gallery-5.png');
-  --gallery-6: url('assets/gallery/gallery-6.png');
+  --gallery-6: url('assets/gallery/gallery-6.gif');
 
 
 
@@ -103,8 +104,3 @@
   --track-5-artist: "Spirit: Stallion of the Cimarron";
 
 }
-
-
-
-
-
