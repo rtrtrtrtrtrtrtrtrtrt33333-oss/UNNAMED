@@ -34,7 +34,7 @@
   /* ===================================== TRACKS ===================================== */
 
   --playlist-track-1: url("assets/playlist/Thornfelt Swamp (feat. Tom Boyd) [KcROgIvKuY8].m4a");
-  --playlist-track-2: url("assets/playlist/THE WORLD'S BEAUTIFUL END.mp3");
+  --playlist-track-2: url("assets/playlist/Hollow Knight OST - Dirtmouth.m4a");
   --playlist-track-3: url("assets/playlist/track-3.mp3");
   --playlist-track-4: url("assets/playlist/track-4.mp3");
   --playlist-track-5: url("assets/playlist/track-5.mp3");
@@ -43,8 +43,8 @@
   --track-1-name: "Thornfelt Swamp";
   --track-1-artist: "Tom Boyd";
 
-  --track-2-name: "the World's beautiful end";
-  --track-2-artist: "EmptyHeadedGenuis from Youtube";
+  --track-2-name: "Dirtmouth";
+  --track-2-artist: "Hollow Knight OST";
 
   --track-3-name: "";
   --track-3-artist: "";
