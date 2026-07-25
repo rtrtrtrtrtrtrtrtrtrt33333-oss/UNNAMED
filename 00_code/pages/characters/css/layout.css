@@ -27,6 +27,7 @@ body {
 
 
 .main {
+    position: relative;
     width: 1300px;
     margin: 0 auto 50px;
     margin-top: 400px;
@@ -34,6 +35,25 @@ body {
     transform: translateX(50px);
     background-color: var(--background-main);
     padding: 100px;
+    isolation: isolate;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: var(--background-main-pattern, none);
+    background-repeat: repeat;
+    background-size: 360px auto, 360px auto;
+    background-position: center;
+    opacity: .05;
+}
+
+.main > * {
+    position: relative;
+    z-index: 1;
 }
 
 

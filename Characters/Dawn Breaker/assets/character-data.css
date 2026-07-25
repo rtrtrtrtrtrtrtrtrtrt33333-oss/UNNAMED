@@ -1,6 +1,7 @@
 :root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
+  --background-main-pattern: url('../../../../Characters/Dawn Breaker/assets/pattern.png');
   --page-title: "Dawn Breaker - Character Profile";
   --upper-title: "Dawn Breaker";
 

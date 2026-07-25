@@ -1,6 +1,7 @@
 :root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
+  --background-main-pattern: url('../../../../Characters/Molten Fire/assets/pattern.png');
   --page-title: "Molten Fire - Character Profile";
   --upper-title: "Molten Fire";
 

@@ -1,6 +1,7 @@
 :root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
+  --background-main-pattern: url('../../../../Characters/Nacre Tears/assets/pattern.png');
   --page-title: "Copper Spire - Character Profile";
   --upper-title: "Copper Spire";
 

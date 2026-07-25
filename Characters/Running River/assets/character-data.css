@@ -1,6 +1,7 @@
 :root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
+  --background-main-pattern: url('../../../../Characters/Running River/assets/pattern.png');
   --page-title: "Running River - Character Profile";
   --upper-title: "Running River";
 

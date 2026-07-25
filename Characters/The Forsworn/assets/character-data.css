@@ -1,6 +1,7 @@
 :root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
+  --background-main-pattern: url('../../../../Characters/The Forsworn/assets/pattern.png');
   --page-title: "The Forsworn - Character Profile";
   --upper-title: "The Forsworn";
 

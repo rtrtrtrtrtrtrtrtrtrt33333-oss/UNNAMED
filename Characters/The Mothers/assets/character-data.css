@@ -1,6 +1,7 @@
 :root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
+  --background-main-pattern: url('../../../../Characters/The Mothers/assets/pattern.png');
   --page-title: "The Eternal Choir - Character Profile";
   --upper-title: "The Eternal Choir";
 
