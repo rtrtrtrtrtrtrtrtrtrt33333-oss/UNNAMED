@@ -35,9 +35,9 @@
 
   --playlist-track-1: url("assets/playlist/Heaven Pierce Her - War Without Reason.m4a");
   --playlist-track-2: url("assets/playlist/ULTRAKILL OST - Altars of Apostasy.m4a");
-  --playlist-track-3: url("assets/playlist/track-3.mp3");
-  --playlist-track-4: url("assets/playlist/track-4.mp3");
-  --playlist-track-5: url("assets/playlist/track-5.mp3");
+  --playlist-track-3: "";
+  --playlist-track-4: "";
+  --playlist-track-5: "";
 
 
   --track-1-name: "War without reason";

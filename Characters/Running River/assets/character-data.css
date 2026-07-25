@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
   --page-title: "Running River - Character Profile";
@@ -35,20 +35,7 @@
 
   /* ===================================== DESCRIPTION ===================================== */
 
-  --story-title-1: "Early life";
-  --story-caption-1: "Early life";
-  --story-text-1: "Lorem ipsum dolor sit amet...";
-  --story-image-1: url('assets/history/story-image-1.png');
 
-  --story-title-2: "Later events";
-  --story-caption-2: "Later events";
-  --story-text-2: "Lorem ipsum dolor sit amet...";
-  --story-image-2: url('assets/history/story-image-2.png');
-  --story-text-1-2: "Additional context for the first chapter of their history.";
-  --story-quote: "A line that captures the turning point of their story.";
-  --story-text-2-2: "Further details about later events and their consequences.";
-  --story-image-3: url('assets/history/story-image-3.png');
-  --story-image-3-caption: "A defining moment captured in the archive.";
 
 
 
