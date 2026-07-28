@@ -11,12 +11,18 @@
   height: 500px;
   display: flex;
   justify-content: center;
+  border: 2px solid var(--color-accent);
+  outline: 1px solid rgba(255, 255, 255, .22);
+  outline-offset: -10px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, .45),
+    0 18px 34px rgba(0, 0, 0, .28),
+    inset 0 0 0 1px rgba(0, 0, 0, .35);
 }
 
 .profile-container::before,
 .profile-container::after {
   position: absolute;
-  color: var(--color-accent);
 }
 
 .profile-container::before {
@@ -29,10 +35,22 @@
 }
 
 .profile-container::after {
-  content: "✦";
+  content: "";
   top: -70px;
   right: 0;
-  font-size: 56px;
+  width: 56px;
+  height: 56px;
+  background: var(--color-accent);
+  clip-path: polygon(
+    50% 0,
+    61% 38%,
+    100% 50%,
+    61% 62%,
+    50% 100%,
+    39% 62%,
+    0 50%,
+    39% 38%
+  );
 }
 
 .background-pic {
@@ -93,7 +111,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: var(--background-primary);
+  background: transparent;
+  isolation: isolate;
 }
 
 .title-background {
@@ -102,6 +121,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
+  opacity: .92;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, .36));
 }
 
 .character-name-container h1 {
@@ -114,4 +136,3 @@
   color: var(--character-name-color);
   text-transform: uppercase;
 }
-

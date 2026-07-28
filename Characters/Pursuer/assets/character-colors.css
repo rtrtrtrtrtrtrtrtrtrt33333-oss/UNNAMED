@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caesar+Dressing&family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 :root {
     /* Typography and Colors */
-    --font-accent:"Audiowide", sans-serif;
+    --font-accent: "Special Elite", serif;
     --character-name-color: #ffffff;
     --head-font-size: 100px;
 
@@ -17,12 +18,12 @@
     --text-color-secondary: #b2baca;
     
     /* Background Colors */
-    --background-main: #181b22;
-    --background-primary: #353b47;
-    --background-secondary: #4a4f5b;
-    --background-tertiary: #5d626d;
-    --color-accent: #686d7a;
-    
+    --background-main: #30040e;
+    --background-primary: #070607;
+    --background-secondary: #1f070f;
+    --background-tertiary: #7b0f1f;
+    --color-accent: #d3263f;
+
     /* Crystal Colors */
     --color-palette-1: #ffffff;
     --color-palette-2: #c9cbd0;

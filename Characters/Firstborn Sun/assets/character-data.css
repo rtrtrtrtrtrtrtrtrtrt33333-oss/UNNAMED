@@ -11,7 +11,7 @@
   --hero-profile: url('assets/hero/profile.png');
   --hero-title-pattern: url('assets/hero/title-pattern.gif');
 
-  --character-name: "Первородное Солнце";
+  --character-name: "Firstborn Sun";
   --hero-description: "A planetary-scale engineering megastructure created to reshape worlds, sustain the Interlayer, and preserve the infrastructure of the Architects.";
 
 
@@ -31,11 +31,11 @@
 
   --personality: "Отсутствует.";
 
-  --info-title: "Крупнейшее Созвездие";
+  --info-title: "Firstborn Sun";
 
-  --info-role: "Superstructure, megastructure";
+  --info-role: "Superstructure • megastructure • Constellation";
 
-  --info-origin: "Расцвет Архитекторов • 66 000 оборотов до Вознесения";
+  --info-origin: "Architects";
 
 
   /* ===================================== GALLERY ===================================== */

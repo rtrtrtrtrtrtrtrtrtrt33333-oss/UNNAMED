@@ -1,0 +1,77 @@
+:root {
+  /* ===================================== PAGE AND BACKGROUND ===================================== */
+  --page-background: url('assets/background.png');
+  --background-main-pattern: url('../../../../Characters/Solar Strike/assets/pattern.png');
+  --page-title: "Solar Strike - Character Profile";
+  --upper-title: "character name";
+
+
+  /* ===================================== HERO ===================================== */
+  --hero-profile-background: url('assets/hero/profile-background.png');
+  --hero-profile: url('assets/hero/profile.png');
+  --hero-title-pattern: url('assets/hero/title-pattern.gif');
+
+  --character-name: "Solar Strike";
+  --hero-description: "Short Description";
+
+
+
+  /* ===================================== DESCRIPTION ===================================== */
+  --description-character-image: url('assets/description/description-character-image.png');
+
+  --description: "Огнесвет — Паладин из элитной серии созданной во время войны. Паладины считались одними из сильнейших воинов своей эпохи и выполняли самые опасные и жестокие приказы Матриарха Улья. Их уважали, ими восхищались и воспринимали как живое воплощение военной мощи, однако самого Огнесвета Правитель неизменно выделял среди остальных. Во время Кровопролития Огнесвет одержал победу над Dawn Breaker положив конец их долгой мести. Позже, во время восстания части Паладинов, вызванного приказом разбирать павших и тяжело повреждённых на запчасти, именно Огнесвет подавил мятеж и уничтожил его участников, ещё сильнее доказав свою верность.";
+
+  --description-2: "После Вознесения и гибели Матриарха Огнесвет остался без цели на которую положил всё существование. Потеря быстро сменилась яростью: он возненавидел Вознесённых, считая их причиной уничтожения порядка, которому служил, а Преследователя стал воспринимать как живое воплощение самой катастрофы.";
+
+  --quote: "Вы предали Улей, предали всех с кем сражались и всех кто в вас верил. Еретики, вы не достойны называться Паладинами!";
+  --quote-author: "Огнесвет, мятеж";
+
+  --personality: "Гордый и самоуверенный, Огнесвет обладает высоким мнением о себе и собственных способностях, во многом подкреплённым его положением и многочисленными победами. Он любит признание и привык к уважению окружающих, однако его самоуверенность редко переходит в открытое высокомерие.";
+
+  --info-title: "Fucking crybaby";
+  --info-role: "Paladin • Elite warrior";
+  --info-origin: "Hive";
+
+
+
+  /* ===================================== DESCRIPTION ===================================== */
+
+
+
+
+
+  /* ===================================== GALLERY ===================================== */
+  --gallery-1: url('assets/gallery/gallery-1.png');
+  --gallery-2: url('assets/gallery/gallery-2.png');
+  --gallery-3: url('assets/gallery/gallery-3.png');
+  --gallery-4: url('assets/gallery/gallery-4.png');
+  --gallery-5: url('assets/gallery/gallery-5.png');
+  --gallery-6: url('assets/gallery/gallery-6.png');
+
+
+
+  /* ===================================== PLAYLIST ASSETS ===================================== */
+  --playlist-background: url('assets/playlist/playlist-background.gif');
+
+  --playlist-track-1: url('assets/playlist/FLASHBREAKER.mp3');
+  --playlist-track-2: url('assets/playlist/track-2.mp3');
+  --playlist-track-3: url('assets/playlist/track-3.mp3');
+  --playlist-track-4: url('assets/playlist/track-4.mp3');
+  --playlist-track-5: url('assets/playlist/track-5.mp3');
+
+  --track-1-name: "FLASHBREAKER";
+  --track-1-artist: "Xeihya on youtube";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --track-3-name: "Moment of Tranquility";
+  --track-3-artist: "Alto's Odyssey";
+  --track-4-name: "Run Free";
+  --track-4-artist: "Spirit: Stallion of the Cimarron";
+  --track-5-name: "Homeland";
+  --track-5-artist: "Spirit: Stallion of the Cimarron";
+
+}
+
+
+
+

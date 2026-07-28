@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caesar+Dressing&family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caesar+Dressing&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cutive+Mono&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&display=swap');
 
 
@@ -23,13 +24,13 @@
     --background-secondary: #9b611c;
     --background-tertiary: #d99a52;
     --color-accent: #e39a22;    
-    
+        
     /* Crystal Colors */
-    --color-palette-1: #4a200e;
-    --color-palette-2: #61331f;
-    --color-palette-3: #7c533c;
-    --color-palette-4: #5d688d;   
-    --color-palette-5: #1a2c4d;
+    --color-palette-1: #ffffff;
+    --color-palette-2: #c9cbd0;
+    --color-palette-3: #464a53;
+    --color-palette-4: #101010;   
+    --color-palette-5: #b50707;
 
     /* playlist-header */
     --playlist-text-color-primary: #f0f0f0;

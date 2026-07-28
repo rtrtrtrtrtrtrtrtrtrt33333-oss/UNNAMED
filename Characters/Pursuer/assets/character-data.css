@@ -2,8 +2,8 @@
   /* ===================================== PAGE AND BACKGROUND ===================================== */
   --page-background: url('assets/background.png');
   --background-main-pattern: url('../../../../Characters/Pursuer/assets/pattern.png');
-  --page-title: "Dawn Breaker - Character Profile";
-  --upper-title: "Dawn Breaker";
+  --page-title: "Pursuer - Character Profile";
+  --upper-title: "Pursuer";
 
 
   /* ===================================== HERO ===================================== */
@@ -11,7 +11,7 @@
   --hero-profile: url('assets/hero/profile.png');
   --hero-title-pattern: url('assets/hero/title-pattern.png');
 
-  --character-name: "Dawn Breaker";
+  --character-name: "Pursuer";
   --hero-description: "Short Description";
 
 
