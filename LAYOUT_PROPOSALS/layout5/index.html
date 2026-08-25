@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layout5 - layered gallery</title>
+    <link rel="stylesheet" href="../shared.css">
+    <style>
+        .gallery-stage {
+            position: relative;
+            min-height: 760px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            padding: 28px;
+            border: 3px solid #7d8798;
+            background: rgba(25, 30, 40, .82);
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+            overflow: hidden;
+        }
+
+        .gallery-stage::before {
+            content: "";
+            position: absolute;
+            inset: 22px;
+            border: 1px solid rgba(255,255,255,.1);
+            pointer-events: none;
+        }
+
+        .gallery-title {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 28px;
+        }
+
+        .gallery-title h1 {
+            margin: 0;
+            font-size: clamp(58px, 10vw, 150px);
+            line-height: .78;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 rgba(0,0,0,.48);
+        }
+
+        .photo-wall {
+            position: relative;
+            min-height: 690px;
+        }
+
+        .photo-wall img {
+            position: absolute;
+            width: 48%;
+            height: 38%;
+            object-fit: cover;
+            border: 2px solid rgba(255,255,255,.16);
+            box-shadow: 7px 7px 0 rgba(0,0,0,.3);
+            animation: floatPanel 7s ease-in-out infinite alternate;
+        }
+
+        .photo-wall img:nth-child(1) { left: 0; top: 0; width: 62%; height: 48%; }
+        .photo-wall img:nth-child(2) { right: 0; top: 10%; animation-delay: -1s; }
+        .photo-wall img:nth-child(3) { left: 10%; bottom: 8%; animation-delay: -2s; }
+        .photo-wall img:nth-child(4) { right: 8%; bottom: 0; width: 54%; height: 44%; animation-delay: -3s; }
+
+        @keyframes floatPanel {
+            from { transform: translateY(0); }
+            to { transform: translateY(-14px); }
+        }
+
+        @media (max-width: 900px) {
+            .gallery-stage {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../../Navigation/assets/home/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner"><img src="../../Navigation/assets/home/hero-banner.gif" alt=""><p class="proposal-logo">UNNAMED</p></div>
+        <nav class="proposal-nav"><a href="../../Navigation/home.html">Home</a><a href="../../Navigation/character_list.html">Characters</a><a href="../../Navigation/timeline_list.html">Timeline</a><a href="../../Navigation/aspects_list.html">Aspects</a></nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="proposal-main gallery-stage">
+        <section class="gallery-title"><h1>Layered Mood</h1></section>
+        <section class="photo-wall">
+            <img src="../../Navigation/assets/home/Gallery/mood (1).png" alt="">
+            <img src="../../Navigation/assets/home/Gallery/mood (4).png" alt="">
+            <img src="../../Navigation/assets/home/Gallery/mood (6).png" alt="">
+            <img src="../../Navigation/assets/home/Gallery/mood (8).png" alt="">
+        </section>
+    </main>
+</body>
+</html>

@@ -5,30 +5,30 @@
 :root {
     /* Typography and Colors */
     --font-accent:"Audiowide", sans-serif;
-    --character-name-color: #ffffff;
+    --character-name-color: #f2e4d4;
     --head-font-size: 100px;
 
     /* Primary Text */
     --font-primary: "Times New Roman", Times, serif;
-    --text-color-primary: #e3e8f2;
+    --text-color-primary: #24110a;
 
     /* Secondary Text */
     --font-secondary: "Cutive Mono", monospace;
-    --text-color-secondary: #b2baca;
+    --text-color-secondary: #56311f;
     
     /* Background Colors */
-    --background-main: #181b22;
-    --background-primary: #353b47;
-    --background-secondary: #4a4f5b;
-    --background-tertiary: #5d626d;
-    --color-accent: #686d7a;
+    --background-main: #3a1d17;
+    --background-primary: #b98363;
+    --background-secondary: #714438;
+    --background-tertiary: #9f5f4e;
+    --color-accent: #c97143;
     
     /* Crystal Colors */
-    --color-palette-1: #ffffff;
-    --color-palette-2: #c9cbd0;
-    --color-palette-3: #464a53;
-    --color-palette-4: #101010;   
-    --color-palette-5: #b50707;
+    --color-palette-1: #3a1d17;
+    --color-palette-2: #b98363;
+    --color-palette-3: #714438;
+    --color-palette-4: #9f5f4e;   
+    --color-palette-5: #c97143;
 
     /* playlist-header */
     --playlist-text-color-primary: #f0f0f0;

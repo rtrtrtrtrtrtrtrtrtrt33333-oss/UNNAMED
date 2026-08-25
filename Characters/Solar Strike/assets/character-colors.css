@@ -8,7 +8,7 @@
     /* Typography and Colors */
     --font-accent: "Cinzel", serif;
     --character-name-color: #f5f1e8;
-    --head-font-size: 100px;
+    --head-font-size: 150px;
 
     /* Primary Text */
     --font-primary: "Cormorant Garamond", serif;
@@ -26,11 +26,11 @@
     --color-accent: #e39a22;    
         
     /* Crystal Colors */
-    --color-palette-1: #ffffff;
-    --color-palette-2: #c9cbd0;
-    --color-palette-3: #464a53;
-    --color-palette-4: #101010;   
-    --color-palette-5: #b50707;
+    --color-palette-1: #2d3440;
+    --color-palette-2: #e2e8ec;
+    --color-palette-3: #9b611c;
+    --color-palette-4: #d99a52;   
+    --color-palette-5: #e39a22;
 
     /* playlist-header */
     --playlist-text-color-primary: #f0f0f0;

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caesar+Dressing&family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caesar+Dressing&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cutive+Mono&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&display=swap');
 
 
 :root {
     /* Typography and Colors */
-    --font-accent: "Limelight", sans-serif;
+    --font-accent: "Cinzel", serif;
     --character-name-color: #eee8dc;
-    --head-font-size: 100px;
+    --head-font-size: 250px;
 
     /* Primary Text */
     --font-primary: "Times New Roman", Times, serif;

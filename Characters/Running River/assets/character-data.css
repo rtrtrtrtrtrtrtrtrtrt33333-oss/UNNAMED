@@ -18,6 +18,7 @@
 
   /* ===================================== DESCRIPTION ===================================== */
   --description-character-image: url('assets/description/description-character-image.png');
+  --upper-description-image: url('assets/description/upper-description-image.png');
 
 
   --description: "Long description text. Lorem ipsum dolor sit amet...";

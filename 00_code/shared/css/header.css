@@ -14,9 +14,11 @@
     --sidebar-collapsed:70px;
     --sidebar-expanded:240px;
     --top-header-banner-height:200px;
+    --external-site-nav-height:34px;
     --top-header-nav-height:65px;
-    --top-header-height:calc(var(--top-header-banner-height) + var(--top-header-nav-height));
+    --top-header-height:calc(var(--top-header-banner-height) + var(--external-site-nav-height) + var(--top-header-nav-height));
     --current-top-header-height:calc(
+        var(--external-site-nav-height) +
         var(--top-header-nav-height) +
         (var(--top-header-banner-height) - (var(--top-header-banner-height) * var(--scroll)))
     );
@@ -25,7 +27,7 @@
 
 .top-header{
     position:fixed;
-    top:0;
+    top:var(--external-site-nav-height);
     left:0;
     width:100vw;
     z-index:1000;
@@ -83,6 +85,38 @@
     gap:12px;
 }
 
+.external-site-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:var(--external-site-nav-height);
+    z-index:1100;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    background:#11141a;
+    border-bottom:1px solid var(--header-border);
+}
+
+.external-site-nav a{
+    color:var(--header-text-muted);
+    text-decoration:none;
+    padding:6px 12px;
+    border-radius:7px;
+    transition:.3s;
+    font-family:var(--header-font);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+.external-site-nav a:hover{
+    color:var(--header-link-hover-text);
+    background:var(--header-nav-hover-background);
+}
+
 .header-nav a{
     color:var(--header-text);
     text-decoration:none;
@@ -99,10 +133,10 @@
 
 .sidebar{
     position:fixed;
-    top:0;
+    top:var(--external-site-nav-height);
     left:0;
     width:var(--sidebar-collapsed);
-    height:100vh;
+    height:calc(100vh - var(--external-site-nav-height));
     padding:20px 14px;
     overflow:hidden;
     background:var(--header-sidebar-background);
@@ -114,6 +148,29 @@
 
 .sidebar:hover{
     width:var(--sidebar-expanded);
+}
+
+.sidebar-external{
+    margin-bottom:16px;
+    padding-bottom:12px;
+    border-bottom:1px solid var(--header-border);
+}
+
+.sidebar-external-label{
+    display:block;
+    margin:0 0 8px;
+    padding:0 14px;
+    color:var(--header-text-muted);
+    font-family:var(--header-font);
+    font-size:10px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    opacity:0;
+    transition:opacity .3s ease;
+}
+
+.sidebar:hover .sidebar-external-label{
+    opacity:.8;
 }
 
 .sidebar a,
@@ -200,4 +257,9 @@
 
 .footer-links a:hover{
     color:var(--header-link-hover-text);
+}
+
+.footer-external-links{
+    margin-top:24px;
+    opacity:.78;
 }

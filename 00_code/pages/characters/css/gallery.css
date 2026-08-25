@@ -4,16 +4,18 @@
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    column-count: 3;
+    column-gap: 12px;
     margin-top: 16px;
 }
 
 .gallery-grid img {
     width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0 0 12px;
+    break-inside: avoid;
+    object-fit: contain;
     border-radius: 4px;
     background: var(--background-tertiary);
     border: 1px solid var(--background-secondary);
@@ -23,6 +25,18 @@
 .gallery-grid img:hover {
     opacity: 0.85;
     transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 560px) {
+    .gallery-grid {
+        column-count: 1;
+    }
 }
 
 /* Lightbox (gallery.js) */

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layout8 - orbit plaza</title>
+    <link rel="stylesheet" href="../shared.css">
+    <style>
+        .orbit-plaza {
+            position: relative;
+            min-height: 780px;
+            display: grid;
+            place-items: center;
+            border: 3px solid #8e99ad;
+            background: rgba(21,25,34,.82);
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+            overflow: hidden;
+        }
+
+        .orbit-plaza::before {
+            content: "";
+            position: absolute;
+            width: 720px;
+            aspect-ratio: 1;
+            border: 2px solid rgba(255,255,255,.18);
+            border-radius: 50%;
+            box-shadow:
+                inset 0 0 0 95px rgba(255,255,255,.025),
+                inset 0 0 0 190px rgba(255,255,255,.018);
+            animation: turn 58s linear infinite;
+        }
+
+        .center {
+            position: relative;
+            z-index: 2;
+            width: min(460px, 70vw);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #8e99ad;
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+        }
+
+        .center img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: turn 42s linear infinite reverse;
+        }
+
+        .orbit-card {
+            position: absolute;
+            z-index: 3;
+            width: 240px;
+            height: 150px;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(28,34,45,.9);
+            box-shadow: 5px 5px 0 rgba(0,0,0,.24);
+            overflow: hidden;
+        }
+
+        .orbit-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: .78;
+        }
+
+        .orbit-card-a { left: 8%; top: 16%; }
+        .orbit-card-b { right: 8%; top: 20%; }
+        .orbit-card-c { left: 12%; bottom: 14%; }
+        .orbit-card-d { right: 12%; bottom: 12%; }
+
+        .orbit-title {
+            position: absolute;
+            z-index: 4;
+            bottom: 48px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            font-size: clamp(52px, 9vw, 128px);
+            line-height: .82;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 rgba(0,0,0,.55);
+        }
+
+        @keyframes turn {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 900px) {
+            .orbit-card {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../../Navigation/assets/home/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner"><img src="../../Navigation/assets/home/hero-banner.gif" alt=""><p class="proposal-logo">UNNAMED</p></div>
+        <nav class="proposal-nav"><a href="../../Navigation/home.html">Home</a><a href="../../Navigation/character_list.html">Characters</a><a href="../../Navigation/timeline_list.html">Timeline</a><a href="../../Navigation/aspects_list.html">Aspects</a></nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="proposal-main orbit-plaza">
+        <div class="center"><img src="../../Navigation/assets/home/Overview2.gif" alt=""></div>
+        <div class="orbit-card orbit-card-a"><img src="../../Navigation/assets/home/Gallery/mood (2).png" alt=""></div>
+        <div class="orbit-card orbit-card-b"><img src="../../Navigation/assets/home/Gallery/mood (5).png" alt=""></div>
+        <div class="orbit-card orbit-card-c"><img src="../../Navigation/assets/home/Gallery/mood (7).png" alt=""></div>
+        <div class="orbit-card orbit-card-d"><img src="../../Navigation/assets/home/Gallery/mood (9).png" alt=""></div>
+        <h1 class="orbit-title">Orbit Plaza</h1>
+    </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layout6 - split gate</title>
+    <link rel="stylesheet" href="../shared.css">
+    <style>
+        .gate {
+            min-height: 780px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            border: 3px solid #8b94a4;
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+            overflow: hidden;
+        }
+
+        .gate-panel {
+            position: relative;
+            min-height: 780px;
+            overflow: hidden;
+        }
+
+        .gate-panel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .7s ease;
+        }
+
+        .gate:hover .gate-panel:first-child img { transform: translateX(-18px) scale(1.04); }
+        .gate:hover .gate-panel:last-child img { transform: translateX(18px) scale(1.04); }
+
+        .gate-title {
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(90deg, rgba(0,0,0,.58), transparent 45%, rgba(0,0,0,.58));
+            pointer-events: none;
+        }
+
+        .gate-title h1 {
+            margin: 0;
+            padding: 28px 46px;
+            border-top: 4px solid #8b94a4;
+            border-bottom: 1px solid rgba(255,255,255,.16);
+            background: rgba(20,24,32,.78);
+            font-size: clamp(54px, 10vw, 136px);
+            line-height: .82;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 rgba(0,0,0,.45);
+        }
+
+        @media (max-width: 900px) {
+            .gate {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../../Navigation/assets/home/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner"><img src="../../Navigation/assets/home/hero-banner.gif" alt=""><p class="proposal-logo">UNNAMED</p></div>
+        <nav class="proposal-nav"><a href="../../Navigation/home.html">Home</a><a href="../../Navigation/character_list.html">Characters</a><a href="../../Navigation/timeline_list.html">Timeline</a><a href="../../Navigation/aspects_list.html">Aspects</a></nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="proposal-main gate">
+        <section class="gate-panel"><img src="../../Navigation/assets/home/bottom sections/character.png" alt=""></section>
+        <section class="gate-panel"><img src="../../Navigation/assets/home/bottom sections/Timeline.png" alt=""></section>
+        <div class="gate-title"><h1>Split Gate</h1></div>
+    </main>
+</body>
+</html>

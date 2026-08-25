@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full page - home plaza</title>
+    <link rel="stylesheet" href="../../shared.css">
+    <style>
+        .plaza-page {
+            display: grid;
+            gap: 24px;
+        }
+
+        .plaza-hero {
+            position: relative;
+            min-height: 600px;
+            display: grid;
+            grid-template-columns: 1fr minmax(280px, 520px) 1fr;
+            align-items: center;
+            border: 3px solid #8e99ad;
+            background:
+                linear-gradient(90deg, rgba(16,19,26,.9), rgba(16,19,26,.58), rgba(16,19,26,.9)),
+                url("https://images.unsplash.com/photo-1589646407304-3f8c8659ff2a?fm=jpg&ixlib=rb-4.1.0&q=60&w=1800") center / cover;
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+            overflow: hidden;
+        }
+
+        .plaza-hero::before,
+        .plaza-hero::after {
+            content: "";
+            height: 70%;
+            border-top: 2px solid rgba(255,255,255,.16);
+            border-bottom: 2px solid rgba(255,255,255,.16);
+        }
+
+        .plaza-medal {
+            position: relative;
+            z-index: 2;
+            width: min(430px, 72vw);
+            aspect-ratio: 1;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #8e99ad;
+            box-shadow: 9px 9px 0 rgba(0,0,0,.36);
+        }
+
+        .plaza-medal img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: turn 58s linear infinite;
+        }
+
+        .plaza-title {
+            position: absolute;
+            left: 50%;
+            bottom: 48px;
+            z-index: 3;
+            width: min(900px, calc(100% - 56px));
+            transform: translateX(-50%);
+            padding: 26px 32px;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(20,24,32,.88);
+            box-shadow: 8px 8px 0 rgba(0,0,0,.28);
+            text-align: center;
+        }
+
+        .plaza-title h1 {
+            margin: 0;
+            font-size: clamp(46px, 8vw, 118px);
+            line-height: .82;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+        }
+
+        .plaza-routes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .plaza-routes a {
+            min-height: 210px;
+            display: flex;
+            align-items: end;
+            padding: 16px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,.14);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 5px 5px 0 rgba(0,0,0,.25);
+            text-transform: uppercase;
+        }
+
+        .route-characters { background-image: linear-gradient(180deg, transparent, rgba(0,0,0,.76)), url("../../../Navigation/assets/home/bottom sections/character.png"); }
+        .route-timeline { background-image: linear-gradient(180deg, transparent, rgba(0,0,0,.76)), url("../../../Navigation/assets/home/bottom sections/Timeline.png"); }
+        .route-aspects { background-image: linear-gradient(180deg, transparent, rgba(0,0,0,.76)), url("../../../Navigation/assets/home/bottom sections/aspect.jpg"); }
+        .route-regions { background-image: linear-gradient(180deg, transparent, rgba(0,0,0,.76)), url("../../../Navigation/assets/home/bottom sections/regions.png"); }
+
+        @keyframes turn {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 900px) {
+            .plaza-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .plaza-hero::before,
+            .plaza-hero::after {
+                display: none;
+            }
+
+            .plaza-routes {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../../../Navigation/assets/home/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner"><img src="../../../Navigation/assets/home/hero-banner.gif" alt=""><p class="proposal-logo">UNNAMED</p></div>
+        <nav class="proposal-nav"><a href="../../../Navigation/home.html">Home</a><a href="../../../Navigation/character_list.html">Characters</a><a href="../../../Navigation/timeline_list.html">Timeline</a><a href="../../../Navigation/aspects_list.html">Aspects</a></nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../../../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../../../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../../../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../../../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="proposal-main plaza-page">
+        <section class="plaza-hero">
+            <div class="plaza-medal"><img src="../../../Navigation/assets/home/Overview2.gif" alt=""></div>
+            <div class="plaza-title"><h1>Unnamed</h1></div>
+        </section>
+        <section class="plaza-routes">
+            <a class="route-characters" href="../../../Navigation/character_list.html">Characters</a>
+            <a class="route-timeline" href="../../../Navigation/timeline_list.html">Timeline</a>
+            <a class="route-aspects" href="../../../Navigation/aspects_list.html">Aspects</a>
+            <a class="route-regions" href="../../../Navigation/regions_list.html">Regions</a>
+        </section>
+    </main>
+</body>
+</html>

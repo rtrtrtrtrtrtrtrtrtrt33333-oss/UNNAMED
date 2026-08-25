@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout Proposals</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        .proposal-index {
+            width: min(960px, calc(100% - 48px));
+            margin: 0 auto;
+            padding: 44px;
+            border: 1px solid rgba(255,255,255,.12);
+            background: linear-gradient(135deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+        }
+
+        .proposal-index h1 {
+            margin: 0 0 26px;
+            font-size: clamp(42px, 8vw, 92px);
+            line-height: .85;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .proposal-index nav {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .proposal-index a {
+            min-height: 130px;
+            display: flex;
+            align-items: flex-end;
+            padding: 18px;
+            color: inherit;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,.12);
+            background: #202632;
+            transition: transform .22s ease, border-color .22s ease;
+        }
+
+        .proposal-index a:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255,255,255,.35);
+        }
+
+        .proposal-index span {
+            font-size: 24px;
+        }
+
+        .proposal-index h2 {
+            margin: 34px 0 14px;
+            font-size: 22px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 720px) {
+            .proposal-index nav {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../Navigation/assets/home/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner">
+            <img src="../Navigation/assets/home/hero-banner.gif" alt="">
+            <p class="proposal-logo">UNNAMED</p>
+        </div>
+        <nav class="proposal-nav">
+            <a href="../Navigation/home.html">Home</a>
+            <a href="../Navigation/character_list.html">Characters</a>
+            <a href="../Navigation/timeline_list.html">Timeline</a>
+            <a href="../Navigation/aspects_list.html">Aspects</a>
+        </nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="proposal-index">
+        <h1>Layout Proposals</h1>
+        <h2>Full page alternates</h2>
+        <nav>
+            <a href="full-pages/character-list/index.html"><span>character list - compact dossiers</span></a>
+            <a href="full-pages/home-plaza/index.html"><span>home - city plaza</span></a>
+            <a href="full-pages/timeline/index.html"><span>timeline - procession road</span></a>
+            <a href="full-pages/aspects/index.html"><span>aspects - observatory menu</span></a>
+        </nav>
+        <h2>Fragment studies</h2>
+        <nav>
+            <a href="layout1/index.html"><span>layout1 - plaza monument</span></a>
+            <a href="layout2/index.html"><span>layout2 - archive rail</span></a>
+            <a href="layout3/index.html"><span>layout3 - character breach</span></a>
+            <a href="layout4/index.html"><span>layout4 - aspect observatory</span></a>
+            <a href="layout5/index.html"><span>layout5 - layered gallery</span></a>
+            <a href="layout6/index.html"><span>layout6 - split gate</span></a>
+            <a href="layout7/index.html"><span>layout7 - dossier stack</span></a>
+            <a href="layout8/index.html"><span>layout8 - orbit plaza</span></a>
+        </nav>
+    </main>
+</body>
+</html>

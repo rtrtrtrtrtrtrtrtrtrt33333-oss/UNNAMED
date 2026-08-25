@@ -6,30 +6,30 @@
 :root {
     /* Typography and Colors */
     --font-accent: "Anton", sans-serif;
-    --character-name-color: #ffffff;
+    --character-name-color: #eef8ff;
     --head-font-size: 100px;
 
     /* Primary Text */
     --font-primary: "Times New Roman", Times, serif;
-    --text-color-primary: #e3e8f2;
+    --text-color-primary: #e5f1f7;
 
     /* Secondary Text */
     --font-secondary: "Cutive Mono", monospace;
-    --text-color-secondary: #b2baca;
+    --text-color-secondary: #a7bcc8;
     
     /* Background Colors */
-    --background-main: #181b22;
-    --background-primary: #353b47;
-    --background-secondary: #4a4f5b;
-    --background-tertiary: #5d626d;
-    --color-accent: #686d7a;
+    --background-main: #101a22;
+    --background-primary: #1e2b36;
+    --background-secondary: #38515f;
+    --background-tertiary: #6f8f9e;
+    --color-accent: #b7d9e6;
     
     /* Crystal Colors */
-    --color-palette-1: #4a200e;
-    --color-palette-2: #61331f;
-    --color-palette-3: #7c533c;
-    --color-palette-4: #5d688d;   
-    --color-palette-5: #1a2c4d;
+    --color-palette-1: #101a22;
+    --color-palette-2: #1e2b36;
+    --color-palette-3: #38515f;
+    --color-palette-4: #6f8f9e;   
+    --color-palette-5: #b7d9e6;
 
     /* playlist-header */
     --playlist-text-color-primary: #f0f0f0;

@@ -1,10 +1,13 @@
 :root {
     --nav-home-link: "Navigation/home.html";
     --nav-characters-link: "Navigation/character_list.html";
-    /* --nav-regions-link: "Navigation/regions_list.html"; */
-    /* --nav-empires-link: "Navigation/empires_list.html"; */
+    --nav-regions-link: "Navigation/regions_list.html";
+    --nav-empires-link: "Navigation/empires_list.html";
     --nav-timeline-link: "Navigation/timeline_list.html";
     --nav-aspects-link: "Navigation/aspects_list.html";
+    --nav-main-site-link: "../My Website/index.html";
+    --nav-main-gallery-link: "../My Website/gallery/gallery.html";
+    --nav-main-devlog-link: "../My Website/devlog/devlog.html";
 
     --character-1-link: "Characters/Thirteenth Sun/character-page.html";
     --character-2-link: "Characters/Copper Spire/character-page.html";
@@ -22,6 +25,7 @@
     --character-14-link: "Characters/Pursuer/character-page.html";
     --character-15-link: "Characters/Red Headed Sentinel/character-page.html";
     --character-16-link: "Characters/Rime Belt/character-page.html";
+    --character-17-link: "Characters/Incarcerate/character-page.html";
 
     --timeline-1-link: "#";
     --timeline-2-link: "#";

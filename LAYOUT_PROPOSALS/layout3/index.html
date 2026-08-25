@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layout3 - character breach</title>
+    <link rel="stylesheet" href="../shared.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #141821;
+            color: #f2efe8;
+            font-family: "Times New Roman", serif;
+        }
+
+        .breach {
+            position: relative;
+            width: min(1180px, 100%);
+            min-height: 720px;
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 16px;
+        }
+
+        .portrait {
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #b96848;
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+        }
+
+        .portrait img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portrait::before {
+            content: "";
+            position: absolute;
+            inset: 24px;
+            z-index: 2;
+            border: 1px solid rgba(255,255,255,.18);
+        }
+
+        .title {
+            position: absolute;
+            z-index: 3;
+            left: 34px;
+            bottom: 32px;
+            max-width: 72%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(58px, 10vw, 150px);
+            line-height: .78;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 rgba(0,0,0,.52);
+        }
+
+        .side {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+
+        .tile {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,.14);
+            background: #252d34;
+            box-shadow: 5px 5px 0 rgba(0,0,0,.24);
+        }
+
+        .tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: .82;
+        }
+
+        .scan {
+            position: absolute;
+            inset: 0;
+            z-index: 4;
+            background: linear-gradient(180deg, transparent, rgba(255,255,255,.22), transparent);
+            height: 120px;
+            animation: scan 4.8s linear infinite;
+        }
+
+        @keyframes scan {
+            from { transform: translateY(-140px); }
+            to { transform: translateY(760px); }
+        }
+
+        @media (max-width: 900px) {
+            .breach {
+                grid-template-columns: 1fr;
+            }
+
+            .portrait {
+                min-height: 620px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../../Navigation/assets/home/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner">
+            <img src="../../Navigation/assets/home/hero-banner.gif" alt="">
+            <p class="proposal-logo">UNNAMED</p>
+        </div>
+        <nav class="proposal-nav">
+            <a href="../../Navigation/home.html">Home</a>
+            <a href="../../Navigation/character_list.html">Characters</a>
+            <a href="../../Navigation/timeline_list.html">Timeline</a>
+            <a href="../../Navigation/aspects_list.html">Aspects</a>
+        </nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="breach proposal-main">
+        <section class="portrait">
+            <img src="../../Characters/Copper Spire/assets/hero/profile-background.png" alt="">
+            <img src="../../Characters/Copper Spire/assets/hero/profile.png" alt="">
+            <div class="scan"></div>
+            <div class="title">
+                <h1>Copper Spire</h1>
+            </div>
+        </section>
+        <aside class="side">
+            <div class="tile"><img src="../../Characters/Copper Spire/assets/gallery/gallery-1.png" alt=""></div>
+            <div class="tile"><img src="../../Characters/Copper Spire/assets/gallery/gallery-2.png" alt=""></div>
+            <div class="tile"><img src="../../Characters/Copper Spire/assets/playlist/playlist-background.gif" alt=""></div>
+        </aside>
+    </main>
+</body>
+</html>

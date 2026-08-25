@@ -7,30 +7,30 @@
 :root {
     /* Typography and Colors */
     --font-accent:"Limelight", sans-serif;
-    --character-name-color: #ffffff;
+    --character-name-color: #f0f4ef;
     --head-font-size: 100px;
 
     /* Primary Text */
     --font-primary: "Times New Roman", Times, serif;
-    --text-color-primary: #e3e8f2;
+    --text-color-primary: #2a2c2c;
 
     /* Secondary Text */
     --font-secondary: "Cutive Mono", monospace;
-    --text-color-secondary: #b2baca;
+    --text-color-secondary: #626968;
     
     /* Background Colors */
-    --background-main: #181b22;
-    --background-primary: #353b47;
-    --background-secondary: #4a4f5b;
-    --background-tertiary: #5d626d;
-    --color-accent: #686d7a;
+    --background-main: #27323a;
+    --background-primary: #dce6e3;
+    --background-secondary: #6f8785;
+    --background-tertiary: #a6b9b3;
+    --color-accent: #b9c6a4;
     
     /* Crystal Colors */
-    --color-palette-1: #4c5340;
-    --color-palette-2: #8e986f;
-    --color-palette-3: #8d8f80;
-    --color-palette-4: #795e3e;   
-    --color-palette-5: #ce8871;
+    --color-palette-1: #27323a;
+    --color-palette-2: #dce6e3;
+    --color-palette-3: #6f8785;
+    --color-palette-4: #a6b9b3;   
+    --color-palette-5: #b9c6a4;
 
     /* playlist-header */
     --playlist-text-color-primary: #f0f0f0;

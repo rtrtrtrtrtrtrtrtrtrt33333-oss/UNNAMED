@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layout4 - aspect observatory</title>
+    <link rel="stylesheet" href="../shared.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #10131d;
+            color: #e6ebf6;
+            font-family: "Times New Roman", serif;
+            overflow-x: hidden;
+        }
+
+        .observatory {
+            width: min(1260px, calc(100% - 64px));
+            margin: 64px auto;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 680px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: end;
+            gap: 24px;
+            padding: 28px;
+            border: 3px solid #9aa7e0;
+            background: #171b28;
+            overflow: hidden;
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 760px;
+            aspect-ratio: 1;
+            right: -190px;
+            top: -120px;
+            border: 2px solid rgba(154,167,224,.75);
+            border-radius: 50%;
+            box-shadow:
+                inset 0 0 0 72px rgba(154,167,224,.035),
+                inset 0 0 0 154px rgba(154,167,224,.025);
+            animation: slowTurn 60s linear infinite;
+        }
+
+        .copy {
+            position: relative;
+            z-index: 2;
+            padding: 28px;
+        }
+
+        h1 {
+            margin: 0 0 18px;
+            font-size: clamp(58px, 10vw, 138px);
+            line-height: .78;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 rgba(0,0,0,.5);
+        }
+
+        p {
+            max-width: 520px;
+            margin: 0;
+            padding-left: 18px;
+            border-left: 3px solid #9aa7e0;
+            color: #adb5cd;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .image {
+            position: relative;
+            z-index: 2;
+            min-height: 560px;
+            border: 2px solid #464d60;
+            overflow: hidden;
+            box-shadow: 6px 6px 0 rgba(0,0,0,.3);
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            min-height: 560px;
+            object-fit: cover;
+        }
+
+        .rings {
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(154,167,224,.25) 28% 28.4%, transparent 28.4% 42%, rgba(154,167,224,.18) 42% 42.4%, transparent 42.4%),
+                linear-gradient(90deg, transparent 49.8%, rgba(154,167,224,.28) 49.8% 50.2%, transparent 50.2%),
+                linear-gradient(180deg, transparent 49.8%, rgba(154,167,224,.28) 49.8% 50.2%, transparent 50.2%);
+            mix-blend-mode: screen;
+        }
+
+        @keyframes slowTurn {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../../Navigation/assets/home/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner">
+            <img src="../../Navigation/assets/home/hero-banner.gif" alt="">
+            <p class="proposal-logo">UNNAMED</p>
+        </div>
+        <nav class="proposal-nav">
+            <a href="../../Navigation/home.html">Home</a>
+            <a href="../../Navigation/character_list.html">Characters</a>
+            <a href="../../Navigation/timeline_list.html">Timeline</a>
+            <a href="../../Navigation/aspects_list.html">Aspects</a>
+        </nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="observatory proposal-main">
+        <section class="hero">
+            <div class="copy">
+                <h1>Interlayer</h1>
+                <p>A phenomenon page built around image, orbit, contour, and observation instead of small explanatory widgets.</p>
+            </div>
+            <figure class="image">
+                <img src="../../Aspects/Interlayer/assets/aspect/main-image.png" alt="">
+                <div class="rings"></div>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>

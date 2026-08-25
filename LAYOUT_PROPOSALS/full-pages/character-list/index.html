@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full page - character list dossier</title>
+    <link rel="stylesheet" href="../../shared.css">
+    <style>
+        body {
+            background: #12161e;
+        }
+
+        .dossier-page {
+            display: grid;
+            grid-template-columns: minmax(240px, 340px) 1fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+        .dossier-intro {
+            position: sticky;
+            top: 335px;
+            min-height: 520px;
+            padding: 24px;
+            border: 2px solid rgba(255,255,255,.14);
+            background:
+                linear-gradient(180deg, rgba(20,24,32,.86), rgba(20,24,32,.96)),
+                url("https://images.unsplash.com/photo-1535905313417-483b22cb9d03?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=1600") center / cover;
+            box-shadow: 8px 8px 0 rgba(0,0,0,.34);
+        }
+
+        .dossier-intro h1 {
+            margin: 0;
+            font-size: clamp(44px, 5vw, 86px);
+            line-height: .82;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .dossier-intro::after {
+            content: "";
+            position: absolute;
+            left: 24px;
+            right: 24px;
+            bottom: 24px;
+            height: 6px;
+            background: #9c6a52;
+            box-shadow: 0 13px 0 rgba(255,255,255,.08);
+        }
+
+        .dossier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 14px;
+        }
+
+        .dossier-card {
+            position: relative;
+            min-height: 285px;
+            padding: 12px;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(28,34,45,.92);
+            box-shadow: 5px 5px 0 rgba(0,0,0,.28);
+            overflow: hidden;
+            transition: transform .2s ease, border-color .2s ease;
+        }
+
+        .dossier-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(255,255,255,.34);
+        }
+
+        .dossier-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border: 1px solid rgba(255,255,255,.12);
+        }
+
+        .dossier-card h2 {
+            margin: 13px 0 0;
+            font-size: 22px;
+            line-height: .92;
+            text-transform: uppercase;
+        }
+
+        .dossier-card::after {
+            content: "";
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+            width: 28px;
+            height: 28px;
+            border-right: 2px solid #9c6a52;
+            border-bottom: 2px solid #9c6a52;
+        }
+
+        @media (max-width: 980px) {
+            .dossier-page {
+                grid-template-columns: 1fr;
+            }
+
+            .dossier-intro {
+                position: relative;
+                top: auto;
+                min-height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="layout-bg" src="../../../Navigation/assets/character list/background.png" alt="">
+    <div class="layout-scrim"></div>
+    <header class="proposal-header">
+        <div class="proposal-banner"><img src="../../../Navigation/assets/home/hero-banner.gif" alt=""><p class="proposal-logo">UNNAMED</p></div>
+        <nav class="proposal-nav"><a href="../../../Navigation/home.html">Home</a><a href="../../../Navigation/character_list.html">Characters</a><a href="../../../Navigation/timeline_list.html">Timeline</a><a href="../../../Navigation/aspects_list.html">Aspects</a></nav>
+    </header>
+    <aside class="proposal-side">
+        <a href="../../../Navigation/home.html"><span class="proposal-icon"></span><span>Home</span></a>
+        <a href="../../../Navigation/character_list.html"><span class="proposal-icon"></span><span>Characters</span></a>
+        <a href="../../../Navigation/timeline_list.html"><span class="proposal-icon"></span><span>Timeline</span></a>
+        <a href="../../../Navigation/aspects_list.html"><span class="proposal-icon"></span><span>Aspects</span></a>
+    </aside>
+    <main class="proposal-main dossier-page">
+        <section class="dossier-intro">
+            <h1>Character Dossiers</h1>
+        </section>
+        <section class="dossier-grid">
+            <article class="dossier-card"><img src="../../../Navigation/assets/character list/Character List Portraits/Coffee.png" alt=""><h2>Coffee</h2></article>
+            <article class="dossier-card"><img src="../../../Characters/Solar Strike/assets/hero/profile.png" alt=""><h2>Solar Strike</h2></article>
+            <article class="dossier-card"><img src="../../../Navigation/assets/character list/Character List Portraits/Copper Spire.png" alt=""><h2>Copper Spire</h2></article>
+            <article class="dossier-card"><img src="../../../Navigation/assets/character list/Character List Portraits/The Forsworn.png" alt=""><h2>The Forsworn</h2></article>
+            <article class="dossier-card"><img src="../../../Navigation/assets/character list/Character List Portraits/Pursuer.png" alt=""><h2>Pursuer</h2></article>
+            <article class="dossier-card"><img src="../../../Navigation/assets/character list/Character List Portraits/Dawn Breaker.png" alt=""><h2>Dawn Breaker</h2></article>
+            <article class="dossier-card"><img src="../../../Navigation/assets/character list/Character List Portraits/Incarcerate.png" alt=""><h2>Incarcerate</h2></article>
+            <article class="dossier-card"><img src="../../../Navigation/assets/character list/Character List Portraits/The Eternal Choir.png" alt=""><h2>The Eternal Choir</h2></article>
+        </section>
+    </main>
+</body>
+</html>

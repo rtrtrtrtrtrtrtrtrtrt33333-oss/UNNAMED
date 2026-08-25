@@ -18,18 +18,18 @@
     --text-color-secondary: #9daab3;
 
     /* Background Colors */
-    --background-main: #141821;
-    --background-primary: #2d323e;
-    --background-secondary: #493430;
-    --background-tertiary: #625052;
-    --color-accent: #3c5195;
+    --background-main: #111722;
+    --background-primary: #263142;
+    --background-secondary: #49352d;
+    --background-tertiary: #6a4f42;
+    --color-accent: #415b9d;
     
     /* Crystal Colors */
-    --color-palette-1: #4a200e;
-    --color-palette-2: #61331f;
-    --color-palette-3: #7c533c;
-    --color-palette-4: #5d688d;   
-    --color-palette-5: #1a2c4d;
+    --color-palette-1: #111722;
+    --color-palette-2: #263142;
+    --color-palette-3: #49352d;
+    --color-palette-4: #6a4f42;   
+    --color-palette-5: #415b9d;
 
     /* playlist-header */
     --playlist-text-color-primary: #f0f0f0;
