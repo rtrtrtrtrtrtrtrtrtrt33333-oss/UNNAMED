@@ -46,10 +46,10 @@
 
 .profile-pic {
   position: absolute;
-  top: -30px;
+  top: -70px;
   left: 0;
-  width: calc(100% + 30px);
-  height: calc(100% + 30px);
+  width: calc(100% + 70px);
+  height: calc(100% + 70px);
   object-fit: cover;
   z-index: 100;
 }

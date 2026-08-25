@@ -6,7 +6,7 @@
 .split-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 280px;
-    gap: 24px;
+    gap: 0 24px;
     align-items: flex-start;
     margin: 20px 0;
 }
@@ -20,6 +20,7 @@
     grid-column: 1;
     position: relative;
     height: 145px;
+    margin-bottom: 14px;
     overflow: hidden;
     background: var(--background-secondary);
     border: 6px solid var(--background-secondary);
@@ -50,6 +51,7 @@
     color: var(--text-color-secondary);
     line-height: 1.65;
     letter-spacing: 0.3px;
+
 }
 
 .body-text p {
