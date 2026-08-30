@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | RTRTRTRTRT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-left">
+        <a href="../index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="../devlog/devlog.html">Devlog</a>
+        <a href="../../Unnamed project/Navigation/index.html">Worldbuilding</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="../about.html">About</a>
+    </div>
+</nav>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h3>Navigation</h3>
+
+        <a href="gallery.html">Gallery</a>
+        <a href="../devlog/devlog.html">Devlog</a>
+        <a href="../../Unnamed project/Navigation/index.html">Worldbuilding</a>
+
+        <hr>
+
+        <h3>About</h3>
+
+        <p>
+            Artwork, sketches, concepts and visual experiments.
+        </p>
+
+    </aside>
+
+    <main>
+
+        <section class="intro">
+
+            <h2>Gallery</h2>
+
+            <p>
+                Artwork, sketches, concepts and visual experiments.
+            </p>
+
+            <a href="../index.html" class="back-btn">← Back to Home</a>
+
+        </section>
+
+        <section class="gallery-grid">
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../assets/gallery/art1.jpg" alt="Artwork 1">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Artwork 1</h3>
+                    <p class="gallery-category">Illustration</p>
+                    <p class="gallery-desc">Character design and concept art.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../assets/gallery/art2.jpg" alt="Artwork 2">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Artwork 2</h3>
+                    <p class="gallery-category">Sketch</p>
+                    <p class="gallery-desc">Quick pencil sketch study.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../assets/gallery/art3.jpg" alt="Artwork 3">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Artwork 3</h3>
+                    <p class="gallery-category">Digital</p>
+                    <p class="gallery-desc">Digital painting experiment.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../assets/gallery/art4.jpg" alt="Artwork 4">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Artwork 4</h3>
+                    <p class="gallery-category">Concept</p>
+                    <p class="gallery-desc">Environment concept art.</p>
+                </div>
+            </article>
+
+        </section>
+
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-img">
+        </div>
+
+    </main>
+
+</div>
+
+<footer>
+    © 2026 RTRTRTRTRT
+</footer>
+
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const viewBtns = document.querySelectorAll('.view-btn');
+
+    viewBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const img = e.target.closest('.gallery-image').querySelector('img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    lightboxClose.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+</script>
+
+</body>
+</html>

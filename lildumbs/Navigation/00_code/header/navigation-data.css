@@ -1,0 +1,12 @@
+:root {
+    --nav-home-link: "Navigation/index.html";
+    --nav-characters-link: "Navigation/lists/characters/index.html";
+    --nav-regions-link: "Navigation/lists/regions/index.html";
+    --nav-empires-link: "Navigation/lists/empires/index.html";
+    --nav-timeline-link: "Navigation/lists/timelines/index.html";
+    --nav-aspects-link: "Navigation/lists/aspects/index.html";
+    --nav-main-site-link: "../My Website/index.html";
+    --nav-main-gallery-link: "../My Website/gallery/gallery.html";
+    --nav-main-devlog-link: "../My Website/devlog/devlog.html";
+    --nav-unnamed-project-link: "../Unnamed project/Navigation/index.html";
+}
