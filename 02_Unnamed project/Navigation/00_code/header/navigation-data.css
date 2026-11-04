@@ -1,0 +1,14 @@
+:root {
+    --nav-universe-name: "Unnamed project";
+    --nav-home-link: "Navigation/home/index.html#home";
+    --nav-characters-link: "Navigation/home/index.html#characters";
+    --nav-regions-link: "Navigation/home/index.html#regions";
+    --nav-empires-link: "Navigation/home/index.html#empires";
+    --nav-timeline-link: "Navigation/home/index.html#timelines";
+    --nav-aspects-link: "Navigation/home/index.html#aspects";
+    --nav-main-site-link: "../01_My Website/home/home-page.html";
+    --nav-main-gallery-link: "../01_My Website/home/home-page.html#gallery";
+    --nav-main-devlog-link: "../01_My Website/home/home-page.html#devlog";
+    --nav-main-worlds-link: "../01_My Website/home/home-page.html#worlds";
+    --nav-guts-and-blackpowder-link: "../02_Guts%20and%20Blackpowder/Navigation/index.html";
+}

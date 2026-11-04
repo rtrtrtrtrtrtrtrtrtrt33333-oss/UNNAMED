@@ -1,0 +1,22 @@
+:root {
+  --page-background: url("../backgrounds/background.png");
+
+  /* ===================================== HERO ===================================== */
+
+  --era-banner: url("../hero/profile-background.png");
+
+  --playlist-background: url("../playlist/playlist-background.gif");
+
+  /* ===================================== IMAGE 1 ===================================== */
+
+  --image-1: url("../history/story-image-1.png");
+
+  /* ===================================== IMAGE 2 ===================================== */
+
+  --image-2: url("../history/story-image-2.png");
+
+  /* ===================================== FINAL IMAGE ===================================== */
+
+  --image-3: url("../gallery/gallery-1.png");
+
+}

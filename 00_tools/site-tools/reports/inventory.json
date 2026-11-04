@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-09-20T13:45:37.431Z",
+  "sourceRoot": "C:\\Users\\main\\Desktop\\Nest\\HTML",
+  "total": {
+    "html": 53,
+    "css": 209,
+    "js": 19,
+    "images": 546,
+    "audio": 55
+  },
+  "worlds": [
+    {
+      "id": "main",
+      "title": "01_My Website",
+      "path": "01_My Website",
+      "directories": 5,
+      "html": 4,
+      "css": 2,
+      "js": 0,
+      "images": 1,
+      "audio": 0
+    },
+    {
+      "id": "unnamed",
+      "title": "UNNAMED",
+      "path": "02_Unnamed project",
+      "directories": 271,
+      "html": 37,
+      "css": 154,
+      "js": 13,
+      "images": 401,
+      "audio": 36
+    },
+    {
+      "id": "guts-and-blackpowder",
+      "title": "02_Guts and Blackpowder",
+      "path": "02_Guts and Blackpowder",
+      "directories": 89,
+      "html": 12,
+      "css": 53,
+      "js": 6,
+      "images": 144,
+      "audio": 19
+    }
+  ]
+}

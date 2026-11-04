@@ -1,0 +1,20 @@
+:root {
+  --character-name-color: #ffffff;
+  --text-color-primary: #e3e8f2;
+  --text-color-secondary: #b2baca;
+  --background-main: #181b22;
+  --background-primary: #353b47;
+  --background-secondary: #4a4f5b;
+  --background-tertiary: #5d626d;
+  --color-accent: #d63a42;
+  --color-palette-1: #ffffff;
+  --color-palette-2: #afbde0;
+  --color-palette-3: #606673;
+  --color-palette-4: #2a2e39;
+  --color-palette-5: #d63a42;
+  --playlist-text-color-primary: #edf0f4;
+  --playlist-text-color-secondary: #edf0f4;
+  --playlist-head-text-color-primary: #edf0f4;
+  --playlist-head-text-color-secondary: #edf0f4;
+  --playlist-head-text-color-tertiary: #bbc4d0;
+}

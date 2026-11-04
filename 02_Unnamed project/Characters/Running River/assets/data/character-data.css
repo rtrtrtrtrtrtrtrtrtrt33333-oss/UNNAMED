@@ -1,0 +1,33 @@
+:root {
+  --page-title: "Running River - Character Profile";
+  --upper-title: "Running River";
+  --character-name: "Running River";
+  --hero-description: "Short Description";
+  --description: "Long description text. Lorem ipsum dolor sit amet...";
+  --description-2: "Lorem ipsum dolor sit amet...";
+  --quote: "Character quote.";
+  --quote-author: "Quote author";
+  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+  --trivia: "No trivia yet.";
+  --info-title: "title";
+  --info-role: "Character's role";
+  --info-origin: "Where they come from";
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --track-3-name: "Moment of Tranquility";
+  --track-3-artist: "Alto's Odyssey";
+  --track-4-name: "Run Free";
+  --track-4-artist: "Spirit: Stallion of the Cimarron";
+  --track-5-name: "Homeland";
+  --track-5-artist: "Spirit: Stallion of the Cimarron";
+}
+
+:root {
+  --appearance-1-title: "Full view";
+  --appearance-2-title: "Detail";
+  --appearance-3-title: "Alternate view";
+}
+
+:root { --appearance-main-title: "Full view"; }

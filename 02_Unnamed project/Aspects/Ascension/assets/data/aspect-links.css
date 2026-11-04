@@ -1,0 +1,8 @@
+:root {
+  --page-background: url("../backgrounds/background.png");
+
+  /* ===================================== MAIN IMAGE ===================================== */
+
+  --main-image: url("../aspect/main-image.png");
+
+}

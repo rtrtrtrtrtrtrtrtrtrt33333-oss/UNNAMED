@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+:root {
+    /* Typography */
+    --font-accent: "Black Ops One", system-ui;
+
+    --font-primary: "Times New Roman", Times, serif;
+
+    --font-secondary: "Cutive Mono", monospace;
+
+}

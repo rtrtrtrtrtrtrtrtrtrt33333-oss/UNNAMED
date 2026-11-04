@@ -1,0 +1,33 @@
+:root {
+  --page-title: "Firstborn Sun - Character Profile";
+  --upper-title: "Firstborn Sun";
+  --character-name: "Firstborn Sun";
+  --hero-description: "A planetary-scale engineering megastructure created to reshape worlds, sustain the Interlayer, and preserve the infrastructure of the Architects.";
+  --description: "Перворождённое Солнце — мегаструктура, сформированная из нескольких планетарных тел, и высшее достижение Архитекторов, созданное на заре их технологического могущества. Она была построена для формирования и преобразования миров: соединяла планеты, разбирала их, меняла их устройство и создавала из них новые структуры. За время её работы окружающий мир изменился до неузнаваемости, и многое из того, что существует сегодня, появилось в результате этих преобразований.";
+  --description-2: "Перворождённое Солнце пережило все зафиксированные эпохи и продолжает поддерживать Межслой и бесчисленные связанные с ним системы даже спустя тысячелетия после исчезновения Архитекторов. Её масштаб, красота и значение сделали её почти священной фигурой для появившихся позднее цивилизаций. Однако за этим образом нет ни желаний, ни эмоций, ни собственной воли за пределами назначенной ей функции.";
+  --quote: "Она прекрасна... Она — все, к чему мы стремились тысячи лет.";
+  --quote-author: "Поющий Гребень, Архитектор и главный инженер.";
+  --personality: "Отсутствует.";
+  --trivia: "No trivia yet.";
+  --info-title: "Firstborn Sun";
+  --info-role: "Superstructure • megastructure • Constellation";
+  --info-origin: "Architects";
+  --track-1-name: "Choral Chambers";
+  --track-1-artist: "Hollow Knight: Silksong";
+  --track-2-name: "White Diamond OST";
+  --track-2-artist: "Steven Universe";
+  --track-3-name: "MECHANICAL GOD";
+  --track-3-artist: "AZALI from youtube";
+  --track-4-name: "EMPTY";
+  --track-4-artist: "EMPTY";
+  --track-5-name: "EMPTY";
+  --track-5-artist: "EMPTY";
+}
+
+:root {
+  --appearance-1-title: "Full view";
+  --appearance-2-title: "Detail";
+  --appearance-3-title: "Alternate view";
+}
+
+:root { --appearance-main-title: "Full view"; }

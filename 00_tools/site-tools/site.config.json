@@ -1,0 +1,38 @@
+{
+    "sourceRoot":  "../..",
+    "distDir":  "../../_dist",
+    "worlds":  [
+                   {
+                       "id":  "main",
+                       "title":  "01_My Website",
+                       "path":  "01_My Website"
+                   },
+                   {
+                       "id":  "unnamed",
+                       "title":  "UNNAMED",
+                       "path":  "02_Unnamed project"
+                   },
+                   {
+                       "id":  "guts-and-blackpowder",
+                       "title":  "02_Guts and Blackpowder",
+                       "path":  "02_Guts and Blackpowder"
+                   }
+               ],
+    "copyRootFiles":  [
+                          "index.html"
+                      ],
+    "ignoredLinks":  [
+                         "track-[0-9]+\\.mp3$"
+                     ],
+    "exclude":  [
+                    ".git",
+                    "_dist",
+                    "tools",
+                    "node_modules",
+                    "dist",
+                    ".node",
+                    "LAYOUT_PROPOSALS",
+                    "NEW TEMPLATES",
+                    "templates"
+                ]
+}

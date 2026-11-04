@@ -1,0 +1,21 @@
+:root {
+    --character-name-color: #f5f0ff;
+
+    /* Text */
+    --text-color-primary: #e4e8f5;
+
+    --text-color-secondary: #adb5cd;
+
+    
+    /* Backgrounds and accents */
+    --background-main: #141617;
+
+    --background-primary: #232529;
+
+    --background-secondary: #23293b;
+
+    --background-tertiary: #432f39;
+
+    --color-accent: #ab1222;
+
+}

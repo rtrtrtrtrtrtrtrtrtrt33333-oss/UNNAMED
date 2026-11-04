@@ -1,0 +1,33 @@
+:root {
+  --page-title: "Copper Spire - Character Profile";
+  --upper-title: "Copper Spire";
+  --character-name: "Copper Spire";
+  --hero-description: "Short Description";
+  --description: "Медный Шпиль — бывший рабочий Улья и ученик Инея. Во время первых работ над Органикой, Медный Шпиль только помогал Инею чем сам полноценно участвовал в разработке.";
+  --description-2: "Медный Шпиль был вторым который заразился Органикой после Инея. Ему повезло что он получил только первую, ещё не такую агресисивную версию, но всё равно был вынужден покинуть Улей, ведь он всё равно был угрозой.";
+  --quote: "Character quote.";
+  --quote-author: "Quote author";
+  --personality: "Медный Шпиль не самый общительный или особо социальный, предпочитающий зарываться в работу по голову. Это всё равно не мешает ему быстро находить язык с другими. Мягкий по характеру, и абсолютно не боец и не активный искатель приключений";
+  --trivia: "No trivia yet.";
+  --info-title: "Copper Spire, Secondary Assistant";
+  --info-role: "Drone";
+  --info-origin: "Hive";
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --track-3-name: "Moment of Tranquility";
+  --track-3-artist: "Alto's Odyssey";
+  --track-4-name: "Run Free";
+  --track-4-artist: "Spirit: Stallion of the Cimarron";
+  --track-5-name: "Homeland";
+  --track-5-artist: "Spirit: Stallion of the Cimarron";
+}
+
+:root {
+  --appearance-1-title: "Full view";
+  --appearance-2-title: "Detail";
+  --appearance-3-title: "Alternate view";
+}
+
+:root { --appearance-main-title: "Full view"; }

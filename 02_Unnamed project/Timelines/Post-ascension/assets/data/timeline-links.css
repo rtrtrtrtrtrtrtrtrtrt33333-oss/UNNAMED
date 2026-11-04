@@ -1,0 +1,28 @@
+:root {
+  --page-background: url("../backgrounds/background.png");
+
+  /* ===================================== HERO ===================================== */
+
+  --era-banner: url("../hero/timeline-banner.png");
+
+  --playlist-background: url("../playlist/playlist-background.gif");
+
+  /* ===================================== TRACKS ===================================== */
+
+  --playlist-track-1: url("../playlist/Thornfelt Swamp (feat. Tom Boyd) [KcROgIvKuY8].m4a");
+
+  --playlist-track-2: url("../playlist/Hollow Knight OST - Dirtmouth.m4a");
+
+  --playlist-track-3: url("../playlist/track-3.mp3");
+
+  --playlist-track-4: url("../playlist/track-4.mp3");
+
+  --playlist-track-5: url("../playlist/track-5.mp3");
+
+  --image-1: url("../history/story-image-1.png");
+
+  --image-2: url("../history/story-image-2.png");
+
+  --image-3: url("../history/story-image-3.png");
+
+}

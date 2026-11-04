@@ -1,0 +1,33 @@
+:root {
+  --page-title: "Red Headed Sentinel - Character Profile";
+  --upper-title: "Sentinels of Capital";
+  --character-name: "Red Headed Sentinel";
+  --hero-description: "Short Description";
+  --description: "Страж муравейника. Стражи были созданы с целью защиты Муравейника от любых неприятелей и особенно защиты Матери Многих.";
+  --description-2: "Но после смерти Матери Многих, её тело было решено оставить в старой столице вместе с телами стражей которые погибли защищая её. Красноголовый Сентинель остался защищать её могилу и могилу своих собратьев.";
+  --quote: ". . .";
+  --quote-author: "Quote author";
+  --personality: "Страж не говорит и не двигается, только если что-то не представляет потеницальной опастности Столице.";
+  --trivia: "No trivia yet.";
+  --info-title: "title";
+  --info-role: "Character's role";
+  --info-origin: "Where they come from";
+  --track-1-name: "lorem ipsum"; 
+  --track-1-artist: "lorem ipsum"; 
+  --track-2-name: "lorem ipsum"; 
+  --track-2-artist: "lorem ipsum"; 
+  --track-3-name: "lorem ipsum"; 
+  --track-3-artist: "lorem ipsum"; 
+  --track-4-name: "lorem ipsum"; 
+  --track-4-artist: "lorem ipsum"; 
+  --track-5-name: "lorem ipsum"; 
+  --track-5-artist: "lorem ipsum";
+}
+
+:root {
+  --appearance-1-title: "Full view";
+  --appearance-2-title: "Detail";
+  --appearance-3-title: "Alternate view";
+}
+
+:root { --appearance-main-title: "Full view"; }

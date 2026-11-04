@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-09-21T12:55:06.807Z",
+  "checkedRoot": "C:\\Users\\main\\Desktop\\Nest\\HTML",
+  "issueCount": 12,
+  "issues": [
+    {
+      "file": "02_Guts and Blackpowder\\Navigation\\lists\\characters\\index.html",
+      "link": "../regions/index.html",
+      "resolved": "02_Guts and Blackpowder\\Navigation\\lists\\regions\\index.html"
+    },
+    {
+      "file": "02_Guts and Blackpowder\\Navigation\\lists\\characters\\index.html",
+      "link": "../empires/index.html",
+      "resolved": "02_Guts and Blackpowder\\Navigation\\lists\\empires\\index.html"
+    },
+    {
+      "file": "02_Guts and Blackpowder\\Navigation\\lists\\characters\\index.html",
+      "link": "../timelines/index.html",
+      "resolved": "02_Guts and Blackpowder\\Navigation\\lists\\timelines\\index.html"
+    },
+    {
+      "file": "02_Guts and Blackpowder\\Navigation\\lists\\characters\\index.html",
+      "link": "../aspects/index.html",
+      "resolved": "02_Guts and Blackpowder\\Navigation\\lists\\aspects\\index.html"
+    },
+    {
+      "file": "01_My Website\\devlog\\devlog.html",
+      "link": "../about.html",
+      "resolved": "01_My Website\\about.html"
+    },
+    {
+      "file": "01_My Website\\gallery\\gallery.html",
+      "link": "../about.html",
+      "resolved": "01_My Website\\about.html"
+    },
+    {
+      "file": "01_My Website\\gallery\\gallery.html",
+      "link": "../assets/gallery/art1.jpg",
+      "resolved": "01_My Website\\assets\\gallery\\art1.jpg"
+    },
+    {
+      "file": "01_My Website\\gallery\\gallery.html",
+      "link": "../assets/gallery/art2.jpg",
+      "resolved": "01_My Website\\assets\\gallery\\art2.jpg"
+    },
+    {
+      "file": "01_My Website\\gallery\\gallery.html",
+      "link": "../assets/gallery/art3.jpg",
+      "resolved": "01_My Website\\assets\\gallery\\art3.jpg"
+    },
+    {
+      "file": "01_My Website\\gallery\\gallery.html",
+      "link": "../assets/gallery/art4.jpg",
+      "resolved": "01_My Website\\assets\\gallery\\art4.jpg"
+    },
+    {
+      "file": "01_My Website\\index.html",
+      "link": "about.html",
+      "resolved": "01_My Website\\about.html"
+    },
+    {
+      "file": "01_My Website\\worlds\\worlds.html",
+      "link": "../about.html",
+      "resolved": "01_My Website\\about.html"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[data-navigation-section][hidden] { display: none !important; }
+[data-navigation-section] { min-width: 0; }
+.universe-sections { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.universe-sections a { padding: 10px 16px; color: var(--text-color-primary); background: var(--background-secondary); text-decoration: none; border: 1px solid var(--color-accent); }
+.universe-sections a[aria-current="page"] { background: var(--background-tertiary); text-decoration: underline; }
+.universe-sections a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }

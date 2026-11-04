@@ -1,0 +1,44 @@
+:root {
+  --page-title: "Eternal Choir - Character Profile";
+  --upper-title: "Eternal Choir";
+  --character-name: "Eternal Choir";
+
+  --hero-description: "«With all respect to our leader, whose choirs sing eternal»";
+
+  --description: "Вечный Хор была Матриархом Гнезда. Воинственный и непреклонный правитель, Вечный Хор вела Гнездо на протяжении большей части истории. Её правление сделало Гнездо сильной стороной войны, защищая и захватывая большие территории.";
+
+  --description-2: "Ныне известно, что Вечного Хора больше нет. Она погибла во время Вознесения, когда толпы зараженных напали на Гнездо. Несколько оборотов шла защита, пока их ресурсы не закончились. Вечный Хор умерла в войне, защищая своих подданых.";
+
+  --quote: "ПУСТО";
+  --quote-author: "- Eternal Choir";
+
+  --personality: "Гордые, воинственные и вспыльчивые. Вечный Хор редко отступает перед угрозой или вызовом и легко отвечает на провокацию силой. Оскорбления в адрес себя, Гнезда или тех, кого они считают своими, воспринимаются ими лично. Несмотря на импульсивность, Хор не лишены рассудительности и способны мыслить стратегически, однако гордость нередко заставляет их идти на конфликт даже тогда, когда его можно было избежать.";
+
+  --trivia: "No trivia yet.";
+
+  --info-title: "Matriarch of the Nest";
+  --info-role: "Matriarch • Sovereign";
+  --info-origin: "Nest";
+
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+
+  --track-3-name: "Show me the sky. show me how to live";
+  --track-3-artist: "AZALI";
+
+  --track-4-name: "EMPTY";
+  --track-4-artist: "EMPTY";
+
+  --track-5-name: "EMPTY";
+  --track-5-artist: "EMPTY";
+}
+:root {
+  --appearance-1-title: "Full view";
+  --appearance-2-title: "Detail";
+  --appearance-3-title: "Alternate view";
+}
+
+:root { --appearance-main-title: "Full view"; }

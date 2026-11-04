@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTRTRTRTRT</title>
+    <link rel="stylesheet" href="../00_code/theme.css">
+    <link rel="stylesheet" href="../00_code/style.css">
+    <script src="../00_code/navigation.js" defer></script>
+    <script src="../00_code/gallery.js" defer></script>
+    <script src="../00_code/music-data.js" defer></script>
+    <script src="../00_code/music.js" defer></script>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-left">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#devlog">Devlog</a>
+        <a href="#worlds">Worlds</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+<section class="site-hero archive-hero-main">
+    <div class="site-hero-medallion">
+        <img src="assets/banner/Profile.png" decoding="async" fetchpriority="high" alt="RTRTRTRTRT">
+    </div>
+
+    <div class="site-hero-copy">
+        <p>haiii welcome!!</p>
+        <h1>who the fuck am i</h1>
+        <span>✦ Artist ✦ Programmer ✦ very very cool person ✦</span>
+        <span>Socials: <a href="">ARTIFGHT</a> | <a href="">TOYHOUSE</a> | <a href="">TUMBLR</a></span>
+    </div>
+</section>
+
+<div class="layout archive-layout">
+
+    <aside class="sidebar site-main-sidebar">
+        <h3>Navigation</h3>
+        <a href="#home"><span class="sidebar-icon sidebar-icon-home"></span><span class="sidebar-label">Home</span></a>
+
+        <a href="#gallery"><span class="sidebar-icon sidebar-icon-gallery"></span><span class="sidebar-label">Gallery</span></a>
+        <a href="#devlog"><span class="sidebar-icon sidebar-icon-devlog"></span><span class="sidebar-label">Devlog</span></a>
+        <a href="#worlds"><span class="sidebar-icon sidebar-icon-worlds"></span><span class="sidebar-label">Worlds</span></a>
+
+        <hr>
+
+        <h3>About</h3>
+
+        <p>
+            Personal website. Idk why it just looks sick
+        </p>
+    </aside>
+
+    <main id="site-content">
+        <section class="site-music" aria-labelledby="site-music-title">
+            <div class="music-images" aria-label="Music artwork">
+                <div class="music-artwork">
+                    <img src="assets/music/img1.png" id="music-image-1" alt="" width="150" height="150" decoding="async">
+                    <span class="music-artwork-placeholder" aria-hidden="true">✦</span>
+                </div>
+                <div class="music-artwork">
+                    <img src="assets/music/img2.png"id="music-image-2" alt="" width="150" height="150" decoding="async">
+                    <span class="music-artwork-placeholder" aria-hidden="true">✦</span>
+                </div>
+                <div class="music-artwork">
+                    <img src="assets/music/img3.png" id="music-image-3" alt="" width="150" height="150" decoding="async">
+                    <span class="music-artwork-placeholder" aria-hidden="true">✦</span>
+                </div>
+                <div class="music-artwork">
+                    <img src="assets/music/img4.png" id="music-image-4" alt="" width="150" height="150" decoding="async">
+                    <span class="music-artwork-placeholder" aria-hidden="true">✦</span>
+                </div>
+                <div class="music-artwork">
+                    <img src="assets/music/img5.png" id="music-image-5" alt="" width="150" height="150" decoding="async">
+                    <span class="music-artwork-placeholder" aria-hidden="true">✦</span>
+                </div>
+            </div>
+            <div class="site-music-info">
+                <p class="site-music-label">Theme music i guess</p>
+                <h2 id="site-music-title">Endless Desert</h2>
+                <p id="site-music-artist">Alto's Odyssey</p>
+                <p id="site-music-status" role="status"></p>
+            </div>
+            <div class="music-controls" role="group" aria-label="Music controls">
+                <button id="music-play" type="button" aria-label="Play music" disabled>&#9654;</button>
+                <div class="music-progress">
+                    <input id="music-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Playback position" disabled>
+                    <div class="music-times"><span id="music-elapsed">0:00</span><span id="music-duration">0:00</span></div>
+                </div>
+                <label class="music-volume">Volume
+                    <input id="music-volume" type="range" min="0" max="1" step="0.01" value="0.4" aria-label="Volume">
+                </label>
+            </div>
+            <audio id="site-music-audio" preload="metadata" hidden></audio>
+        </section>
+        <nav class="section-switcher" aria-label="Page sections">
+            <a href="#home" aria-current="page">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#devlog">Devlog</a>
+            <a href="#worlds">Worlds</a>
+            <a href="#about">About</a>
+        </nav>
+        <div id="section-content">
+<section class="site-section archive-page" id="section-home" data-section="home" aria-label="Home">
+        <section class="archive-panel archive-overview-panel">
+            <div class="archive-section-heading">
+                <p>Overview</p>
+                <h2>HAIII WELCOME</h2>
+            </div>
+
+            <p>
+                this is uhh... like, the my homepage thing feel like at home brrr
+            </p>
+            <hr style="opacity: 0.2; width: 70%">
+            <p>
+                My interests are drawing, original character creation, worldbuilding, games and game development, 3D modeling, electronics and such, music and resently I tried making voicebanks on OpenUtau and I find myself enjoying it as well
+            </p>
+        </section>
+
+        <section class="archive-card-grid" aria-label="Main sections">
+            <a href="#gallery" class="archive-nav-card archive-nav-card-gallery">
+                <p>art here</p>
+                <h3>Gallery</h3>
+                <span>Artwork, sketches, concepts</span>
+            </a>
+
+            <a href="#devlog" class="archive-nav-card archive-nav-card-devlog">
+                <p>devlopp</p>
+                <h3>Devlog</h3>
+                <span>my progress</span>
+            </a>
+
+            <a href="#worlds" class="archive-nav-card archive-nav-card-worlds">
+                <p>Worldbuilding</p>
+                <h3>My settings and characters</h3>
+                <span>a lot of fellas are here.</span>
+            </a>
+        </section>
+    </section>
+<section class="site-section archive-page" id="section-gallery" data-section="gallery" aria-label="Gallery" hidden>
+        <section class="archive-panel">
+            <div class="archive-section-heading">
+                <p>welcome!</p>
+                <h2>Gallery</h2>
+            </div>
+        </section>
+
+        <section class="gallery-grid">
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../home/assets/gallery/art1.jpg" decoding="async" alt="Artwork 1">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <p class="gallery-category">lorem ipsum</p>
+                    <p class="gallery-desc">lorem ipsum</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../home/assets/gallery/art2.jpg" decoding="async" alt="Artwork 2">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <p class="gallery-category">lorem ipsum</p>
+                    <p class="gallery-desc">lorem ipsum</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../home/assets/gallery/art3.jpg" decoding="async" loading="lazy" alt="Artwork 3">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <p class="gallery-category">lorem ipsum</p>
+                    <p class="gallery-desc">lorem ipsum</p>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../home/assets/gallery/art4.jpg" decoding="async" loading="lazy" alt="Artwork 4">
+                    <div class="gallery-overlay">
+                        <button class="view-btn" aria-label="View image">View</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <p class="gallery-category">lorem ipsum</p>
+                    <p class="gallery-desc">lorem ipsum</p>
+                </div>
+            </article>
+        </section>
+
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close" aria-label="Close lightbox">x</button>
+            <img alt="" class="lightbox-img" decoding="async">
+        </div>
+    </section>
+<section class="site-section archive-page" id="section-devlog" data-section="devlog" aria-label="Devlog" hidden>
+        <section class="archive-panel">
+            <div class="archive-section-heading">
+                <p>Workshop notes</p>
+                <h2>Devlog</h2>
+            </div>
+        </section>
+
+        <section class="devlog-entries">
+            <article class="log-entry">
+                <span class="log-date">2026-07-03</span>
+                <h3>THIS PAGE IS STILL IN DEVELOPMENT</h3>
+                <p>
+                    NOT DONE. NOT DONE NOT DONE NOT DONE NOT DONE
+                </p>
+            </article>
+        </section>
+    </section>
+<section class="site-section worlds-page" id="section-worlds" data-section="worlds" aria-label="Worlds" hidden>
+        <section class="archive-panel">
+            <div class="archive-section-heading">
+                <h2>Worlds/settings</h2>
+            </div>
+        </section>
+
+        <section class="worlds-archive-grid" aria-label="World archives">
+            <article class="archive-world-card archive-world-card-unnamed">
+                <div class="archive-world-header">
+                    <h2>Unnamed Project (honestly i have no idea how to call it)</h2>
+                </div>
+
+                    <p class="archive-world-description">
+                        So it's my original world, robots, bugs, wars. 
+                    </p>
+
+                <div class="archive-link-list">
+                    <a href="../../02_Unnamed project/Navigation/index.html">Open ></a>
+                </div>
+            </article>
+
+            <article class="archive-world-card archive-world-card-gab">
+                <div class="archive-world-header">
+                    <h2>Guts and Blackpowder Fan OCs</h2>
+                </div>
+
+                <p class="archive-world-description">
+                    Me and my sister's fan ocs :3. Inspired by game called "Guts and Blackpowder" on Roblox
+                </p>
+
+                <div class="archive-link-list">
+                    <a href="../../02_Guts and Blackpowder/Navigation/index.html">Open ></a>
+                </div>
+            </article>
+        </section>
+        <section class="setting-cast-index" aria-label="Characters by setting">
+            <div class="setting-cast-heading">
+                <h2>All characters</h2>
+            </div>
+
+            <div class="setting-cast-grid">
+                <article class="setting-cast-card">
+                    <h3>Unnamed Project</h3>
+                    <div class="setting-character-list">
+                        <a href="../../02_Unnamed project/Characters/Thirteen/character-page.html"><img class="character-card-icon" src="assets/Icons/thirteen.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Thirteen</span></a>
+                        <a href="../../02_Unnamed project/Characters/Coffee/character-page.html"><img class="character-card-icon" src="assets/Icons/Coffee.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Coffee</span></a>
+                        <a href="../../02_Unnamed project/Characters/Copper Spire/character-page.html"><img class="character-card-icon" src="assets/Icons/Copper Spire.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Copper Spire</span></a>
+                        <a href="../../02_Unnamed project/Characters/Dawn Breaker/character-page.html"><img class="character-card-icon" src="assets/Icons/Dawn Breaker.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Dawn Breaker</span></a>
+                        <a href="../../02_Unnamed project/Characters/Supreme Accordance/character-page.html"><img class="character-card-icon" src="assets/Icons/Hive Matriarchs.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Supreme Accordance</span></a>
+                        <a href="../../02_Unnamed project/Characters/Incarcerate/character-page.html"><img class="character-card-icon" src="assets/Icons/Incarcerate.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Incarcerate</span></a>
+                        <a href="../../02_Unnamed project/Characters/Nacre/character-page.html"><img class="character-card-icon" src="assets/Icons/Nacre Tears.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Nacre</span></a>
+                        <a href="../../02_Unnamed project/Characters/Pursuer/character-page.html"><img class="character-card-icon" src="assets/Icons/Pursuer.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Pursuer</span></a>
+                        <a href="../../02_Unnamed project/Characters/Red Headed Sentinel/character-page.html"><img class="character-card-icon" src="assets/Icons/Red Headed Sentinel.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Red Headed Sentinel</span></a>
+                        <a href="../../02_Unnamed project/Characters/Rime Belt/character-page.html"><img class="character-card-icon" src="assets/Icons/Rime Belt.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Rime Belt</span></a>
+                        <a href="../../02_Unnamed project/Characters/Riven/character-page.html"><img class="character-card-icon" src="assets/Icons/Riven.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Riven</span></a>
+                        <a href="../../02_Unnamed project/Characters/Running River/character-page.html"><img class="character-card-icon" src="assets/Icons/Running River.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Running River</span></a>
+                        <a href="../../02_Unnamed project/Characters/Solar Strike/character-page.html"><img class="character-card-icon" src="assets/Icons/Solar Strike.png"  alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Solar Strike</span></a>
+                        <a href="../../02_Unnamed project/Characters/The Eternal Choir/character-page.html"><img class="character-card-icon" src="assets/Icons/The Eternal Choir.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">The Eternal Choir</span></a>
+                        <a href="../../02_Unnamed project/Characters/The Forsworn/character-page.html"><img class="character-card-icon" src="assets/Icons/The Forsworn.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">The Forsworn</span></a>
+                        <a href="../../02_Unnamed project/Characters/Verdant Temperance/character-page.html"><img class="character-card-icon" src="assets/Icons/The Mothers.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Verdant Temperance</span></a>
+                        <a href="../../02_Unnamed project/Characters/Horizon Sky/character-page.html"><img class="character-card-icon" src="assets/Icons/Horizon Sky.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Horizon Sky</span></a>
+                        <a href="../../02_Unnamed project/Characters/Rowan Branch/character-page.html"><img class="character-card-icon" src="assets/Icons/Rowan Branch.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Rowan Branch</span></a>
+                        <a href="../../02_Unnamed project/Characters/Fly Whisker/character-page.html"><img class="character-card-icon" src="assets/Icons/Fly Whisker.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Fly Whisker</span></a>
+                        <a href="../../02_Unnamed project/Characters/Dusk/character-page.html"><img class="character-card-icon" src="assets/Icons/Dusk.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Dusk</span></a>
+                        <a href="../../02_Unnamed project/Characters/Frosted/character-page.html"><img class="character-card-icon" src="assets/Icons/Frosted.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Frosted</span></a>
+                        <a href="../../02_Unnamed project/Characters/Sunny/character-page.html"><img class="character-card-icon" src="assets/Icons/Sunny.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Sunny</span></a>
+                        <a href="../../02_Unnamed project/Characters/Razor/character-page.html"><img class="character-card-icon" src="assets/Icons/Wicked.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Razor</span></a>
+                        <a href="../../02_Unnamed project/Characters/Little Pebble/character-page.html"><img class="character-card-icon" src="assets/Icons/Pebble.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Little Pebble</span></a>
+                        <a href="../../02_Unnamed project/Characters/SteelTooth/character-page.html"><img class="character-card-icon" src="assets/Icons/Steel tooth.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">SteelTooth</span></a>
+                        <a href="../../02_Unnamed project/Characters/Obsidian/character-page.html"><img class="character-card-icon" src="assets/Icons/Obsidian.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Obsidian</span></a>
+                        <a href="../../02_Unnamed project/Characters/Sharp Cutter/character-page.html"><img class="character-card-icon" src="assets/Icons/Sharpcutter.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Sharp Cutter</span></a>
+                        <a href="../../02_Unnamed project/Characters/Halcyon/character-page.html"><img class="character-card-icon" src="assets/Icons/Halcyon.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Halcyon</span></a>
+                        <a href="../../02_Unnamed project/Characters/Creek/character-page.html"><img class="character-card-icon" src="assets/Icons/Creek.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Creek</span></a>
+                        <a href="../../02_Unnamed project/Characters/Tang/character-page.html"><img class="character-card-icon" src="assets/Icons/Tang.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Tang</span></a>
+                        <a href="../../02_Unnamed project/Characters/Syncopation/character-page.html"><img class="character-card-icon" src="assets/Icons/Syncopation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Syncopation</span></a>
+                        <a href="../../02_Unnamed project/Characters/ToeTwister/character-page.html"><img class="character-card-icon" src="assets/Icons/ToeTwister.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">TowTwister</span></a>
+                        <a href="../../02_Unnamed project/Characters/Rou/character-page.html"><img class="character-card-icon" src="assets/Icons/Rou.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Rou</span></a>
+                        <a href="../../02_Unnamed project/Characters/Rou/character-page.html"><img class="character-card-icon" src="assets/Icons/Twin Bells.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Twin Bells</span></a>
+                        <a href="../../02_Unnamed project/Characters/Firstborn Sun/character-page.html"><img class="character-card-icon" src="assets/Icons/First Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Firstborn Sun</span></a>
+                        <a href="../../02_Unnamed project/Characters/Second Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Second Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Second Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Third Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Third Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Third Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Fourth Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Fourth Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Fourth Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Fifth Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Fifth Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Fifth Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Sixth Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Sixth Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Sixth Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Seventh Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Seventh Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Seventh Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Eighth Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Eighth Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Eighth Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Ninth Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Ninth Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Ninth Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Tenth Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Tenth Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Tenth Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Eleventh Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Eleventh Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Eleventh Constellation</span></a>
+                        <a href="../../02_Unnamed project/Characters/Twelve Constellation/character-page.html"><img class="character-card-icon" src="assets/Icons/Twelve Constellation.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Twelve Constellation</span></a>
+
+
+
+
+                    </div>
+                </article>
+                <article class="setting-cast-card">
+                    <h3>Guts and Blackpowder</h3>
+                    <div class="setting-character-list setting-character-list-compact">
+                        <a href="../../02_Guts and Blackpowder/Characters/Arthur/character-page.html"><img class="character-card-icon" src="assets/Icons/Arthur.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Arthur</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Bastien/character-page.html"><img class="character-card-icon" src="assets/Icons/Bastien.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Bastien</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Jacques/character-page.html"><img class="character-card-icon" src="assets/Icons/Jacques.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Jacques</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Jean/character-page.html"><img class="character-card-icon" src="assets/Icons/Jean.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Jean</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Louis/character-page.html"><img class="character-card-icon" src="assets/Icons/Louis.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Louis</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Mikhail/character-page.html"><img class="character-card-icon" src="assets/Icons/Mikhail.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Mikhail</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Nikolai/character-page.html"><img class="character-card-icon" src="assets/Icons/Nikolai.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Nikolai</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Oceania/character-page.html"><img class="character-card-icon" src="assets/Icons/Oceania.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Oceania</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Pierre/character-page.html"><img class="character-card-icon" src="assets/Icons/Pierre.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Pierre</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Guillaume/character-page.html"><img class="character-card-icon" src="assets/Icons/Guillaume.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Guillaume</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Johann/character-page.html"><img class="character-card-icon" src="assets/Icons/Johann.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Johann</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Amelia/character-page.html"><img class="character-card-icon" src="assets/Icons/Amelia.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Amelia</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Madeleine/character-page.html"><img class="character-card-icon" src="assets/Icons/Madeleine.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Madeleine</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Rose/character-page.html"><img class="character-card-icon" src="assets/Icons/Rose.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Rose</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Andreas/character-page.html"><img class="character-card-icon" src="assets/Icons/Andreas.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Andreas</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Henrietta/character-page.html"><img class="character-card-icon" src="assets/Icons/Henrietta.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Henrietta</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Elise/character-page.html"><img class="character-card-icon" src="assets/Icons/Elise.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Elise</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Adam/character-page.html"><img class="character-card-icon" src="assets/Icons/Adam.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Adam</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Pascal/character-page.html"><img class="character-card-icon" src="assets/Icons/Pascal.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Pascal</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Tormentor/character-page.html"><img class="character-card-icon" src="assets/Icons/Tormentor.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Tormentor</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Gustaf/character-page.html"><img class="character-card-icon" src="assets/Icons/Gustaf.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Gustaf</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Centaur/character-page.html"><img class="character-card-icon" src="assets/Icons/Centaur.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Centaur</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Casper/character-page.html"><img class="character-card-icon" src="assets/Icons/Casper.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Casper</span></a>
+                        <a href="../../02_Guts and Blackpowder/Characters/Theodore/character-page.html"><img class="character-card-icon" src="assets/Icons/Theodore.png" alt="" width="80" height="80" loading="lazy" decoding="async"><span class="character-card-name">Theodore</span></a>
+
+                    </div>
+                </article>
+
+                <article class="setting-cast-card">
+                    <h3>UtauLoids</h3>
+                    <div class="setting-character-list setting-character-list-compact">
+                        <a href="../../02_unsorted ocs/Characters/Fartloid/character-page.html"><img class="character-card-icon" src="assets/Icons/Fartloid.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Fartloid</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Pianoloid/character-page.html"><img class="character-card-icon" src="assets/Icons/Pianoloid.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Pianoloid</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Violinloid/character-page.html"><img class="character-card-icon" src="assets/Icons/Violinloid.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Violinloid</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Drumloid/character-page.html"><img class="character-card-icon" src="assets/Icons/Drumloid.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Drumloid</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Celloloid/character-page.html"><img class="character-card-icon" src="assets/Icons/Celloloid.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Celloloid</span></a>
+                    </div>
+                </article>
+
+                <article class="setting-cast-card">
+                    <h3>Unsorted</h3>
+                    <div class="setting-character-list setting-character-list-compact">
+                        <a href="../../02_unsorted ocs/Characters/Fraud/character-page.html"><img class="character-card-icon" src="assets/Icons/Fraud.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Fraud</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Goddess/character-page.html"><img class="character-card-icon" src="assets/Icons/Goddess.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Goddess</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Kiba/character-page.html"><img class="character-card-icon" src="assets/Icons/Kiba.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Kiba</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Knight/character-page.html"><img class="character-card-icon" src="assets/Icons/Knight.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Knight</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Sharky/character-page.html"><img class="character-card-icon" src="assets/Icons/Sharky.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Sharky</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Grandmaman/character-page.html"><img class="character-card-icon" src="assets/Icons/Grandmaman.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Grandmaman</span></a>
+                    </div>
+                </article>
+
+                    
+                <article class="setting-cast-card">
+                    <h3>Rainworld</h3>
+                    <div class="setting-character-list setting-character-list-compact">
+                        <a href="../../02_unsorted ocs/Characters/Griefborne/character-page.html"><img class="character-card-icon" src="assets/Icons/Griefborne.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Griefborne</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Mudball/character-page.html"><img class="character-card-icon" src="assets/Icons/Mudball.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Mudball</span></a>
+                    </div>
+                </article>
+
+                    
+                <article class="setting-cast-card">
+                    <h3>Warrior Cats</h3>
+                    <div class="setting-character-list setting-character-list-compact">
+                        <a href="../../02_unsorted ocs/Characters/MantisDance/character-page.html"><img class="character-card-icon" src="assets/Icons/Mantis Dance.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Mantis'Dance</span></a>
+                        <a href="../../02_unsorted ocs/Characters/SnailBark/character-page.html"><img class="character-card-icon" src="assets/Icons/Snail Bark.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Snail'Bark</span></a>
+                        <a href="../../02_unsorted ocs/Characters/Monarch/character-page.html"><img class="character-card-icon" src="assets/Icons/Monarch.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="character-card-name">Monarch</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </section>
+<section class="site-section archive-panel" id="section-about" data-section="about" aria-label="About" hidden><div class="archive-section-heading"><h2>About</h2></div><p>I was inspired by Toyhouse's pages dedicated for character, I really was awed how they create atmosphere and capture character's themes and aesthetics, but at that time I didn't have Toyhouse account, so I begun coding my own thing, first sure it was pages for characters but then I thought why not make whole ass website for myself and what I do. Feel yourself at home and thanks for reading this <3 </p>
+
+<p><a href="https://rtrtrtrtrt3.github.io/Character-page/">https://rtrtrtrtrt3.github.io/Character-page/</a> or this <a href="https://rtrtrtrtrt3.github.io/Firstborn-Sun/">https://rtrtrtrtrt3.github.io/Firstborn-Sun/</a> This is not my oldest, but one of previous designs for pages I used if you're curious X), sadly I lost my very first versions, cuz some disk failure corrupted my personal files and i lost everything :P </p>
+
+<img src="" alt="">
+
+</section>
+        </div>
+</main>
+
+</div>
+
+<footer>
+    u scrolled to footer uay
+</footer>
+
+</body>
+</html>

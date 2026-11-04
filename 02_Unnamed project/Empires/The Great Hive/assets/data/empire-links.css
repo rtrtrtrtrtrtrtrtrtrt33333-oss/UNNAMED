@@ -1,0 +1,65 @@
+:root {
+  /* ===================================== PAGE ===================================== */
+
+  --page-background: url("../backgrounds/background.png");
+
+  /* ===================================== HERO ===================================== */
+
+  --hero-image: url("../hero/profile-background.png");
+
+  --hero-logo: url("../hero/profile.png");
+
+  --playlist-background:
+    url("../playlist/playlist-background.gif");
+
+  --playlist-track-1:
+    url("../playlist/Princess Mononoke San.mp3");
+
+  --playlist-track-2:
+    url("../playlist/Princess Mononoke San.mp3");
+
+  --playlist-track-3:
+    url("../playlist/Princess Mononoke San.mp3");
+
+  --gallery-1-image-1: url("../gallery/gallery-1.png");
+
+  --gallery-1-image-2: url("../gallery/gallery-2.png");
+
+  --gallery-1-image-3: url("../gallery/gallery-3.png");
+
+  --gallery-1-image-4: url("../gallery/gallery-4.png");
+
+  --gallery-2-image-1: url("../history/story-image-1.png");
+
+  --gallery-2-image-2: url("../history/story-image-2.png");
+
+  --gallery-2-image-3: url("../gallery/gallery-5.png");
+
+  --gallery-2-image-4: url("../gallery/gallery-6.png");
+
+  --history-image-1:
+    url("../history/story-image-1.png");
+
+  /* ===================================== GALLERY ===================================== */
+
+  --gallery-1: url("../gallery/gallery-1.png");
+
+  --gallery-2: url("../gallery/gallery-2.png");
+
+  --gallery-3: url("../gallery/gallery-3.png");
+
+  --gallery-4: url("../gallery/gallery-4.png");
+
+  --gallery-5: url("../gallery/gallery-5.png");
+
+  --gallery-6: url("../gallery/gallery-6.png");
+
+
+  /* ===================================== ROLES ===================================== */
+
+  /* Optional images: use url("../roles/filename.png"). Empty values hide the image. */
+  --role-1-image: "";
+  --role-2-image: "";
+  --role-3-image: "";
+  --role-4-image: "";
+}

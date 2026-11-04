@@ -1,0 +1,22 @@
+:root {
+  --page-background: url("../backgrounds/background.png");
+
+  /* ===================================== HERO ===================================== */
+
+  --era-banner: url("../hero/timeline-banner.png");
+
+  --playlist-background: url("../playlist/playlist-background.gif");
+
+  /* ===================================== TRACKS ===================================== */
+
+  --playlist-track-1: url("../playlist/Heaven Pierce Her - War Without Reason.m4a");
+
+  --playlist-track-2: url("../playlist/ULTRAKILL OST - Altars of Apostasy.m4a");
+
+  --image-1: url("../history/story-image-1.png");
+
+  --image-2: url("../history/story-image-2.png");
+
+  --image-3: url("../history/story-image-3.png");
+
+}

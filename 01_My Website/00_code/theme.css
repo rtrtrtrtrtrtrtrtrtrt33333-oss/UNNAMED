@@ -1,0 +1,114 @@
+@import url("outer-header.css");
+
+/* Shared theme for Home, Gallery, Devlog and Worlds. */
+:root:has(body > .site-hero),
+.site-main-sidebar,
+.external-site-nav {
+  /* Compact section heading containers. */
+  --heading-banner-height: clamp(140px, 16vw, 170px);
+  --heading-banner-padding: clamp(26px, 3vw, 36px);
+
+  /* Heading sizes: minimum, responsive size, maximum. */
+  --font-size-hero: clamp(36px, 6vw, 64px);
+  --font-size-page-heading: clamp(32px, 5vw, 56px);
+  --font-size-section-heading: clamp(26px, 3.5vw, 40px);
+  --font-size-world-heading: clamp(28px, 4vw, 44px);
+  --font-size-card-heading: clamp(24px, 3vw, 34px);
+
+  /* Fonts */
+  --font-primary: Arial, sans-serif;
+  --font-secondary: "Cutive Mono", monospace;
+  --font-heading: "Times New Roman", Times, serif;
+
+  /* Main colors, backgrounds and text */
+  --background-fallback: #191c24;
+  --text-fallback: #eee8e5;
+
+  --background-nav: #151820;
+  --background-sidebar: #222630;
+  --text-sidebar: #b7bdc9;
+
+  --text-muted: #969eae;
+  --text-footer: #858c9b;
+  --border-footer: #393e4a;
+
+  --background-page: #191c24;
+  --background-banner: #202530;
+
+  --color-accent: #a94f58;
+
+  --text-primary: #eee8e5;
+  --text-secondary: #b7bdc9;
+
+  /* Cards and panels */
+  --background-card: #262b35;
+  --background-panel: #222630;
+  --background-card-hover: #303644;
+
+  --text-character-link: #e8dadd;
+  --text-hover: #ffffff;
+  --text-navigation: rgba(238, 232, 229, .85);
+
+  /* Worlds banner overlays */
+  --worlds-banner-overlay-start: rgba(25, 28, 36, .4);
+  --worlds-banner-overlay-end: rgba(25, 28, 36, .94);
+
+  /* General banner overlays */
+  --banner-overlay-start: rgba(25, 28, 36, .34);
+  --banner-overlay-end: rgba(25, 28, 36, .92);
+
+  /* Home banner overlays */
+  --home-banner-overlay-start: rgba(25, 28, 36, .28);
+  --home-banner-overlay-end: rgba(25, 28, 36, .9);
+
+  /* Glows */
+  --banner-glow: rgba(169, 79, 88, .28);
+  --page-glow: rgba(169, 79, 88, .12);
+
+  /* Ornaments */
+  --ornament-border: rgba(188, 135, 143, .3);
+  --ornament-stripe: rgba(169, 79, 88, .12);
+  --ornament-glow: rgba(169, 79, 88, .2);
+
+  --portrait-border: rgba(188, 135, 143, .28);
+
+  /* World card overlays */
+  --world-card-overlay-start: rgba(19, 22, 30, .88);
+  --world-card-overlay-end: rgba(19, 22, 30, .24);
+
+  /* Home card overlays */
+  --home-card-overlay-start: rgba(19, 22, 30, .9);
+  --home-card-overlay-end: rgba(19, 22, 30, .2);
+
+  /* Shadows and character backgrounds */
+  --text-shadow: rgba(0, 0, 0, .42);
+
+  --background-character-link: rgba(169, 79, 88, .1);
+  --background-portrait: rgba(10, 12, 18, .22);
+
+  /* Gallery and lightbox */
+  --gallery-overlay: rgba(10, 12, 18, .65);
+  --lightbox-overlay: rgba(5, 7, 12, .92);
+
+  /* Hero */
+  --background-hero-copy: #20232c;
+
+  /* Character links */
+  --character-link-border: rgba(169, 79, 88, .7);
+
+  /* Subtle surfaces */
+  --surface-subtle: rgba(238, 232, 229, .045);
+  --surface-sidebar-hover: rgba(169, 79, 88, .09);
+  --surface-nav-hover: var(--site-nav-surface-nav-hover);
+
+  /* Controls and buttons */
+  --surface-control: rgba(238, 232, 229, .08);
+  --surface-button: rgba(169, 79, 88, .16);
+
+  /* Borders */
+  --border-banner: rgba(183, 189, 201, .11);
+  --border-card: rgba(183, 189, 201, .12);
+  --border-panel: rgba(183, 189, 201, .13);
+  --border-inset: rgba(183, 189, 201, .16);
+  --border-button: rgba(169, 79, 88, .35);
+}
