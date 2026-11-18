@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // The quote belongs to the character introduction; keep playlist markup as
+  // the source so existing pages need no individual HTML migration.
+  document.querySelectorAll('.playlist-quote').forEach((quote) => {
+    const hero = document.querySelector('.hero-layout');
+    if (!hero || document.querySelector('.hero-quote')) return;
+    quote.classList.remove('playlist-quote');
+    quote.classList.add('hero-quote');
+    hero.insertAdjacentElement('afterend', quote);
+  });
+
   const ICONS = {
     play: '▶',
     pause: '⏸',

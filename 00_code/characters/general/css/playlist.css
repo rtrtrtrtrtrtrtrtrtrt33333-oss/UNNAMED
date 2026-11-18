@@ -1,5 +1,6 @@
 .playlist {
-    width: 250px;
+    width: 280px;
+    margin-top: 10px;
     flex-shrink: 0;
     position: sticky;
     top: calc(var(--current-top-header-height, 99px) + 20px);

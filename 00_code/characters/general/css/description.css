@@ -1,6 +1,6 @@
 /* Section */
 .description {
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .split-layout {
@@ -87,7 +87,7 @@
     flex-direction: column;
     gap: 4px;
     padding: 10px 0;
-    border-bottom: 1px solid var(--background-tertiary);
+    border-bottom: 2px solid var(--background-tertiary);
     min-width: 0;
 }
 

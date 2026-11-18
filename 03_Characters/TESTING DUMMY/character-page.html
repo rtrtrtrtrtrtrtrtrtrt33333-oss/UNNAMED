@@ -25,6 +25,7 @@
 
 
     <link rel="stylesheet" href="../../00_code/characters/general/css/layout.css">
+    <link rel="stylesheet" href="assets/data/testing-experiment.css">
     <script src="../../00_code/characters/general/js/gallery.js"></script>
     <script src="../../00_code/worlds/lost-motion/header/header.js"></script>
     <script src="../../00_code/characters/general/js/playlist.js"></script>
@@ -76,6 +77,10 @@
                         <img class="profile-pic" alt="" data-link="--hero-profile">
                     </div>
                 </div>
+                <blockquote class="hero-quote">
+                    <p data-text="--quote"></p>
+                    <cite data-text="--quote-author"></cite>
+                </blockquote>
 
                 <div class="character-box">
                     
@@ -84,7 +89,7 @@
                         <div class="character-section-divider character-title-divider" aria-hidden="true">&#10022; &#10023; &#10022;</div>
                         <section class="description" id="description">
                             <div class="section-title">
-                                <h2>Description</h2>
+                                <h2><span aria-hidden="true">&#9776;</span>Description</h2>
                             </div>
                             <div class="split-layout">
                                 <div class="split-main">
@@ -96,7 +101,7 @@
                                     
                                 </div>
                             </div>
-                                                    <div class="description-visuals" aria-label="Description artwork">
+                            <div class="description-visuals" aria-label="Description artwork">
                                 <img alt="" data-link="--description-image-1" loading="lazy">
                                 <img alt="" data-link="--description-image-2" loading="lazy">
                                 <img alt="" data-link="--description-image-3" loading="lazy">
@@ -106,21 +111,21 @@
                         <div class="character-section-divider" aria-hidden="true">&#10022; &#10023; &#10022;</div>
                         
                         <section class="appearance" id="appearance" aria-label="Appearance">
-                            <div class="section-title"><h2>Appearance</h2></div>
+                            <div class="section-title"><h2><span aria-hidden="true">&#9670;</span>Appearance</h2></div>
                             <div class="appearance-grid">
                                 <figure class="appearance-main">
                                     <img class="appearance-main-image" alt="Full view" data-link="--appearance-main">
                                 </figure>
-                                <div class="appearance-previews" role="group" aria-label="Appearance views">
-                                    <div class="appearance-preview"><img alt="" loading="lazy" data-link="--appearance-1"></div>
-                                    <div class="appearance-preview"><img alt="" loading="lazy" data-link="--appearance-2"></div>
-                                    <div class="appearance-preview"><img alt="" loading="lazy" data-link="--appearance-3"></div>
-                                </div>
                             </div>
                             <div class="appearance-palette" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+                            <div class="appearance-previews" role="group" aria-label="Appearance views">
+                                <div class="appearance-preview"><img alt="" loading="lazy" data-link="--appearance-1"></div>
+                                <div class="appearance-preview"><img alt="" loading="lazy" data-link="--appearance-2"></div>
+                                <div class="appearance-preview"><img alt="" loading="lazy" data-link="--appearance-3"></div>
+                            </div>
                         </section>
                         <div class="character-section-divider" aria-hidden="true">&#10022; &#10023; &#10022;</div><section class="information" id="information">
-                            <div class="section-title"><h2>Information</h2></div>
+                            <div class="section-title"><h2><span aria-hidden="true">&#9432;</span>Information</h2></div>
                             <div class="information-layout">
                                 <div class="information-details"><ul class="char-info-list">
 
@@ -147,7 +152,7 @@
                         <div class="character-section-divider" aria-hidden="true">&#10022; &#10023; &#10022;</div>
                         <section class="gallery" id="gallery">
                             <div class="section-title">
-                                <h2>Gallery</h2>
+                                <h2><span aria-hidden="true">&#9638;</span>Gallery</h2>
                             </div>
                             <div class="gallery-grid">
                                 <img alt="" data-link="--gallery-1">
@@ -166,7 +171,6 @@
     <div class="playlist-center">
         <div class="playlist-infobox">
             <img class="playlist-profile-image" alt="" data-link="--infobox-image">
-            <blockquote class="playlist-quote"><p data-text="--quote"></p><cite data-text="--quote-author"></cite></blockquote>
         </div>
         <div class="playlist-layout"><div class="now-playing">
             <div class="now-playing-info"><div class="now-playing-track">No track playing</div><div class="now-playing-artist">-</div></div>

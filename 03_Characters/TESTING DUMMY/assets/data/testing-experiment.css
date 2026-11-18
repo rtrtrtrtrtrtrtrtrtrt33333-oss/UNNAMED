@@ -1,0 +1,7 @@
+/* Experimental additions for Testing Dummy only. */
+
+.description { position: relative; isolation: isolate; overflow: hidden; }
+.description::before { content: ""; position: absolute; inset: 42px 0 0; z-index: -1; opacity: .08; background: var(--hero-title-pattern) center / cover no-repeat; pointer-events: none; }
+.section-title h2 > span { display: inline-block; margin-right: 8px; color: var(--color-accent); font-size: .8em; vertical-align: .08em; }
+
+
