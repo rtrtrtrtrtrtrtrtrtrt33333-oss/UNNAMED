@@ -1,1 +1,8 @@
 _dist/
+
+# Local art sources, editor backups and generated tool output.
+*.kra
+*.kra~
+*~
+__pycache__/
+00_tools/site-tools/reports/

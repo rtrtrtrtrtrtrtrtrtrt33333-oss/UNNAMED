@@ -1,0 +1,18 @@
+﻿:root {
+  --page-title: "Riven - Character Profile";
+  --character-name: "Riven";
+  --theme-symbol: "✦";
+  --description: "Один из немногих паладинов которые оказали сопротивление Матриарху в приказе о переработке корпусов раненных, и обьявленный еретик.";
+  --description-2: "Побежденный братом по оружию Solar Strikеом, рассеченный на две части, его корпус был не полностью уничтожен но оставлен в таком состоянии как напоминание о том что происходит с теми кто оказывает сопротивление.";
+  --quote: "Character quote.";
+  --quote-author: "Quote author";
+  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+  --trivia: "No trivia yet.";
+  --info-role: "Character's role";
+  --info-origin: "Where they come from";
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --character-universe: "Lost Motion";
+}

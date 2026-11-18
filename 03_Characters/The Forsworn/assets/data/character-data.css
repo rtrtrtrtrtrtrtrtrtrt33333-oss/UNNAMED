@@ -1,0 +1,18 @@
+﻿:root {
+  --page-title: "The Forsworn - Character Profile";
+  --character-name: "The Forsworn";
+  --theme-symbol: "✦";
+  --description: "Long description text. Lorem ipsum dolor sit amet...";
+  --description-2: "Lorem ipsum dolor sit amet...";
+  --quote: "Character quote.";
+  --quote-author: "Quote author";
+  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+  --trivia: "No trivia yet.";
+  --info-role: "Character's role";
+  --info-origin: "Where they come from";
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --character-universe: "Lost Motion";
+}

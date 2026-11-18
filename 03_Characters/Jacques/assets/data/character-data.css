@@ -1,0 +1,18 @@
+﻿:root {
+  --page-title: "Jasques - Character Profile";
+  --character-name: "Jasques";
+  --theme-symbol: "✦";
+  --description: "Жак Моро был простым моряком, жившим в маленьком портовом городке. Раньше он зарабатывал рыболовством и продажей рыбы, женился и заводит семью. У него рождается дочка Осеания, которую он с женой растили до того как разгорается Наполеоновская война.";
+  --description-2: "Жак принимает рещение уйти на службу. Прослужив несколько годов, мужчина собирался вернуться домой, но вскоре из-за вспышки заражения застревает в армии. Единственное что ему оставалось, это обмениваться письмами и надеется на лучшее.";
+  --quote: "Некоторые из вас причина почему шампуни имеют инструкцию";
+  --quote-author: "Жак Моро";
+  --personality: "Суровый мужик. По пустякам не разговаривает, предпочитая действия выше слов. ";
+  --trivia: "No trivia yet.";
+  --info-role: "lorem ipsum";
+  --info-origin: "lorem ipsum";
+  --track-1-name: "Voiceclaim: guy from wind rises";
+  --track-1-artist: "The wind rises";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --character-universe: "Guts and Blackpowder";
+}

@@ -1,0 +1,14 @@
+﻿:root {
+    --nav-universe-name: "unsorted ocs";
+    --nav-home-link: "world-page.html#home";
+    --nav-characters-link: "world-page.html#characters";
+    --nav-regions-link: "world-page.html#regions";
+    --nav-empires-link: "world-page.html#empires";
+    --nav-timeline-link: "world-page.html#timelines";
+    --nav-aspects-link: "world-page.html#aspects";
+    --nav-main-site-link: "../../01_My Website/home/home-page.html";
+    --nav-main-gallery-link: "../../01_My Website/home/home-page.html#gallery";
+    --nav-main-devlog-link: "../../01_My Website/home/home-page.html#devlog";
+    --nav-main-worlds-link: "../../01_My Website/home/home-page.html#worlds";
+    --nav-Lost Motion-project-link: "../Lost Motion/world-page.html";
+}

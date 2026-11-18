@@ -1,0 +1,13 @@
+:root {
+    --nav-universe-name: "Hidden";
+    --nav-home-link: "../../01_My Website/home/home-page.html#home";
+    --nav-characters-link: "../../01_My Website/home/home-page.html#worlds";
+    --nav-regions-link: "../../01_My Website/home/home-page.html#worlds";
+    --nav-empires-link: "../../01_My Website/home/home-page.html#worlds";
+    --nav-timeline-link: "../../01_My Website/home/home-page.html#worlds";
+    --nav-aspects-link: "../../01_My Website/home/home-page.html#worlds";
+    --nav-main-site-link: "../../01_My Website/home/home-page.html";
+    --nav-main-gallery-link: "../../01_My Website/home/home-page.html#gallery";
+    --nav-main-devlog-link: "../../01_My Website/home/home-page.html#devlog";
+    --nav-main-worlds-link: "../../01_My Website/home/home-page.html#worlds";
+}

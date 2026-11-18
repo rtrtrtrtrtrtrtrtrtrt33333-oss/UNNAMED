@@ -1,0 +1,16 @@
+﻿:root {
+  --character-name: "Centaur";
+  --theme-symbol: "✦";
+  --description: "An infected cavalryman whose body was fused with his horse by the Mor. The result resembles a centaur only in shape.";
+  --description-2: "It was once an ordinary cavalryman and an ordinary horse. Their former identities have little relevance to what now remains.";
+  --quote: "";
+  --personality: "The Centaur behaves primarily through instinct and immediate reaction. It is extremely dangerous at close range and difficult to stop once moving.";
+  --trivia: "Its name comes entirely from its appearance. • Tormentor is capable of riding it. • It does not need to understand Tormentor as a person in order to tolerate its presence.";
+  --info-role: "French Infantryman · Veteran";
+  --info-origin: "France · Born 1790";
+  --track-1-name: "Voiceclaim: Jiro Horikoshi ";
+  --track-1-artist: "The wind rises";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --character-universe: "Guts and Blackpowder";
+}

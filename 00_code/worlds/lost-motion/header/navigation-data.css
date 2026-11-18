@@ -1,0 +1,6 @@
+/*
+ * Shared navigation fallback.
+ * Every character, region, empire, timeline and aspect supplies its own
+ * concrete links from assets/data/*-navigation.css.
+ */
+:root {}

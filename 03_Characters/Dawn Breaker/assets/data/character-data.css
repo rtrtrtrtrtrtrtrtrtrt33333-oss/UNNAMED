@@ -1,0 +1,18 @@
+﻿:root {
+  --page-title: "Dawn Breaker - Character Profile";
+  --character-name: "Dawn Breaker";
+  --theme-symbol: "✦";
+  --description: "Одна из первых кто решил нарушить клятву данную Oath Upon. Рассвет была мотыльком, которая потеряла всё когда Улей внезапно начал их уничтожать. Она отреклась от клятвы чтобы защищать то немногое что оставалось от колонии Мотыльков. Её примеру так же последовали другие и отреклись от клятвы.";
+  --description-2: "Во время её мести, Рассвет нанесла большой ущерб Улью, уничтожив часть их войнов и несколько раз совершая сами набеги. Это было до того как создали Паладинов, и она была побеждена Solar Strike.";
+  --quote: "Character quote.";
+  --quote-author: "Quote author";
+  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+  --trivia: "No trivia yet.";
+  --info-role: "Character's role";
+  --info-origin: "Where they come from";
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --character-universe: "Lost Motion";
+}

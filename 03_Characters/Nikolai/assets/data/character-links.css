@@ -1,0 +1,35 @@
+:root {
+
+  --page-background: url('../images/00_backgrounds-background.png');
+  --background-main-pattern: url('../images/00_backgrounds-main-pattern.png');
+  --hero-profile-background: url('../images/01_hero-profile-background.png');
+  --hero-profile: url('../images/01_hero-profile.png');
+  --hero-title-pattern: url('../images/01_hero-title-pattern.png');
+  --infobox-image: url('../images/05_playlist-profile-image.png');
+  --description-image-1: url('../images/02_description-01.png');
+  --description-image-2: url('../images/02_description-02.png');
+  --description-image-3: url('../images/02_description-03.png');
+  --description-image-4: url('../images/02_description-04.png');
+  --description-image-5: url('../images/02_description-05.png');
+  --gallery-1: url('../images/04_gallery-01.png');
+  --gallery-2: url('../images/04_gallery-02.png');
+  --gallery-3: url('../images/04_gallery-03.png');
+  --gallery-4: url('../images/04_gallery-04.png');
+  --gallery-5: url('../images/04_gallery-05.png');
+  --gallery-6: url('../images/04_gallery-06.png');
+  --playlist-background: url('../images/05_playlist-background.gif');
+  --playlist-track-1: url('../playlist/audiomass-output.flac');
+  --playlist-track-2: url('../playlist/track-2.mp3');
+}
+
+/* Independent appearance views; replace with your own image URLs as needed. */
+:root {
+  --appearance-1: url('../images/03_appearance-extra-01.png');
+  --appearance-2: url('../images/03_appearance-extra-02.png');
+  --appearance-3: url('../images/03_appearance-extra-03.png');
+}
+
+:root {
+  --appearance-main: url('../images/03_appearance-big-image.png');
+  --information-side-image: url('../images/02_information-side-image.png');
+}

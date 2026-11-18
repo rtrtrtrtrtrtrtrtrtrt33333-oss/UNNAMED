@@ -1,0 +1,18 @@
+﻿:root {
+  --page-title: "Arthur - Character Profile";
+  --character-name: "Arthur";
+  --theme-symbol: "✦";
+  --description: "Артур бывший британский солдат, которого временно подобрали Французские солдаты. Артур рос с мамой без отца, но несмотря на это имел счастливое детство. Долгое время он мечтал попасть в армию и на войну, ошибочно считая что это крутое и эпичное место, и что он выйдет победителем.";
+  --description-2: "Попав в британскую армию, .";
+  --quote: "lorem ipsum";
+  --quote-author: "lorem ipsum";
+  --personality: "lorem ipsum";
+  --trivia: "No trivia yet.";
+  --info-role: "lorem ipsum";
+  --info-origin: "lorem ipsum";
+  --track-1-name: "Voiceclaim: guy from wind rises";
+  --track-1-artist: "The wind rises";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --character-universe: "UTAUloids";
+}

@@ -1,0 +1,18 @@
+﻿:root {
+  --page-title: "Nacre - Character Profile";
+  --character-name: "Nacre";
+  --theme-symbol: "✦";
+  --description: "Богомолы долгое время находились в тени крупных империй, скрываясь от их взора чтобы избежать уничтожения. Долгое время их вождём был мудрый и спокойный правитель, пока Перламутр не решила отнять его место, и превратить их колонию в бандитов.";
+  --description-2: "События происходили задолго до войны, богомолы нападали на колонии мельче, на караванчики и отбившихся Муравейников. Пока не наткнулись на Зыбкую Реку. Мало известно, но после того как Перламутр вызвала Зыбкую Реку в бой, её воинственный пыл пропал.";
+  --quote: "Character quote.";
+  --quote-author: "Quote author";
+  --personality: "Personality description. Lorem ipsum dolor sit amet...";
+  --trivia: "No trivia yet.";
+  --info-role: "Character's role";
+  --info-origin: "Where they come from";
+  --track-1-name: "Voiceclaim: San";
+  --track-1-artist: "The Princess Mononoke";
+  --track-2-name: "Endless Desert";
+  --track-2-artist: "Alto's Odyssey";
+  --character-universe: "Lost Motion";
+}

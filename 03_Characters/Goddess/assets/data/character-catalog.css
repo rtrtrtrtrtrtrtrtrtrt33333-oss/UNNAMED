@@ -1,0 +1,13 @@
+:root {
+    --nav-universe-name: "unsorted ocs";
+    --nav-home-link: "../../02_Worlds/unsorted ocs/world-page.html#home";
+    --nav-characters-link: "../../02_Worlds/unsorted ocs/world-page.html#characters";
+    --nav-regions-link: "../../02_Worlds/unsorted ocs/world-page.html#regions";
+    --nav-empires-link: "../../02_Worlds/unsorted ocs/world-page.html#empires";
+    --nav-timeline-link: "../../02_Worlds/unsorted ocs/world-page.html#timelines";
+    --nav-aspects-link: "../../02_Worlds/unsorted ocs/world-page.html#aspects";
+    --nav-main-site-link: "../../01_My Website/home/home-page.html";
+    --nav-main-gallery-link: "../../01_My Website/home/home-page.html#gallery";
+    --nav-main-devlog-link: "../../01_My Website/home/home-page.html#devlog";
+    --nav-main-worlds-link: "../../01_My Website/home/home-page.html#worlds";
+}

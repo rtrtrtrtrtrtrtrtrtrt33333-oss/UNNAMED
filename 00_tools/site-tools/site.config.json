@@ -8,14 +8,19 @@
                        "path":  "01_My Website"
                    },
                    {
-                       "id":  "unnamed",
-                       "title":  "UNNAMED",
-                       "path":  "02_Unnamed project"
+                       "id":  "lost-motion",
+                       "title":  "Lost Motion",
+                       "path":  "02_Worlds/Lost Motion"
                    },
                    {
                        "id":  "guts-and-blackpowder",
-                       "title":  "02_Guts and Blackpowder",
-                       "path":  "02_Guts and Blackpowder"
+                       "title":  "Guts and Blackpowder",
+                       "path":  "02_Worlds/Guts and Blackpowder"
+                   },
+                   {
+                       "id":  "unsorted-ocs",
+                       "title":  "unsorted ocs",
+                       "path":  "02_Worlds/unsorted ocs"
                    }
                ],
     "copyRootFiles":  [
@@ -27,7 +32,8 @@
     "exclude":  [
                     ".git",
                     "_dist",
-                    "tools",
+                    "00_tools",
+                    "old layout",
                     "node_modules",
                     "dist",
                     ".node",

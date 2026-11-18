@@ -6,6 +6,7 @@ import sys
 import hashlib
 import json
 import os
+import re
 import tempfile
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
@@ -40,10 +41,19 @@ PRESETS = {
     'Узор основного блока': 'assets/images/00_backgrounds-main-pattern.png',
     'Цвета персонажа': 'assets/data/character-colors.css',
     'Шрифты персонажа': 'assets/data/character-font.css',
-    'Фон плейлиста (GIF)': 'assets/images/06_playlist-background.gif',
+    'Фон плейлиста (GIF)': 'assets/images/05_playlist-background.gif',
     'Фон Hero': 'assets/images/01_hero-profile-background.png',
     'Другой файл assets (указать путь)': '',
 }
+
+
+def character_universe(character):
+    """Read the catalogue grouping without coupling folders to worlds."""
+    data = character / 'assets' / 'data' / 'character-data.css'
+    if not data.is_file():
+        return 'Unassigned'
+    match = re.search(r'--character-universe:\s*["\'](.*?)["\']\s*;', data.read_text(encoding='utf-8'))
+    return match.group(1) if match else 'Unassigned'
 
 
 def digest(data):
@@ -96,7 +106,7 @@ def plan(root, characters, relative, source):
     rows = []
     for character in characters:
         character = inside(character, root)
-        if character.parent.name != 'Characters':
+        if character.parent.name != '03_Characters':
             raise ValueError('Неверная папка персонажа.')
         target = inside(character / relative, character / 'assets')
         inside(target, root)
@@ -174,11 +184,12 @@ class App(tk.Tk):
         self.preset = tk.StringVar(value=next(iter(PRESETS)))
         self.preview = None
         self.asset_photo = None
-        self.characters = sorted(p.parent for p in ROOT.glob('*/Characters/*/character-page.html'))
+        self.characters = sorted(p.parent for p in (ROOT / '03_Characters').glob('*/character-page.html'))
         top = ttk.Frame(self, padding=12)
         top.pack(fill='x')
         ttk.Label(top, text='1. Выбери персонажей слева. 2. Выбери файл и назначение. 3. Проверь замены.').pack(anchor='w')
-        projects = ['Все проекты'] + sorted({p.parent.parent.name for p in self.characters})
+        self.universes = {character: character_universe(character) for character in self.characters}
+        projects = ['Все проекты'] + sorted(set(self.universes.values()), key=str.casefold)
         selector = ttk.Combobox(top, textvariable=self.project, values=projects, state='readonly')
         selector.pack(anchor='w', pady=8)
         selector.bind('<<ComboboxSelected>>', lambda _: self.populate())
@@ -306,11 +317,11 @@ class App(tk.Tk):
             pass
 
     def populate(self):
-        self.visible = [p for p in self.characters if self.project.get() == 'Все проекты' or p.parent.parent.name == self.project.get()]
+        self.visible = [p for p in self.characters if self.project.get() == 'Все проекты' or self.universes[p] == self.project.get()]
         for item in self.listbox.get_children():
             self.listbox.delete(item)
         for index, path in enumerate(self.visible):
-            self.listbox.insert('', 'end', iid=str(index), text=f'{path.parent.parent.name} / {path.name}')
+            self.listbox.insert('', 'end', iid=str(index), text=f'{self.universes[path]} / {path.name}')
         self.invalidate()
         self.refresh_character_thumbnails()
         self.refresh_asset_preview()

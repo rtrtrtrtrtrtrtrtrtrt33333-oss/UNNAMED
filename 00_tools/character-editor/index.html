@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Character Editor</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #14161c; color: #edf0f4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; grid-template-columns: 270px minmax(0, 1fr); }
+    aside { padding: 20px 14px; background: #1c2029; border-right: 1px solid #3b4351; }
+    h1 { margin: 0 0 16px; font-size: 21px; letter-spacing: .06em; }
+    h2 { margin: 0; font-size: 17px; }
+    select, button { font: inherit; color: inherit; border: 1px solid #586274; background: #252b37; border-radius: 4px; }
+    select { width: 100%; padding: 9px; margin-bottom: 10px; }
+    #characters { display: grid; gap: 4px; overflow: auto; max-height: calc(100vh - 128px); }
+    .character { width: 100%; padding: 8px 10px; text-align: left; cursor: pointer; }
+    .character:hover, .character.active { background: #394354; border-color: #a8bacf; }
+    .character small { display: block; color: #b8c0cc; margin-top: 2px; }
+    main { padding: 28px; max-width: 1320px; width: 100%; margin: 0 auto; }
+    .empty { margin-top: 18vh; text-align: center; color: #abb4c1; }
+    .editor { display: grid; gap: 20px; }
+    .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; }
+    .top p { margin: 0; color: #b8c0cc; }
+    .workspace { display: grid; grid-template-columns: minmax(310px, 420px) minmax(0, 1fr); align-items: start; gap: 20px; }
+    .controls { display: grid; gap: 12px; }
+    .panel { padding: 18px; background: #1c2029; border: 1px solid #3b4351; }
+    details.panel { padding: 0; }
+    details.panel > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; cursor: pointer; user-select: none; }
+    details.panel > summary::after { content: '+'; color: #a8bacf; font-size: 20px; line-height: 1; }
+    details.panel[open] > summary { border-bottom: 1px solid #3b4351; }
+    details.panel[open] > summary::after { content: '−'; }
+    details.panel > summary h2 { display: inline; }
+    .panel-content { padding: 0 18px 18px; }
+    .preview { position: sticky; top: 18px; padding: 0; overflow: hidden; }
+    .preview-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 18px; border-bottom: 1px solid #3b4351; }
+    .preview-scale { display: flex; align-items: center; gap: 8px; color: #b8c0cc; font-size: 12px; }
+    .preview-scale input { width: 110px; }
+    .preview-scale output { width: 36px; text-align: right; }
+    .preview-stage { height: 720px; overflow: hidden; background: #111; }
+    .preview iframe { display: block; width: 100%; height: 720px; border: 0; background: #111; transform-origin: top left; }
+    .colors { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-top: 14px; }
+    .fonts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; margin-top: 14px; }
+    .data-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+    label.data { display: grid; gap: 5px; padding: 8px; background: #252b37; color: #b8c0cc; font-size: 12px; }
+    label.data.wide { grid-column: 1 / -1; }
+    label.data input, label.data textarea { width: 100%; padding: 7px; color: inherit; border: 1px solid #586274; background: #181c24; font: inherit; }
+    label.data textarea { min-height: 88px; resize: vertical; }
+    label.font { display: grid; gap: 5px; padding: 8px; background: #252b37; color: #b8c0cc; font-size: 12px; }
+    label.font input { width: 100%; padding: 7px; color: inherit; border: 1px solid #586274; background: #181c24; }
+    label.color { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 5px 8px; min-width: 0; padding: 7px; background: #252b37; }
+    label.color span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+    .color-alpha { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 38px; align-items: center; gap: 7px; color: #b8c0cc; font-size: 11px; }
+    .color-alpha input { width: 100%; }
+    input[type=color] { width: 34px; height: 30px; padding: 0; border: 0; background: none; cursor: pointer; }
+    .save { margin-top: 14px; padding: 9px 13px; cursor: pointer; }
+    .assets { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 14px; }
+    .asset { min-width: 0; padding: 8px; border: 1px solid #475163; background: #252b37; }
+    .asset strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+    .asset small { display: block; min-height: 30px; color: #aeb8c6; font-size: 11px; overflow-wrap: anywhere; }
+    .drop { position: relative; display: grid; place-items: center; min-height: 128px; margin-top: 8px; overflow: hidden; border: 1px dashed #72829a; cursor: pointer; background: #181c24; }
+    .drop.drag { border-color: #fff; background: #354152; }
+    .drop img { width: 100%; height: 128px; object-fit: contain; }
+    .drop span { position: absolute; inset: auto 4px 4px; padding: 3px 5px; background: #111a; font-size: 11px; }
+    .drop input { display: none; }
+    #notice { position: fixed; right: 18px; bottom: 18px; max-width: 420px; padding: 11px 14px; background: #2d3f37; border: 1px solid #6ba17f; opacity: 0; transform: translateY(8px); transition: .2s; pointer-events: none; }
+    #notice.error { background: #4b3035; border-color: #c37a82; }
+    #notice.visible { opacity: 1; transform: none; }
+    @media (max-width: 920px) { .workspace { grid-template-columns: 1fr; } .preview { position: static; } }
+    @media (max-width: 700px) { body { grid-template-columns: 1fr; } aside { border-right: 0; border-bottom: 1px solid #3b4351; } #characters { max-height: 190px; } main { padding: 18px; } }
+  </style>
+</head>
+<body>
+  <aside>
+    <h1>Character Editor</h1>
+    <select id="universe"><option value="">Все вселенные</option></select>
+    <div id="characters"></div>
+  </aside>
+  <main id="main"><div class="empty">Выбери персонажа слева.</div></main>
+  <div id="notice" role="status"></div>
+  <script>
+    const state = { characters: [], current: null };
+    const list = document.querySelector('#characters');
+    const main = document.querySelector('#main');
+    const universe = document.querySelector('#universe');
+    const notice = document.querySelector('#notice');
+    const imageLabel = variable => variable.replace(/^--/, '').replaceAll('-', ' ');
+    const DATA_LABELS = {
+      '--page-title': 'Название вкладки', '--character-name': 'Имя на hero', '--theme-symbol': 'Символ темы',
+      '--description': 'Description', '--description-2': 'Description — продолжение', '--quote': 'Цитата',
+      '--quote-author': 'Автор цитаты', '--personality': 'Personality', '--trivia': 'Trivia',
+      '--info-role': 'Role', '--info-origin': 'Origin', '--track-1-name': 'Дорожка 1 — название',
+      '--track-1-artist': 'Дорожка 1 — автор', '--track-2-name': 'Дорожка 2 — название',
+      '--track-2-artist': 'Дорожка 2 — автор'
+    };
+
+    async function request(path, options) {
+      const response = await fetch(path, options);
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(data.error || 'Не удалось сохранить изменения');
+      return data;
+    }
+    function say(message, error = false) {
+      notice.textContent = message; notice.className = `visible${error ? ' error' : ''}`;
+      clearTimeout(say.timer); say.timer = setTimeout(() => notice.className = '', 3500);
+    }
+    function renderList() {
+      const selected = universe.value;
+      list.replaceChildren(...state.characters.filter(item => !selected || item.universe === selected).map(item => {
+        const button = document.createElement('button'); button.className = `character${state.current?.name === item.name ? ' active' : ''}`;
+        button.innerHTML = `${item.name}<small>${item.universe}</small>`;
+        button.onclick = () => loadCharacter(item.name); return button;
+      }));
+    }
+    async function loadCharacter(name) {
+      try { state.current = await request(`/api/character?name=${encodeURIComponent(name)}`); renderList(); renderEditor(); }
+      catch (error) { say(error.message, true); }
+    }
+    function colorValue(input) {
+      const alpha = input.closest('label').querySelector('.color-alpha input');
+      const amount = alpha ? Number(alpha.value) : 100;
+      return input.value + (amount < 100 ? Math.round(amount * 2.55).toString(16).padStart(2, '0') : '');
+    }
+    function colorParts(value) {
+      const hex = /^#([0-9a-f]{6})([0-9a-f]{2})?$/i.exec(value);
+      if (hex) return { hex: `#${hex[1]}`, alpha: hex[2] ? Math.round(parseInt(hex[2], 16) / 2.55) : 100 };
+      const rgb = /^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/i.exec(value);
+      if (!rgb || rgb.slice(1).some(part => Number(part) > 255)) return null;
+      return { hex: `#${rgb.slice(1).map(part => Number(part).toString(16).padStart(2, '0')).join('')}`, alpha: 100 };
+    }
+    function applyPreviewColor(input) {
+      state.preview?.contentDocument?.documentElement.style.setProperty(input.dataset.variable, colorValue(input));
+    }
+    function colorField(variable, value) {
+      const label = document.createElement('label'); label.className = 'color';
+      const parts = colorParts(value);
+      const input = document.createElement('input'); input.type = 'color'; input.className = 'preview-setting'; input.value = parts?.hex || '#000000'; input.dataset.variable = variable;
+      const text = document.createElement('span'); text.textContent = imageLabel(variable);
+      const alpha = document.createElement('div'); alpha.className = 'color-alpha'; alpha.innerHTML = '<input type="range" min="0" max="100" value="100"><output>100%</output>';
+      const slider = alpha.querySelector('input'); const output = alpha.querySelector('output');
+      const initial = parts?.alpha ?? 100; slider.value = initial; output.value = `${initial}%`;
+      const update = () => { output.value = `${slider.value}%`; applyPreviewColor(input); };
+      input.oninput = update; slider.oninput = update; label.append(input, text, alpha); return label;
+    }
+    function fontField(variable, value) {
+      const label = document.createElement('label'); label.className = 'font'; label.textContent = imageLabel(variable);
+      const input = document.createElement('input'); input.className = 'preview-setting'; input.dataset.variable = variable;
+      if (variable === '--head-font-size') { input.type = 'number'; input.min = 32; input.max = 220; input.value = Number.parseInt(value, 10) || 100; input.dataset.unit = 'px'; }
+      else { input.type = 'text'; input.value = value; }
+      input.oninput = () => state.preview?.contentDocument?.documentElement.style.setProperty(variable, input.value + (input.dataset.unit || ''));
+      label.append(input); return label;
+    }
+    function collapsiblePanel(title, description = '') {
+      const panel = document.createElement('details'); panel.className = 'panel'; panel.open = true;
+      const summary = document.createElement('summary'); summary.innerHTML = `<h2>${title}</h2>`;
+      const content = document.createElement('div'); content.className = 'panel-content';
+      if (description) { const copy = document.createElement('p'); copy.style.cssText = 'color:#b8c0cc;font-size:13px'; copy.innerHTML = description; content.append(copy); }
+      panel.append(summary, content); return { panel, content };
+    }
+    function makeCollapsible(panel) {
+      const heading = panel.querySelector('h2');
+      const title = heading?.textContent || '';
+      heading?.remove();
+      const details = document.createElement('details'); details.className = 'panel'; details.open = true;
+      const summary = document.createElement('summary'); summary.innerHTML = `<h2>${title}</h2>`;
+      const content = document.createElement('div'); content.className = 'panel-content';
+      while (panel.firstChild) content.append(panel.firstChild);
+      details.append(summary, content); return details;
+    }
+    function dataField(variable, value) {
+      const multiline = ['--description', '--description-2', '--quote', '--personality', '--trivia'].includes(variable);
+      const label = document.createElement('label'); label.className = `data${multiline ? ' wide' : ''}`; label.textContent = DATA_LABELS[variable] || imageLabel(variable);
+      const input = document.createElement(multiline ? 'textarea' : 'input'); input.className = 'data-input'; input.dataset.variable = variable; input.value = value || '';
+      if (variable === '--character-name') input.title = 'Используй | для переноса строки в имени.';
+      input.oninput = () => applyDataValue(variable, input.value);
+      label.append(input); return label;
+    }
+    function imageCard(image) {
+      const card = document.createElement('div'); card.className = 'asset';
+      const name = document.createElement('strong'); name.textContent = imageLabel(image.variable);
+      const path = document.createElement('small'); path.textContent = image.path;
+      const drop = document.createElement('label'); drop.className = 'drop';
+      const preview = document.createElement('img'); preview.src = image.url + `&t=${Date.now()}`; preview.alt = image.variable;
+      const hint = document.createElement('span'); hint.textContent = 'PNG/GIF или JPG → PNG';
+      const input = document.createElement('input'); input.type = 'file'; input.accept = '.png,.gif,.jpg,.jpeg,image/png,image/gif,image/jpeg';
+      const useFile = file => uploadImage(image, file, preview, drop);
+      input.onchange = () => input.files[0] && useFile(input.files[0]);
+      drop.ondragover = event => { event.preventDefault(); drop.classList.add('drag'); };
+      drop.ondragleave = () => drop.classList.remove('drag');
+      drop.ondrop = event => { event.preventDefault(); drop.classList.remove('drag'); event.dataTransfer.files[0] && useFile(event.dataTransfer.files[0]); };
+      drop.append(preview, hint, input); card.append(name, path, drop); return card;
+    }
+    function applyPreviewColors() {
+      const document = state.preview?.contentDocument; if (!document) return;
+      main.querySelectorAll('.preview-setting').forEach(input => document.documentElement.style.setProperty(input.dataset.variable, input.type === 'color' ? colorValue(input) : input.value + (input.dataset.unit || '')));
+    }
+    function applyDataValue(variable, value) {
+      const document = state.preview?.contentDocument; if (!document) return;
+      document.querySelectorAll(`[data-text="${CSS.escape(variable)}"]`).forEach(element => {
+        if (variable === '--character-name' && value.includes('|')) {
+          element.replaceChildren(...value.split('|').flatMap((part, index) => index ? [document.createElement('br'), document.createTextNode(part)] : [document.createTextNode(part)]));
+        } else element.textContent = value;
+      });
+    }
+    function applyPreviewData() { main.querySelectorAll('.data-input').forEach(input => applyDataValue(input.dataset.variable, input.value)); }
+    function setPreviewScale(frame, scale) {
+      frame.style.width = `${100 / scale}%`;
+      frame.style.height = `${720 / scale}px`;
+      frame.style.transform = `scale(${scale})`;
+    }
+    async function uploadImage(image, file, preview, drop) {
+      if (!state.current) return;
+      const suffix = file.name.split('.').pop().toLowerCase();
+      if (!['png', 'gif', 'jpg', 'jpeg'].includes(suffix)) return say('Выбери PNG, GIF, JPG или JPEG', true);
+      try {
+        drop.classList.add('drag');
+        const data = await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(String(reader.result).split(',')[1]); reader.onerror = reject; reader.readAsDataURL(file); });
+        const result = await request('/api/image', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({name: state.current.name, variable: image.variable, filename: file.name, data}) });
+        image.path = result.path; image.url = `/asset?name=${encodeURIComponent(state.current.name)}&path=${encodeURIComponent(result.path)}`;
+        preview.src = image.url + `&t=${Date.now()}`; state.preview?.contentWindow.location.reload(); say('Изображение заменено');
+      } catch (error) { say(error.message, true); } finally { drop.classList.remove('drag'); }
+    }
+    function renderEditor() {
+      const current = state.current; if (!current) return;
+      main.replaceChildren(); const editor = document.createElement('div'); editor.className = 'editor';
+      const top = document.createElement('div'); top.className = 'top'; top.innerHTML = `<h2>${current.data['--character-name'] || current.name}</h2><p>${current.data['--character-universe'] || ''}</p>`;
+      const previewPanel = document.createElement('section'); previewPanel.className = 'panel preview';
+      const previewHead = document.createElement('div'); previewHead.className = 'preview-head'; previewHead.innerHTML = '<h2>Живое превью страницы</h2>';
+      const scaleControl = document.createElement('label'); scaleControl.className = 'preview-scale'; scaleControl.innerHTML = '<span>Масштаб</span><input type="range" min="0.4" max="1" step="0.05" value="0.8"><output>80%</output>';
+      const stage = document.createElement('div'); stage.className = 'preview-stage';
+      const frame = document.createElement('iframe'); frame.title = 'Character page preview'; frame.src = `/site/03_Characters/${encodeURIComponent(current.name)}/character-page.html`;
+      const slider = scaleControl.querySelector('input'); const output = scaleControl.querySelector('output');
+      const updateScale = () => { const value = Number(slider.value); output.value = `${Math.round(value * 100)}%`; setPreviewScale(frame, value); };
+      slider.oninput = updateScale; updateScale(); frame.onload = () => { applyPreviewColors(); applyPreviewData(); };
+      state.preview = frame; stage.append(frame); previewHead.append(scaleControl); previewPanel.append(previewHead, stage);
+      const dataPanel = document.createElement('section'); dataPanel.className = 'panel'; dataPanel.innerHTML = '<h2>Текст и данные</h2><p style="color:#b8c0cc;font-size:13px">Изменения сразу видны в предпросмотре. Для переноса имени используй <code>|</code>.</p>';
+      const dataGrid = document.createElement('div'); dataGrid.className = 'data-fields'; Object.keys(DATA_LABELS).filter(key => key in current.data).forEach(key => dataGrid.append(dataField(key, current.data[key])));
+      const saveData = document.createElement('button'); saveData.className = 'save'; saveData.textContent = 'Сохранить character-data'; saveData.onclick = async () => { try { const values = Object.fromEntries([...dataGrid.querySelectorAll('.data-input')].map(input => [input.dataset.variable, input.value])); await request('/api/data', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name: current.name, data: values})}); Object.assign(current.data, values); say('character-data.css сохранён'); } catch (error) { say(error.message, true); } };
+      dataPanel.append(dataGrid, saveData);
+      const colors = document.createElement('section'); colors.className = 'panel'; colors.innerHTML = '<h2>Цвета</h2>';
+      const grid = document.createElement('div'); grid.className = 'colors'; Object.entries(current.colors).filter(([, value]) => colorParts(value)).forEach(([key, value]) => grid.append(colorField(key, value)));
+      const save = document.createElement('button'); save.className = 'save'; save.textContent = 'Сохранить цвета'; save.onclick = async () => { try { const values = Object.fromEntries([...grid.querySelectorAll('input[type=color]')].map(input => [input.dataset.variable, colorValue(input)])); await request('/api/colors', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name: current.name, colors: values})}); say('Цвета сохранены'); } catch (error) { say(error.message, true); } };
+      colors.append(grid, save);
+      const fonts = document.createElement('section'); fonts.className = 'panel'; fonts.innerHTML = '<h2>Шрифты</h2>';
+      const fontGrid = document.createElement('div'); fontGrid.className = 'fonts'; ['--font-accent', '--font-primary', '--font-secondary', '--head-font-size'].forEach(key => { if (current.fonts[key]) fontGrid.append(fontField(key, current.fonts[key])); });
+      const saveFonts = document.createElement('button'); saveFonts.className = 'save'; saveFonts.textContent = 'Сохранить шрифты'; saveFonts.onclick = async () => { try { const values = Object.fromEntries([...fontGrid.querySelectorAll('input')].map(input => [input.dataset.variable, input.value + (input.dataset.unit || '')])); await request('/api/fonts', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name: current.name, fonts: values})}); say('Шрифты сохранены'); } catch (error) { say(error.message, true); } };
+      fonts.append(fontGrid, saveFonts);
+      const assets = document.createElement('section'); assets.className = 'panel'; assets.innerHTML = '<h2>Изображения и GIF</h2><p style="color:#b8c0cc;font-size:13px">Перетащи файл на нужную карточку. Тип файла должен совпадать с назначением: PNG к PNG, GIF к GIF.</p>';
+      const assetGrid = document.createElement('div'); assetGrid.className = 'assets'; current.images.forEach(image => assetGrid.append(imageCard(image))); assets.append(assetGrid);
+      const controls = document.createElement('div'); controls.className = 'controls';
+      controls.append(makeCollapsible(dataPanel), makeCollapsible(colors), makeCollapsible(fonts), makeCollapsible(assets));
+      const workspace = document.createElement('div'); workspace.className = 'workspace'; workspace.append(controls, previewPanel);
+      editor.append(top, workspace); main.append(editor);
+    }
+    (async () => { try { state.characters = await request('/api/characters'); [...new Set(state.characters.map(item => item.universe))].sort().forEach(value => universe.add(new Option(value, value))); universe.onchange = renderList; renderList(); } catch (error) { say(error.message, true); } })();
+  </script>
+</body>
+</html>
