@@ -22,6 +22,7 @@
     .editor { display: grid; gap: 20px; }
     .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; }
     .top p { margin: 0; color: #b8c0cc; }
+    .open-assets { padding: 7px 10px; cursor: pointer; }
     .workspace { display: grid; grid-template-columns: minmax(310px, 420px) minmax(0, 1fr); align-items: start; gap: 20px; }
     .controls { display: grid; gap: 12px; }
     .panel { padding: 18px; background: #1c2029; border: 1px solid #3b4351; }
@@ -54,6 +55,11 @@
     .color-alpha input { width: 100%; }
     input[type=color] { width: 34px; height: 30px; padding: 0; border: 0; background: none; cursor: pointer; }
     .save { margin-top: 14px; padding: 9px 13px; cursor: pointer; }
+    .color-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .color-actions button, .color-actions input, .color-actions select { padding: 8px 10px; cursor: pointer; }
+    .color-actions input { min-width: 150px; cursor: text; }
+    .color-actions select { width: auto; min-width: 170px; margin: 0; }
+    .color-actions button:disabled { opacity: .45; cursor: not-allowed; }
     .assets { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 14px; }
     .asset { min-width: 0; padding: 8px; border: 1px solid #475163; background: #252b37; }
     .asset strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
@@ -80,6 +86,8 @@
   <div id="notice" role="status"></div>
   <script>
     const state = { characters: [], current: null };
+    const COLOR_CLIPBOARD_KEY = 'character-editor-color-clipboard';
+    const COLOR_TEMPLATES_KEY = 'character-editor-color-templates';
     const list = document.querySelector('#characters');
     const main = document.querySelector('#main');
     const universe = document.querySelector('#universe');
@@ -130,6 +138,38 @@
     }
     function applyPreviewColor(input) {
       state.preview?.contentDocument?.documentElement.style.setProperty(input.dataset.variable, colorValue(input));
+    }
+    function savedColorClipboard() {
+      try { return JSON.parse(localStorage.getItem(COLOR_CLIPBOARD_KEY) || 'null'); }
+      catch { return null; }
+    }
+    function colorTemplates() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(COLOR_TEMPLATES_KEY) || '[]');
+        return Array.isArray(saved) ? saved.filter(item => item && typeof item.name === 'string' && item.colors) : [];
+      } catch { return []; }
+    }
+    function saveColorTemplates(templates) { localStorage.setItem(COLOR_TEMPLATES_KEY, JSON.stringify(templates)); }
+    function colorsFromGrid(grid) {
+      return Object.fromEntries([...grid.querySelectorAll('input[type=color]')].map(input => [input.dataset.variable, colorValue(input)]));
+    }
+    function applyColorValues(grid, values, label) {
+      let applied = 0;
+      grid.querySelectorAll('input[type=color]').forEach(input => {
+        const value = values[input.dataset.variable];
+        const parts = value && colorParts(value);
+        if (!parts) return;
+        input.value = parts.hex;
+        const alpha = input.closest('label').querySelector('.color-alpha input');
+        const output = input.closest('label').querySelector('.color-alpha output');
+        alpha.value = parts.alpha; output.value = `${parts.alpha}%`;
+        applyPreviewColor(input); applied += 1;
+      });
+      say(`${label}: ${applied} цветов применено. Нажми «Сохранить цвета», если результат подходит.`);
+    }
+    function applyColorClipboard(grid) {
+      const clipboard = savedColorClipboard();
+      if (clipboard?.colors) applyColorValues(grid, clipboard.colors, 'Палитра вставлена');
     }
     function colorField(variable, value) {
       const label = document.createElement('label'); label.className = 'color';
@@ -224,6 +264,10 @@
       const current = state.current; if (!current) return;
       main.replaceChildren(); const editor = document.createElement('div'); editor.className = 'editor';
       const top = document.createElement('div'); top.className = 'top'; top.innerHTML = `<h2>${current.data['--character-name'] || current.name}</h2><p>${current.data['--character-universe'] || ''}</p>`;
+      const openAssets = document.createElement('button'); openAssets.className = 'open-assets'; openAssets.textContent = 'Открыть assets в Проводнике'; openAssets.onclick = async () => {
+        try { await request('/api/open-assets', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name: current.name})}); say('Папка assets открыта в Проводнике.'); }
+        catch (error) { say(error.message, true); }
+      }; top.append(openAssets);
       const previewPanel = document.createElement('section'); previewPanel.className = 'panel preview';
       const previewHead = document.createElement('div'); previewHead.className = 'preview-head'; previewHead.innerHTML = '<h2>Живое превью страницы</h2>';
       const scaleControl = document.createElement('label'); scaleControl.className = 'preview-scale'; scaleControl.innerHTML = '<span>Масштаб</span><input type="range" min="0.4" max="1" step="0.05" value="0.8"><output>80%</output>';
@@ -239,8 +283,47 @@
       dataPanel.append(dataGrid, saveData);
       const colors = document.createElement('section'); colors.className = 'panel'; colors.innerHTML = '<h2>Цвета</h2>';
       const grid = document.createElement('div'); grid.className = 'colors'; Object.entries(current.colors).filter(([, value]) => colorParts(value)).forEach(([key, value]) => grid.append(colorField(key, value)));
-      const save = document.createElement('button'); save.className = 'save'; save.textContent = 'Сохранить цвета'; save.onclick = async () => { try { const values = Object.fromEntries([...grid.querySelectorAll('input[type=color]')].map(input => [input.dataset.variable, colorValue(input)])); await request('/api/colors', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name: current.name, colors: values})}); say('Цвета сохранены'); } catch (error) { say(error.message, true); } };
-      colors.append(grid, save);
+      const actions = document.createElement('div'); actions.className = 'color-actions';
+      const copyColors = document.createElement('button'); copyColors.textContent = 'Копировать палитру'; copyColors.onclick = () => {
+        localStorage.setItem(COLOR_CLIPBOARD_KEY, JSON.stringify({ source: current.name, colors: colorsFromGrid(grid) }));
+        say(`Палитра «${current.name}» скопирована. Выбери другого персонажа и нажми «Вставить палитру».`);
+        pasteColors.disabled = false;
+        pasteColors.textContent = `Вставить палитру (${current.name})`;
+      };
+      const pasteColors = document.createElement('button'); const copied = savedColorClipboard();
+      pasteColors.textContent = copied ? `Вставить палитру (${copied.source})` : 'Вставить палитру'; pasteColors.disabled = !copied?.colors;
+      pasteColors.onclick = () => applyColorClipboard(grid);
+      actions.append(copyColors, pasteColors);
+      const templates = document.createElement('div'); templates.className = 'color-actions';
+      const templateName = document.createElement('input'); templateName.placeholder = 'Название шаблона'; templateName.setAttribute('aria-label', 'Название шаблона цветов');
+      const saveTemplate = document.createElement('button'); saveTemplate.textContent = 'Сохранить как шаблон';
+      const templateSelect = document.createElement('select'); templateSelect.setAttribute('aria-label', 'Шаблон цветов');
+      const refreshTemplates = (selected = '') => {
+        templateSelect.replaceChildren(new Option('Выбрать шаблон…', ''));
+        colorTemplates().sort((a, b) => a.name.localeCompare(b.name)).forEach(template => templateSelect.add(new Option(template.name, template.name)));
+        templateSelect.value = selected;
+      };
+      refreshTemplates();
+      saveTemplate.onclick = () => {
+        const name = templateName.value.trim();
+        if (!name) { say('Сначала дай шаблону название.', true); return; }
+        const next = colorTemplates().filter(template => template.name !== name);
+        next.push({ name, colors: colorsFromGrid(grid) }); saveColorTemplates(next); refreshTemplates(name);
+        say(`Шаблон «${name}» сохранён на этом компьютере.`);
+      };
+      const applyTemplate = document.createElement('button'); applyTemplate.textContent = 'Вставить шаблон'; applyTemplate.onclick = () => {
+        const template = colorTemplates().find(item => item.name === templateSelect.value);
+        if (!template) { say('Выбери шаблон цветов.', true); return; }
+        applyColorValues(grid, template.colors, `Шаблон «${template.name}»`);
+      };
+      const deleteTemplate = document.createElement('button'); deleteTemplate.textContent = 'Удалить шаблон'; deleteTemplate.onclick = () => {
+        const name = templateSelect.value; if (!name) { say('Выбери шаблон для удаления.', true); return; }
+        saveColorTemplates(colorTemplates().filter(template => template.name !== name)); refreshTemplates();
+        say(`Шаблон «${name}» удалён.`);
+      };
+      templates.append(templateName, saveTemplate, templateSelect, applyTemplate, deleteTemplate);
+      const save = document.createElement('button'); save.className = 'save'; save.textContent = 'Сохранить цвета'; save.onclick = async () => { try { const values = colorsFromGrid(grid); await request('/api/colors', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name: current.name, colors: values})}); Object.assign(current.colors, values); say('Цвета сохранены'); } catch (error) { say(error.message, true); } };
+      colors.append(grid, actions, templates, save);
       const fonts = document.createElement('section'); fonts.className = 'panel'; fonts.innerHTML = '<h2>Шрифты</h2>';
       const fontGrid = document.createElement('div'); fontGrid.className = 'fonts'; ['--font-accent', '--font-primary', '--font-secondary', '--head-font-size'].forEach(key => { if (current.fonts[key]) fontGrid.append(fontField(key, current.fonts[key])); });
       const saveFonts = document.createElement('button'); saveFonts.className = 'save'; saveFonts.textContent = 'Сохранить шрифты'; saveFonts.onclick = async () => { try { const values = Object.fromEntries([...fontGrid.querySelectorAll('input')].map(input => [input.dataset.variable, input.value + (input.dataset.unit || '')])); await request('/api/fonts', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name: current.name, fonts: values})}); say('Шрифты сохранены'); } catch (error) { say(error.message, true); } };

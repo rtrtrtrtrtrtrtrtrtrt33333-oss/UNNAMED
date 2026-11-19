@@ -313,7 +313,6 @@ body {
     transform: none !important;
 }
 .description-visuals { gap: 8px; }
-.description-visuals img:nth-child(5) { display: none; }
 
 .hero-quote {
     box-sizing: border-box;
@@ -375,19 +374,23 @@ body {
 .playlist-infobox-mark {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: space-between;
     margin: 0 12px;
     color: var(--color-accent);
-    font-size: 24px;
-    line-height: 1;
+    font-size: 0;
+    line-height: 0;
     text-align: center;
+    background: linear-gradient(currentColor, currentColor) center / 100% 2px no-repeat;
 }
 .playlist-infobox-mark::before,
 .playlist-infobox-mark::after {
-    content: "";
-    flex: 1;
-    height: 2px;
-    background: currentColor;
+    content: var(--theme-symbol, "✦");
+    flex: 0 0 auto;
+    padding: 0 8px;
+    color: var(--color-accent);
+    background: var(--background-primary);
+    font-size: 24px;
+    line-height: 1;
     opacity: 1;
 }
 .playlist-profile-image {

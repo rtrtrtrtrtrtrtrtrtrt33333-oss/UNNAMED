@@ -1,20 +1,20 @@
 :root {
   --character-name-color: #eee8dc;
-  --text-color-primary: #1c0e07;
+  --text-color-primary: #2c170c;
   --text-color-secondary: #492c19;
-  --background-main: #35231c;
-  --background-primary: #b28c69;
-  --background-secondary: #697053;
-  --background-tertiary: #839169;
-  --color-accent: #a8b250;
+  --background-main: #190f0b;
+  --background-primary: #afc091;
+  --background-secondary: #92a064;
+  --background-tertiary: #f7f6e4;
+  --color-accent: #ca8816;
   --color-palette-1: #622e1e;
   --color-palette-2: #85492b;
   --color-palette-3: #efdbca;
   --color-palette-4: #d58e42;
-  --color-palette-5: rgb(238, 173, 102);
+  --color-palette-5: #eead66;
   --playlist-text-color-primary: #f0f0f0;
   --playlist-text-color-secondary: #8c9395;
   --playlist-head-text-color-primary: #f0f0f0;
-  --playlist-head-text-color-secondary: #8c9395;
+  --playlist-head-text-color-secondary: #fbe2cb;
   --playlist-head-text-color-tertiary: #cecece;
 }

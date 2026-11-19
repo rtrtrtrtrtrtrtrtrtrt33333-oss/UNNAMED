@@ -10,10 +10,9 @@
   --description-image-2: url('../images/02_description-02.png');
   --description-image-3: url('../images/02_description-03.gif');
   --description-image-4: url('../images/02_description-04.gif');
-  --description-image-5: url('../images/02_description-05.gif');
   --gallery-1: url('../images/04_gallery-01.png');
   --gallery-2: url('../images/04_gallery-02.png');
-  --gallery-3: url('../images/04_gallery-03.png');
+  --gallery-3: url('../images/04_gallery-03.gif');
   --gallery-4: url('../images/04_gallery-04.png');
   --gallery-5: url('../images/04_gallery-05.png');
   --gallery-6: url('../images/04_gallery-06.gif');
@@ -24,9 +23,9 @@
 
 /* Independent appearance views; replace with your own image URLs as needed. */
 :root {
-  --appearance-1: url('../images/03_appearance-extra-01.png');
+  --appearance-1: url('../images/03_appearance-extra-01.gif');
   --appearance-2: url('../images/03_appearance-extra-02.png');
-  --appearance-3: url('../images/03_appearance-extra-03.png');
+  --appearance-3: url('../images/03_appearance-extra-03.gif');
 }
 
 :root {

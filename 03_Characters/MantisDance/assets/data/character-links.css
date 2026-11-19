@@ -1,6 +1,6 @@
 :root {
 
-  --page-background: url('../images/00_backgrounds-background.gif');
+  --page-background: url('../images/00_backgrounds-background.png');
   --background-main-pattern: url('../images/00_backgrounds-main-pattern.png');
   --hero-profile-background: url('../images/01_hero-profile-background.png');
   --hero-profile: url('../images/01_hero-profile.png');
@@ -10,14 +10,13 @@
   --description-image-2: url('../images/02_description-02.gif');
   --description-image-3: url('../images/02_description-03.gif');
   --description-image-4: url('../images/02_description-04.gif');
-  --description-image-5: url('../images/02_description-05.gif');
   --gallery-1: url('../images/04_gallery-01.png');
   --gallery-2: url('../images/04_gallery-02.png');
   --gallery-3: url('../images/04_gallery-03.png');
   --gallery-4: url('../images/04_gallery-04.png');
   --gallery-5: url('../images/04_gallery-05.png');
   --gallery-6: url('../images/04_gallery-06.png');
-  --playlist-background: url('../images/05_playlist-background.gif');
+  --playlist-background: url('../images/05_playlist-background.png');
   --playlist-track-1: url('../playlist/audiomass-output.flac');
   --playlist-track-2: url('../playlist/track-2.mp3');
 }

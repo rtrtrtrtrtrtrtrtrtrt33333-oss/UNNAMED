@@ -235,6 +235,15 @@ class EditorHandler(BaseHTTPRequestHandler):
                 update_data(folder / "assets" / "data" / "character-data.css", {str(key): str(value) for key, value in updates.items()})
                 return self.json(HTTPStatus.OK, {"ok": True})
 
+            if self.path == "/api/open-assets":
+                assets = (folder / "assets").resolve()
+                if not assets.is_dir() or not assets.is_relative_to(folder.resolve()):
+                    raise ValueError("Assets folder not found")
+                if not hasattr(os, "startfile"):
+                    raise ValueError("Opening Explorer is available only on Windows")
+                os.startfile(str(assets))  # type: ignore[attr-defined]
+                return self.json(HTTPStatus.OK, {"ok": True})
+
             if self.path == "/api/image":
                 variable = str(payload.get("variable", ""))
                 filename = str(payload.get("filename", ""))

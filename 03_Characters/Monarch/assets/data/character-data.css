@@ -1,15 +1,15 @@
-﻿:root {
-  --page-title: "Arthur - Character Profile";
-  --character-name: "Arthur";
-  --theme-symbol: "✦";
-  --description: "Артур бывший британский солдат, которого временно подобрали Французские солдаты. Артур рос с мамой без отца, но несмотря на это имел счастливое детство. Долгое время он мечтал попасть в армию и на войну, ошибочно считая что это крутое и эпичное место, и что он выйдет победителем.";
-  --description-2: "Попав в британскую армию, .";
+:root {
+  --page-title: "Monarch - Character Profile";
+  --character-name: "Monarch";
+  --theme-symbol: "ꕤ";
+  --description: "Monarch is an 10-11 old apprentice, she's observant and usually not talkative. She's known for her good hunting skills, and her strategy of staying innoticed until close to prey.";
+  --description-2: "Even if Monarch can look unapprochable, actually she likes to hang out with her friends.";
   --quote: "lorem ipsum";
   --quote-author: "lorem ipsum";
-  --personality: "lorem ipsum";
-  --trivia: "No trivia yet.";
-  --info-role: "lorem ipsum";
-  --info-origin: "lorem ipsum";
+  --personality: "Monarch can be described as observant and curious. Usually she doesn't take initiative in starting conversations, but she easily can support one. She prefers hunting over fighting, believing fights is for brutes.";
+  --trivia: "Likes flowers and adorning her fur with them ꕤ A bit of neat freak, always keeping her fur well cleaned and avoiding getting dirt on her paws ꕤ She's afraid of bugs, expecially spiders, butterflies, moths and bees are only critters she finds cute ꕤ Particularly doesn't like toads and frogs, expecially touching them. Don't try to ask her to hunt one";
+  --info-role: "Apprentice";
+  --info-origin: "unknown clan";
   --track-1-name: "Voiceclaim: guy from wind rises";
   --track-1-artist: "The wind rises";
   --track-2-name: "Endless Desert";

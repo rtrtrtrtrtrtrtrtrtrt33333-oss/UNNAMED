@@ -1,15 +1,15 @@
-﻿:root {
+:root {
   --page-title: "Thirteen - Character Profile";
   --character-name: "Thirteen";
   --theme-symbol: "✦";
-  --description: "Тринадцать — разумный Вознесенный, странствующий среди руин. В отличие от большинства Вознесенных, они сохранили способность самостоятельно мыслить, говорить и принимать решения. Они не принадлежат ни к одной известной группировке и путешествуют по собственным причинам.";
-  --description-2: "Тринадцать появились после того, как Вознесение достигло Гнезда. Их оболочкой стало тело Октавы, боевой единицы, погибшей во время катастрофы. Несмотря на общее тело, Тринадцать не являются Октавой и не обладают воспоминаниями о её жизни. Покинув Гнездо, они начали странствовать по руинам.";
-  --quote: "Вы все должны были давно сгнить в своих оболочках. Но ты... На удивление упряма.";
-  --quote-author: "Кофеёк";
-  --personality: "Тринадцать спокойны и немногословны. Они редко позволяют эмоциям влиять на решения и обычно действуют наиболее прямым и эффективным способом. Тринадцать способны самостоятельно ставить перед собой цели и долго следовать им. Их особенно раздражает, когда окружающие считают их такими же, как остальные Вознесенные.";
-  --trivia: "Красная накидка на самом деле является плотью, которая со временем вытянулась и сформировала ровные узоры • Тело Тринадцати раньше имело четыре ноги, но теперь осталось три • Их оболочка раньше принадлежала Октаве • Октава служила боевой единицей Гнезда под командованием Вечного Хора";
-  --info-role: "Wanderer • Ascended";
-  --info-origin: "Nest";
+  --description: "Thirteen is a sentient ascended, solemn wanderer that crossed countless ruins and lands and fierce warrior. Unlike most of their kind who is driven by mindless hunger, they possess the ability to acknowledge themselves. They belong to no place, still an enemy to remaining communities left by empires.";
+  --description-2: "Thirteen emerged after the Ascension destroyed Clans of Nests. Infection got into the corpse shell of Frostbitten: a combatant who perished during the catastrophe, developing it's own conscience. They began their journey across the Web in order to slay Constellations and Firstborn Sun.";
+  --quote: "All of you monstrosities should have rotted away... But you are surprisingly stubborn.";
+  --quote-author: "Peace Maker";
+  --personality: "Thirteen usually are calm and reserved, although they tend to get irritated and hot-tempered easily. They never backed down to protect themselves, not fearing to engage in brutal brawls if necessary. They aren't devoid of empathy, but also capable of commiting truly cruel deeds in order to reach their goals.";
+  --trivia: "✦  Their red cloak is actually flesh, over time it good smoother surface and more clear patterns, when they get irritated veins and flesh fibers get more pronounced ✦ Majority Artificials are hostile towards them, even acknowleging their intelligence, and Thirteen is hostile towards them as well ✦ Swears sometimes, doesn't really care about manners ✦ Thirteen easily adopts different fighting styles, but Frostbitten's original shell was made as tank and heavy combatant ✦";
+  --info-role: "Wanderer ✦ Ascended";
+  --info-origin: "Clans of Nest";
   --track-1-name: "Voiceclaim: San";
   --track-1-artist: "The Princess Mononoke";
   --track-2-name: "Endless Desert";
